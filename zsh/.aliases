@@ -1,0 +1,9 @@
+alias rgi="rg --no-ignore"
+alias ta="tmux attach"
+alias gitconfig='vim $XDG_CONFIG_HOME/git/config'
+alias thist="tmux capture-pane -epS - > /tmp/tmuxhist && vim -c 'te cat /tmp/tmuxhist' -c stopinsert"
+
+# Project based
+# AP
+alias rs="./devops/rsync.sh marwan"
+alias gql="npm run graphql:introspect && npm run graphql:generate"

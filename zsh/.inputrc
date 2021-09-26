@@ -1,0 +1,6 @@
+set colored-stats on
+set enable-bracketed-paste off
+
+"\C-p": history-search-backward
+"\C-n": history-search-forward
+TAB: menu-complete
