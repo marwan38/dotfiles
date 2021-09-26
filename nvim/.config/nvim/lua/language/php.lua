@@ -62,7 +62,7 @@ return {
             args = {
                 "--no-interaction",
                 "--quiet",
-                "--config=/home/marwan38/.dotfiles/.php-cs-fixer.php",
+                "--config=/home/marwan38/.config/phpcs/.php-cs-fixer.php",
                 "fix",
                 "$FILENAME",
             },

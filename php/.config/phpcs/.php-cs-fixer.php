@@ -9,5 +9,5 @@ return $config->setRules([
     'strict_param' => true,
     'array_syntax' => ['syntax' => 'short'],
     'binary_operator_spaces' => ['operators' => ['=>' => 'align']],
-])->setRiskyAllowed(true);
+])->setRiskyAllowed(true)->setCacheFile('/tmp/.php-cs-fixer.cache');
 
