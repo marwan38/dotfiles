@@ -5,11 +5,8 @@ return {
     end,
 
     setup = function()
-        vim.g.nvim_tree_width = 40
-        vim.g.nvim_tree_auto_ignore_ft = { "dashboard" }
         vim.g.nvim_tree_git_hl = 1
         vim.g.nvim_tree_highlight_opened_files = 1
-        vim.g.nvim_tree_lsp_diagnostics = 1
 
         vim.g.nvim_tree_window_picker_exclude = {
             filetype = {
@@ -76,6 +73,10 @@ return {
             open_on_setup = false,
             ignore_ft_on_setup = {
                 "dashboard",
+            },
+            lsp_diagnostics = true,
+            view = {
+                width = 40,
             },
         }
     end,
