@@ -1,3 +1,8 @@
+local impatient_exists, _ = pcall(require, "impatient")
+if impatient_exists then
+    require "impatient"
+end
+
 local execute = vim.api.nvim_command
 local fn = vim.fn
 
@@ -45,11 +50,6 @@ local layers = {
     require "language/json",
     require "language/css",
 }
-
-local impatient_exists, impatient = pcall(require, "impatient")
-if impatient_exists then
-    require "impatient"
-end
 
 packer.startup {
     function()

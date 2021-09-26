@@ -178,6 +178,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-cmp"
   },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua"
+  },
   ["nvim-comment"] = {
     loaded = true,
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-comment"

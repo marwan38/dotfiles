@@ -5,61 +5,77 @@ return {
     end,
 
     setup = function()
-        require("nvim-tree").setup {
-            active = true,
-            update_cwd = 1,
-            respect_buf_cwd = 1,
-            disable_netrw = 0,
-            hijack_netrw = 0,
+        vim.g.nvim_tree_width = 40
+        vim.g.nvim_tree_auto_ignore_ft = { "dashboard" }
+        vim.g.nvim_tree_git_hl = 1
+        vim.g.nvim_tree_highlight_opened_files = 1
+        vim.g.nvim_tree_lsp_diagnostics = 1
 
-            side = "left",
-            width = 30,
-            show_icons = {
-                git = 1,
-                folders = 1,
-                files = 1,
-                folder_arrows = 1,
-                tree_width = 30,
+        vim.g.nvim_tree_window_picker_exclude = {
+            filetype = {
+                "packer",
+                "qf",
+                "dashboard",
             },
-            ignore = { ".git", "node_modules", ".cache" },
-            auto_open = 0,
-            auto_close = 1,
-            quit_on_open = 0,
-            follow = 1,
+            buftype = {
+                "terminal",
+                "dashboard",
+            },
+        }
+        vim.g.nvim_tree_special_files = {}
+        vim.g.nvim_tree_show_icons = {
 
-            hide_dotfiles = 0,
-            git_hl = 1,
-            root_folder_modifier = ":t",
-            tab_open = 0,
-            allow_resize = 1,
-            lsp_diagnostics = 1,
-            auto_ignore_ft = { "startify", "dashboard" },
-            icons = {
-                default = "",
-                symlink = "",
-                git = {
-                    unstaged = "",
-                    staged = "S",
-                    unmerged = "",
-                    renamed = "➜",
-                    deleted = "",
+            git = 0,
+            folders = 1,
+            files = 1,
+            folder_arrows = 1,
+        }
 
-                    untracked = "U",
-                    ignored = "◌",
-                },
-                folder = {
-                    default = "",
-                    open = "",
-                    empty = "",
-                    empty_open = "",
-                    symlink = "",
-                },
-                lsp = {
-                    hint = "",
-                    info = "",
-                    warning = "",
-                    error = "",
-                },
+        vim.g.nvim_tree_icons = {
+            default = "",
+            symlink = "",
+            git = {
+                unstaged = "~",
+                staged = "+",
+                unmerged = "",
+                renamed = ">",
+                untracked = "*",
+                deleted = "-",
+
+                ignored = "",
+            },
+            folder = {
+                arrow_open = "",
+                arrow_closed = "",
+                default = "",
+                open = "",
+                empty = "",
+                empty_open = "",
+                symlink = "",
+
+                symlink_open = "",
+            },
+            lsp = {
+                hint = "",
+                info = "",
+                warning = "",
+                error = "",
+            },
+        }
+
+        vim.api.nvim_exec(
+            [[
+    autocmd ColorScheme * highlight NvimTreeGitDirty guifg=#EBCB8B | highlight Directory guifg=#81A1C1
+	autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) | execute 'cd '.argv()[0] | execute 'Dashboard' | wincmd l | endif
+    ]],
+            false
+        )
+
+        require("nvim-tree").setup {
+            auto_close = false,
+            open_on_setup = false,
+            ignore_ft_on_setup = {
+                "dashboard",
             },
         }
     end,

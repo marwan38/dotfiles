@@ -9,10 +9,12 @@ return {
         use "akinsho/nvim-bufferline.lua"
         use "ojroques/nvim-bufdel"
         use "kevinhwang91/nvim-bqf"
+        use "norcalli/nvim-colorizer.lua"
     end,
 
     setup = function()
         require("bqf").setup {}
+        require("colorizer").setup()
 
         require("bufdel").setup {
             next = "alternate",
@@ -66,7 +68,6 @@ return {
                 end,
             },
         }
-
     end,
 
     bindings = function(map)
