@@ -13,7 +13,6 @@ return {
     end,
 
     setup = function()
-        local lspkind = require "lspkind"
         local cmp = require "cmp"
         cmp.setup {
             snippet = {
@@ -43,7 +42,7 @@ return {
                 { name = "buffer" },
                 { name = "path" },
                 { name = "nvim_lua" },
-                { name = "orgmode" },
+                { name = "neorg" },
             },
             formatting = {
                 format = function(entry, vim_item)

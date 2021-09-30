@@ -54,7 +54,6 @@ return {
                 }
                 ts_utils.setup_client(client)
             end,
-            capabilities = require("lsp").common_capabilities(),
             flags = {
                 debounce_text_changes = 150,
             },

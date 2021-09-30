@@ -26,7 +26,8 @@ return {
                 "html",
                 "graphql",
                 "dockerfile",
-                "rust"
+                "rust",
+                "norg"
             },
             playground = {
                 enable = true,

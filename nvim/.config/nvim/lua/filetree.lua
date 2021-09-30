@@ -5,61 +5,6 @@ return {
     end,
 
     setup = function()
-        vim.g.nvim_tree_git_hl = 1
-        vim.g.nvim_tree_highlight_opened_files = 1
-
-        vim.g.nvim_tree_window_picker_exclude = {
-            filetype = {
-                "packer",
-                "qf",
-                "dashboard",
-            },
-            buftype = {
-                "terminal",
-                "dashboard",
-            },
-        }
-        vim.g.nvim_tree_special_files = {}
-        vim.g.nvim_tree_show_icons = {
-
-            git = 0,
-            folders = 1,
-            files = 1,
-            folder_arrows = 1,
-        }
-
-        vim.g.nvim_tree_icons = {
-            default = "",
-            symlink = "",
-            git = {
-                unstaged = "~",
-                staged = "+",
-                unmerged = "",
-                renamed = ">",
-                untracked = "*",
-                deleted = "-",
-
-                ignored = "",
-            },
-            folder = {
-                arrow_open = "",
-                arrow_closed = "",
-                default = "",
-                open = "",
-                empty = "",
-                empty_open = "",
-                symlink = "",
-
-                symlink_open = "",
-            },
-            lsp = {
-                hint = "",
-                info = "",
-                warning = "",
-                error = "",
-            },
-        }
-
         vim.api.nvim_exec(
             [[
     autocmd ColorScheme * highlight NvimTreeGitDirty guifg=#EBCB8B | highlight Directory guifg=#81A1C1
@@ -67,16 +12,64 @@ return {
     ]],
             false
         )
+        local global_configs = {
+            show_icons = {
+                git = 1,
+                folders = 1,
+                files = 1,
+                folder_arrows = 1,
+                tree_width = 30,
+            },
+            ignore = { ".git", "node_modules", ".cache" },
+            quit_on_open = 0,
+            hide_dotfiles = 1,
+            git_hl = 1,
+            root_folder_modifier = ":t",
+            allow_resize = 1,
+            auto_ignore_ft = { "startify", "dashboard" },
+            icons = {
+                default = "",
+                symlink = "",
+                git = {
+                    unstaged = "",
+                    staged = "S",
+                    unmerged = "",
+
+                    renamed = "➜",
+                    deleted = "",
+                    untracked = "U",
+                    ignored = "◌",
+                },
+                folder = {
+                    default = "",
+                    open = "",
+                    empty = "",
+                    empty_open = "",
+                    symlink = "",
+                },
+            },
+        }
+
+        for opt, val in pairs(global_configs) do
+            vim.g["nvim_tree_" .. opt] = val
+        end
 
         require("nvim-tree").setup {
-            auto_close = false,
-            open_on_setup = false,
-            ignore_ft_on_setup = {
-                "dashboard",
+            auto_open = 0,
+            auto_close = 1,
+            tab_open = 0,
+            update_focused_file = {
+                enable = 1,
             },
-            lsp_diagnostics = true,
+            lsp_diagnostics = 1,
             view = {
-                width = 40,
+
+                width = 50,
+                side = "left",
+                auto_resize = false,
+                mappings = {
+                    custom_only = false,
+                },
             },
         }
     end,

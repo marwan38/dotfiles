@@ -10,11 +10,11 @@ function M.setup()
 
     local config = { -- your config
         signs = true,
-        virtual_text = false,
-        -- virtual_text = {
-        --     prefix = "",
-        --     spacing = 0,
-        -- },
+        -- virtual_text = false,
+        virtual_text = {
+            source = "always",
+            -- spacing = 0,
+        },
         update_in_insert = false,
 
         underline = true,
@@ -31,40 +31,30 @@ function M.setup()
         local diagnostics = result.diagnostics
         local ok, vim_diag = pcall(require, "vim.diagnostic")
 
-        if ok then
-            for i, diagnostic in ipairs(diagnostics) do
-                local rng = diagnostic.range
-                diagnostics[i].lnum = rng["start"].line
-                diagnostics[i].end_lnum = rng["end"].line
-                diagnostics[i].col = rng["start"].character
-                diagnostics[i].end_col = rng["end"].character
-            end
-            local namespace = vim.lsp.diagnostic.get_namespace(ctx.client_id)
-
-            vim_diag.set(namespace, bufnr, diagnostics, config)
-            if not vim.api.nvim_buf_is_loaded(bufnr) then
-                return
-            end
-
-            local sign_names = {
-                "DiagnosticSignError",
-                "DiagnosticSignWarn",
-                "DiagnosticSignInfo",
-                "DiagnosticSignHint",
-            }
-            for i, sign in ipairs(signs) do
-                vim.fn.sign_define(sign_names[i], { texthl = sign_names[i], text = sign.text, numhl = "" })
-            end
-            vim_diag.show(namespace, bufnr, diagnostics, config)
-        else
-            -- TODO Get rid of this 0.5.0
-            vim.lsp.diagnostic.save(diagnostics, bufnr, ctx.client_id)
-
-            if not vim.api.nvim_buf_is_loaded(bufnr) then
-                return
-            end
-            vim.lsp.diagnostic.display(diagnostics, bufnr, ctx.client_id, config)
+        for i, diagnostic in ipairs(diagnostics) do
+            local rng = diagnostic.range
+            diagnostics[i].lnum = rng["start"].line
+            diagnostics[i].end_lnum = rng["end"].line
+            diagnostics[i].col = rng["start"].character
+            diagnostics[i].end_col = rng["end"].character
         end
+        local namespace = vim.lsp.diagnostic.get_namespace(ctx.client_id)
+
+        vim_diag.set(namespace, bufnr, diagnostics, config)
+        if not vim.api.nvim_buf_is_loaded(bufnr) then
+            return
+        end
+
+        local sign_names = {
+            "DiagnosticSignError",
+            "DiagnosticSignWarn",
+            "DiagnosticSignInfo",
+            "DiagnosticSignHint",
+        }
+        for i, sign in ipairs(signs) do
+            vim.fn.sign_define(sign_names[i], { texthl = sign_names[i], text = sign.text, numhl = "" })
+        end
+        vim_diag.show(namespace, bufnr, diagnostics, config)
     end
 
     vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {

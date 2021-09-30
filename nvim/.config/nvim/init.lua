@@ -29,6 +29,7 @@ local layers = {
     require "filetree",
     require "yanking",
     require "completion",
+    require "org",
     require "treesitter",
     require "finder",
 
@@ -40,7 +41,6 @@ local layers = {
     require "debugging",
     require "tmux",
     require "testing",
-    require "org",
 
     require "lsp",
     require "language/php",

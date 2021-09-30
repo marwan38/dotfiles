@@ -150,6 +150,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/lualine.nvim"
   },
+  neorg = {
+    config = { "\27LJ\2\2±\4\0\0\6\0\28\0&6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\18\0005\2\3\0004\3\0\0=\3\4\0025\3\6\0005\4\5\0=\4\a\3=\3\b\0024\3\0\0=\3\t\0025\3\r\0005\4\v\0005\5\n\0=\5\f\4=\4\a\3=\3\14\0025\3\16\0005\4\15\0=\4\a\3=\3\17\2=\2\19\1B\0\2\0016\0\0\0'\1\20\0B\0\2\0029\0\21\0B\0\1\0025\1\26\0005\2\23\0005\3\24\0=\3\25\2=\2\27\1=\1\22\0K\0\1\0\17install_info\1\0\0\nfiles\1\3\0\0\17src/parser.c\19src/scanner.cc\1\0\2\burl3https://github.com/nvim-neorg/tree-sitter-norg\vbranch\tmain\tnorg\23get_parser_configs\28nvim-treesitter.parsers\tload\1\0\0\25core.norg.completion\1\0\0\1\0\1\vengine\rnvim-cmp\21core.norg.dirman\1\0\0\15workspaces\1\0\0\1\0\1\17my_workspace\f~/neorg\24core.norg.concealer\18core.keybinds\vconfig\1\0\0\1\0\2\21default_keybinds\2\17neorg_leader\14<Leader>o\18core.defaults\1\0\0\nsetup\nneorg\frequire\0" },
+    loaded = true,
+    path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/neorg"
+  },
   ["nui.nvim"] = {
     loaded = true,
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/nui.nvim"
@@ -237,11 +242,6 @@ _G.packer_plugins = {
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
-  },
-  ["orgmode.nvim"] = {
-    config = { "\27LJ\2\2Ž\1\0\0\3\0\6\0\t6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0005\2\3\0=\2\5\1B\0\2\1K\0\1\0\21org_agenda_files\1\0\1\27org_default_notes_file\22~/orgs/refile.org\1\2\0\0\16~/orgs/**/*\nsetup\forgmode\frequire\0" },
-    loaded = true,
-    path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/orgmode.nvim"
   },
   ["package-info.nvim"] = {
     loaded = true,
@@ -364,6 +364,10 @@ time([[Setup for vim-test]], false)
 time([[packadd for vim-test]], true)
 vim.cmd [[packadd vim-test]]
 time([[packadd for vim-test]], false)
+-- Config for: neorg
+time([[Config for neorg]], true)
+try_loadstring("\27LJ\2\2±\4\0\0\6\0\28\0&6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\18\0005\2\3\0004\3\0\0=\3\4\0025\3\6\0005\4\5\0=\4\a\3=\3\b\0024\3\0\0=\3\t\0025\3\r\0005\4\v\0005\5\n\0=\5\f\4=\4\a\3=\3\14\0025\3\16\0005\4\15\0=\4\a\3=\3\17\2=\2\19\1B\0\2\0016\0\0\0'\1\20\0B\0\2\0029\0\21\0B\0\1\0025\1\26\0005\2\23\0005\3\24\0=\3\25\2=\2\27\1=\1\22\0K\0\1\0\17install_info\1\0\0\nfiles\1\3\0\0\17src/parser.c\19src/scanner.cc\1\0\2\burl3https://github.com/nvim-neorg/tree-sitter-norg\vbranch\tmain\tnorg\23get_parser_configs\28nvim-treesitter.parsers\tload\1\0\0\25core.norg.completion\1\0\0\1\0\1\vengine\rnvim-cmp\21core.norg.dirman\1\0\0\15workspaces\1\0\0\1\0\1\17my_workspace\f~/neorg\24core.norg.concealer\18core.keybinds\vconfig\1\0\0\1\0\2\21default_keybinds\2\17neorg_leader\14<Leader>o\18core.defaults\1\0\0\nsetup\nneorg\frequire\0", "config", "neorg")
+time([[Config for neorg]], false)
 -- Config for: hop.nvim
 time([[Config for hop.nvim]], true)
 try_loadstring("\27LJ\2\0021\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\bhop\frequire\0", "config", "hop.nvim")
@@ -372,10 +376,6 @@ time([[Config for hop.nvim]], false)
 time([[Config for project.nvim]], true)
 try_loadstring("\27LJ\2\2x\0\0\2\0\6\0\r6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\0016\0\0\0'\1\3\0B\0\2\0029\0\4\0'\1\5\0B\0\2\1K\0\1\0\rprojects\19load_extension\14telescope\nsetup\17project_nvim\frequire\0", "config", "project.nvim")
 time([[Config for project.nvim]], false)
--- Config for: orgmode.nvim
-time([[Config for orgmode.nvim]], true)
-try_loadstring("\27LJ\2\2Ž\1\0\0\3\0\6\0\t6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0005\2\3\0=\2\5\1B\0\2\1K\0\1\0\21org_agenda_files\1\0\1\27org_default_notes_file\22~/orgs/refile.org\1\2\0\0\16~/orgs/**/*\nsetup\forgmode\frequire\0", "config", "orgmode.nvim")
-time([[Config for orgmode.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
