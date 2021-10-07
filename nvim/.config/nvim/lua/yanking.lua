@@ -25,14 +25,5 @@ return {
 
         -- gm for marks
         map("n", "gm", "m", opts)
-
-        --         map("n", "<M-p>", "<plug>(YoinkPostPasteSwapBack)", {})
-        --         map("n", "<M-P>", "<plug>(YoinkPostPasteSwapForward)", {})
-
-        --         map("n", "p", "<plug>(YoinkPaste_p)", {})
-        --         map("n", "P", "<Plug>(YoinkPaste_P)", {})
-
-        --         map("n", "y", "<Plug>(YoinkYankPreserveCursorPosition)", {})
-        --         map("x", "y", "<Plug>(YoinkYankPreserveCursorPosition)", {})
     end,
 }

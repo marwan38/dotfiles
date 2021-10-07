@@ -8,14 +8,13 @@ return {
         require("gitsigns").setup {
             keymaps = {
                 noremap = true,
-
                 ["o ih"] = ':<C-U>lua require"gitsigns.actions".select_hunk()<CR>',
                 ["x ih"] = ':<C-U>lua require"gitsigns.actions".select_hunk()<CR>',
             },
         }
     end,
 
-    bindings = function(map)
+    bindings = function()
         local wk = require "which-key"
 
         wk.register {

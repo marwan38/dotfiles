@@ -45,19 +45,19 @@ return {
                 { name = "neorg" },
             },
             formatting = {
-                format = function(entry, vim_item)
-                    -- fancy icons ad a name of kind
-                    vim_item.kind = require("lspkind").presets.default[vim_item.kind] .. " " .. vim_item.kind
-                    -- set a name for each source
-                    vim_item.menu = ({
+                format = require("lspkind").cmp_format {
+                    with_text = true,
+                    menu = {
+                        path = "(Path)",
                         buffer = "[Buffer]",
                         nvim_lsp = "[LSP]",
                         luasnip = "[LuaSnip]",
+                        vsnip = "[VSnip]",
+                        emoji = "(Emoji)",
                         nvim_lua = "[Lua]",
                         latex_symbols = "[Latex]",
-                    })[entry.source.name]
-                    return vim_item
-                end,
+                    },
+                },
             },
         }
 
@@ -68,7 +68,7 @@ return {
 
         require("nvim-autopairs.completion.cmp").setup {
             map_cr = true,
-            map_complete = true,
+            map_complete = false,
             auto_select = true,
         }
     end,

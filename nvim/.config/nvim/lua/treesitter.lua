@@ -27,7 +27,7 @@ return {
                 "graphql",
                 "dockerfile",
                 "rust",
-                "norg"
+ --               "norg",
             },
             playground = {
                 enable = true,
@@ -109,6 +109,7 @@ return {
             },
             context_commentstring = {
                 enable = true,
+                enable_autocmd = false, -- for nvim-comment integration
             },
             autotag = {
                 enable = true,
@@ -117,9 +118,6 @@ return {
 
         -- vim.cmd [[ autocmd ColorScheme * highlight TSError cterm=undercurl ctermfg=1 gui=undercurl guifg=NONE guisp=#BF616A ]]
 
-        vim.opt.foldmethod = "expr"
-        vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-        vim.opt.foldlevel = 99
     end,
 
     bindings = function(_, wk)

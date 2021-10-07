@@ -2,12 +2,10 @@ return {
     plugins = function(use)
         use "mfussenegger/nvim-dap"
         use "rcarriga/nvim-dap-ui"
-        use "Pocco81/DAPInstall.nvim"
         use "theHamsta/nvim-dap-virtual-text"
     end,
 
     setup = function()
-        require("dap-install").setup {}
         require("dapui").setup {
             icons = { expanded = "▾", collapsed = "▸" },
             mappings = {
@@ -15,13 +13,14 @@ return {
                 expand = { "<CR>", "<2-LeftMouse>" },
                 open = "o",
                 remove = "d",
+
                 edit = "e",
                 repl = "r",
             },
+
             sidebar = {
                 -- You can change the order of elements in the sidebar
                 elements = {
-
                     -- Provide as ID strings or tables with "id" and "size" keys
                     {
                         id = "scopes",
@@ -41,6 +40,7 @@ return {
             },
             floating = {
                 max_height = nil, -- These can be integers or a float between 0 and 1.
+
                 max_width = nil, -- Floats will be treated as percentage of your screen.
                 mappings = {
                     close = { "q", "<Esc>" },
@@ -48,9 +48,6 @@ return {
             },
             windows = { indent = 1 },
         }
-    end,
-
-    bindings = function()
         local dap = require "dap"
 
         vim.fn.sign_define("DapBreakpoint", {
@@ -60,7 +57,9 @@ return {
             numhl = "",
         })
         dap.defaults.fallback.terminal_win_cmd = "50vsplit new"
+    end,
 
+    bindings = function()
         local wk = require "which-key"
 
         wk.register {
@@ -76,6 +75,7 @@ return {
                 i = { "<cmd>lua require'dap'.step_into()<cr>", "Step Into" },
                 o = { "<cmd>lua require'dap'.step_over()<cr>", "Step Over" },
                 u = { "<cmd>lua require'dap'.step_out()<cr>", "Step Out" },
+                U = { "<cmd>lua require'dapui'.toggle()<cr>", "Step Out" },
                 p = { "<cmd>lua require'dap'.pause.toggle()<cr>", "Pause" },
                 r = { "<cmd>lua require'dap'.repl.toggle()<cr>", "Toggle Repl" },
 

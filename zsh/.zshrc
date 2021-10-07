@@ -1,9 +1,9 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# fi
 
 # Plugins ----------------------------------------------------------------------
 
@@ -39,8 +39,6 @@ function have_cmd {
 
 if [[ -d $DOTFILES/bin ]]; then
     PATH="$DOTFILES/bin:$PATH"
-else
-    echo "Error: Directory \"$DOTFILES/bin\" does not exist"
 fi
 
 # Variables --------------------------------------------------------------------
@@ -65,7 +63,7 @@ export LESS="\
     --quit-if-one-screen \
     --chop-long-lines"
 
-export MANPAGER='nvim +Man!'
+# export MANPAGER='nvim +Man!'
 
 # Other ----------------------------------------------------------------------
 

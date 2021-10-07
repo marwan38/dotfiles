@@ -39,7 +39,9 @@ return {
             -- Visual/Operator mapping left hand side
             operator_mapping = "gc",
             -- Hook function to call before commenting takes place
-            hook = nil,
+            hook = function()
+                require("ts_context_commentstring.internal").update_commentstring()
+            end,
         }
     end,
 
@@ -69,7 +71,7 @@ return {
         map("n", "<leader>/", ":CommentToggle<CR>", { noremap = true, silent = true })
         map("v", "<leader>/", ":CommentToggle<CR>", { noremap = true, silent = true })
 
-        map("n", "<ESC><ESC>", ":nohl<CR>", { silent = true })
+        map("n", "<ESC>", ":nohl<CR>", { silent = true })
 
         map("n", "n", "nzz", { silent = true })
         map("n", "N", "Nzz", { silent = true })

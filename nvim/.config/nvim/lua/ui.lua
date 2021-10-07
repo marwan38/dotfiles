@@ -36,6 +36,7 @@ return {
                 component_separators = { left = "", right = "" },
                 section_separators = { left = "", right = "" },
             },
+            extensions = { "fugitive", "nvim-tree", "quickfix" },
         }
 
         require("indent_blankline").setup {
@@ -88,13 +89,12 @@ return {
             },
         }
 
-        local map = vim.api.nvim_set_keymap
         local opts = { noremap = true, silent = true }
 
         map("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", opts)
         map("n", "<Tab>", ":BufferLineCycleNext<CR>", opts)
         map("n", "<A-<>", ":BufferLineMovePrev<CR>", opts)
         map("n", "<A->>", " :BufferLineMoveNext<CR>", opts)
-        map("n", "<A-q>", ":Bdelete<CR>", opts)
+        map("n", "<A-q>", ":BufDel<CR>", opts)
     end,
 }

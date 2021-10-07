@@ -25,8 +25,8 @@ local layers = {
     require "system",
     require "edit",
     require "ui",
-    require "homepage",
     require "filetree",
+    require "homepage",
     require "yanking",
     require "completion",
     require "org",
@@ -49,6 +49,21 @@ local layers = {
     require "language/lua",
     require "language/json",
     require "language/css",
+}
+
+packer.init {
+    display = {
+        open_fn = function()
+            return require("packer.util").float { border = "single" }
+        end,
+        prompt_border = "single",
+    },
+    git = {
+        clone_timeout = 600, -- Timeout, in seconds, for git clones
+    },
+    auto_clean = true,
+    compile_on_sync = true,
+    --    auto_reload_compiled = true
 }
 
 packer.startup {

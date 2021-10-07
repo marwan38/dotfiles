@@ -5,13 +5,6 @@ return {
     end,
 
     setup = function()
-        vim.api.nvim_exec(
-            [[
-    autocmd ColorScheme * highlight NvimTreeGitDirty guifg=#EBCB8B | highlight Directory guifg=#81A1C1
-	autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) | execute 'cd '.argv()[0] | execute 'Dashboard' | wincmd l | endif
-    ]],
-            false
-        )
         local global_configs = {
             show_icons = {
                 git = 1,
@@ -21,12 +14,13 @@ return {
                 tree_width = 30,
             },
             ignore = { ".git", "node_modules", ".cache" },
-            quit_on_open = 0,
-            hide_dotfiles = 1,
+            quit_on_open = 1,
+            hide_dotfiles = 0,
             git_hl = 1,
-            root_folder_modifier = ":t",
+            root_folder_modifier = table.concat { ":t:gs?$?/..", string.rep(" ", 1000), "?:gs?^??" },
+            highlight_opened_files = 1,
             allow_resize = 1,
-            auto_ignore_ft = { "startify", "dashboard" },
+            auto_ignore_ft = { "dashboard" },
             icons = {
                 default = "",
                 symlink = "",
@@ -55,21 +49,24 @@ return {
         end
 
         require("nvim-tree").setup {
-            auto_open = 0,
-            auto_close = 1,
-            tab_open = 0,
-            update_focused_file = {
-                enable = 1,
-            },
-            lsp_diagnostics = 1,
-            view = {
+            lsp_diagnostics = false,
 
-                width = 50,
+            disable_netrw = true,
+            hijack_netrw = true,
+            ignore_ft_on_setup = { "dashboard" },
+            auto_close = false,
+            open_on_tab = false,
+            hijack_cursor = true,
+            update_cwd = true,
+            update_focused_file = {
+                enable = true,
+                update_cwd = true,
+            },
+
+            view = {
+                allow_resize = true,
                 side = "left",
-                auto_resize = false,
-                mappings = {
-                    custom_only = false,
-                },
+                width = 40,
             },
         }
     end,

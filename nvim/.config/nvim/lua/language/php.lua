@@ -34,7 +34,7 @@ return {
             settings = {
                 intelephense = {
                     environment = {
-                        phpVersion = "7.3",
+                        phpVersion = "7.4",
                     },
                 },
             },
@@ -68,17 +68,22 @@ return {
             },
         })
 
-        local dap_install = require "dap-install"
-        dap_install.config("php_dbg", {
+        local dap = require "dap"
+        dap.adapters.php = {
+            type = "executable",
+            command = "node",
+            args = { "/home/marwan38/programs/vscode-php-debug/out/phpDebug.js" },
+        }
+        dap.configurations.php = {
             {
                 name = "Listen for XDebug",
                 type = "php",
                 request = "launch",
                 port = 9003,
                 pathMappings = {
-                    ["/home/ec2-user/www/team/marwan/"] = "${workspaceFolder}/",
+                    ["/srv/archipro/www/marwan/"] = "${workspaceFolder}/",
                 },
-                -- stopOnEntry = true,
+                stopOnEntry = true,
                 ignore = {
                     "**/silverstripe-cache/**/*.php",
                     "**/vendor/**/*.php",
@@ -93,7 +98,33 @@ return {
                 cwd = "${fileDirname}",
                 port = 9000,
             },
-        })
+        }
+        -- local dap_install = require "dap-install"
+        -- dap_install.config("php_dbg", {
+        --     {
+        --         name = "Listen for XDebug",
+        --         type = "php",
+        --         request = "launch",
+        --         port = 9003,
+        --         pathMappings = {
+        --             ["/home/ec2-user/www/team/marwan/"] = "${workspaceFolder}/",
+        --         },
+        --         -- stopOnEntry = true,
+        --         ignore = {
+        --             "**/silverstripe-cache/**/*.php",
+        --             "**/vendor/**/*.php",
+        --         },
+        --         hostname = "0.0.0.0",
+        --     },
+        --     {
+        --         name = "Launch currently open script",
+        --         type = "php",
+        --         request = "launch",
+        --         program = "${file}",
+        --         cwd = "${fileDirname}",
+        --         port = 9000,
+        --     },
+        -- })
 
         require("which-key").register {
             ["<leader>l"] = {

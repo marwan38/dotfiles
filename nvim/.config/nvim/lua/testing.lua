@@ -5,7 +5,7 @@ return {
             setup = function()
                 vim.cmd [[
                     let test#strategy = "neovim"
-                    let test#neovim#term_position = "vert botright 50"
+                    let test#neovim#term_position = "vert botright 200"
                 ]]
             end,
         }
