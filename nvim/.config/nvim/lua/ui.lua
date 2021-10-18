@@ -2,6 +2,7 @@ return {
     plugins = function(use)
         use { "Mofiqul/dracula.nvim" }
         use { "sainnhe/gruvbox-material" }
+        use "monsonjeremy/onedark.nvim"
         use "shadmansaleh/lualine.nvim"
         use "kyazdani42/nvim-web-devicons"
         use "lukas-reineke/indent-blankline.nvim"
@@ -29,6 +30,8 @@ return {
             let g:gruvbox_material_enable_italic = 1
             colorscheme gruvbox-material
         ]]
+
+        -- vim.cmd [[colorscheme dracula]]
 
         require("lualine").setup {
             options = {

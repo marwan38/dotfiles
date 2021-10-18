@@ -2,14 +2,23 @@ return {
     plugins = function(use)
         use "windwp/nvim-autopairs"
         use "hrsh7th/nvim-cmp"
-        use "hrsh7th/vim-vsnip"
-        use "hrsh7th/vim-vsnip-integ"
-        use "rafamadriz/friendly-snippets"
         use "hrsh7th/cmp-buffer"
         use "hrsh7th/cmp-path"
         use "hrsh7th/cmp-nvim-lsp"
         use "hrsh7th/cmp-nvim-lua"
-        use "hrsh7th/cmp-vsnip"
+        use { "hrsh7th/vim-vsnip-integ", requires = { "hrsh7th/vim-vsnip" } }
+        use {
+            "hrsh7th/cmp-vsnip",
+            after = "nvim-cmp",
+            requires = {
+                "hrsh7th/vim-vsnip",
+
+                {
+                    "rafamadriz/friendly-snippets",
+                    after = "cmp-vsnip",
+                },
+            },
+        }
     end,
 
     setup = function()
@@ -35,7 +44,6 @@ return {
                     select = true,
                 },
             },
-
             sources = {
                 { name = "nvim_lsp" },
                 { name = "vsnip" },
@@ -48,11 +56,11 @@ return {
                 format = require("lspkind").cmp_format {
                     with_text = true,
                     menu = {
-                        path = "(Path)",
-                        buffer = "[Buffer]",
                         nvim_lsp = "[LSP]",
                         luasnip = "[LuaSnip]",
                         vsnip = "[VSnip]",
+                        path = "(Path)",
+                        buffer = "[Buffer]",
                         emoji = "(Emoji)",
                         nvim_lua = "[Lua]",
                         latex_symbols = "[Latex]",
@@ -63,13 +71,18 @@ return {
 
         require("nvim-autopairs").setup {
             check_ts = true,
-            enable_check_bracket_line = true,
         }
 
         require("nvim-autopairs.completion.cmp").setup {
-            map_cr = true,
-            map_complete = false,
-            auto_select = true,
+            map_cr = true, --  map <CR> on insert mode
+            map_complete = false, -- it will auto insert `(` (map_char) after select function or method item
+            auto_select = true, -- automatically select the first item
+            insert = false, -- use insert confirm behavior instead of replace
+
+            map_char = { -- modifies the function or method delimiter by filetypes
+                all = "(",
+                tex = "{",
+            },
         }
     end,
     bindings = function(map)

@@ -43,7 +43,7 @@ return {
         local null_ls = require "null-ls"
 
         null_ls.register(null_ls.builtins.diagnostics.phpstan.with {
-            -- args = { "analyze", "--error-format", "json", "--no-progress", "$FILENAME", "--debug" },
+            args = { "analyze", "--error-format", "json", "--no-progress", "--memory-limit", "512M", "$FILENAME", "--debug", "-vvv" },
             command = "./vendor/bin/phpstan",
             condition = function(utils)
                 return utils.root_has_file "phpstan.neon"

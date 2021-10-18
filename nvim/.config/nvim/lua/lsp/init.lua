@@ -34,15 +34,26 @@ local function lsp_highlight_document(client)
     if client.resolved_capabilities.document_highlight then
         vim.api.nvim_exec(
             [[
-          hi LspReferenceRead cterm=bold ctermbg=red guibg=#353d46
-          hi LspReferenceText cterm=bold ctermbg=red guibg=#353d46
+      augroup lsp_document_highlight
+        autocmd! * <buffer>
+        autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
+        autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
+      augroup END
+    ]],
+            false
+        )
+    end
+end
 
-          hi LspReferenceWrite cterm=bold ctermbg=red guibg=#353d46
-          augroup lsp_document_highlight
-            autocmd! * <buffer>
-            autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
-            autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
-          augroup END
+local function lsp_code_lens_refresh(client)
+    if client.resolved_capabilities.code_lens then
+        vim.api.nvim_exec(
+            [[
+      augroup lsp_code_lens_refresh
+        autocmd! * <buffer>
+        autocmd InsertLeave <buffer> lua vim.lsp.codelens.refresh()
+        autocmd InsertLeave <buffer> lua vim.lsp.codelens.display()
+      augroup END
     ]],
             false
         )
@@ -56,12 +67,14 @@ return {
         use "onsails/lspkind-nvim"
         use "jose-elias-alvarez/null-ls.nvim"
         use "kabouzeid/nvim-lspinstall"
+        use "kosayoda/nvim-lightbulb"
     end,
 
     setup = function()
         require("lsp.handlers").setup()
         require("null-ls").config { debug = true }
         require("lspconfig")["null-ls"].setup {}
+        vim.cmd [[autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()]]
     end,
 
     bindings = function()
@@ -116,7 +129,9 @@ return {
             auto_close_after = 10,
             toggle_key = "<M-s>",
         }, bufnr)
-        lsp_highlight_document(client)
+
+        -- lsp_code_lens_refresh(client)
+        -- lsp_highlight_document(client)
         add_lsp_buffer_keybindings(bufnr)
     end,
 

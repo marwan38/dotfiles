@@ -101,7 +101,7 @@ return {
                 enable = true,
             },
             autopairs = {
-                enable = true,
+                enable = false,
             },
             matchup = {
                 enable = true,

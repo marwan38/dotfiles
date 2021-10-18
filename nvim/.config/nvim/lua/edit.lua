@@ -2,6 +2,7 @@ return {
     plugins = function(use)
         use "tpope/vim-surround"
         use "tpope/vim-repeat"
+        use "tpope/vim-unimpaired"
 
         use "AndrewRadev/splitjoin.vim"
         use "lambdalisue/suda.vim"

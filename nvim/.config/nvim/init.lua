@@ -1,8 +1,3 @@
-local impatient_exists, _ = pcall(require, "impatient")
-if impatient_exists then
-    require "impatient"
-end
-
 local execute = vim.api.nvim_command
 local fn = vim.fn
 
@@ -29,7 +24,7 @@ local layers = {
     require "homepage",
     require "yanking",
     require "completion",
-    require "org",
+    -- require "org",
     require "treesitter",
     require "finder",
 
@@ -49,6 +44,7 @@ local layers = {
     require "language/lua",
     require "language/json",
     require "language/css",
+    require "language/rust",
 }
 
 packer.init {
@@ -56,20 +52,15 @@ packer.init {
         open_fn = function()
             return require("packer.util").float { border = "single" }
         end,
-        prompt_border = "single",
     },
     git = {
         clone_timeout = 600, -- Timeout, in seconds, for git clones
     },
-    auto_clean = true,
-    compile_on_sync = true,
-    --    auto_reload_compiled = true
 }
 
 packer.startup {
     function()
         use "wbthomason/packer.nvim"
-        use "lewis6991/impatient.nvim"
 
         for _, layer in pairs(layers) do
             if layer.plugins ~= nil then

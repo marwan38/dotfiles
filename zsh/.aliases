@@ -7,3 +7,4 @@ alias thist="tmux capture-pane -epS - > /tmp/tmuxhist && vim -c 'te cat /tmp/tmu
 # AP
 alias rs="./devops/rsync.sh marwan"
 alias gql="npm run graphql:introspect && npm run graphql:generate"
+alias n="/usr/bin/nvim@0.5.1"
