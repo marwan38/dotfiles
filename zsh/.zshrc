@@ -80,6 +80,7 @@ setopt IGNORE_EOF
 ! [ -f ~/.aliases_local ] || source ~/.aliases_local
 ! [ -f ~/.fzf.zsh       ] || source ~/.fzf.zsh
 ! [ -f ~/.zshrc_local   ] || source ~/.zshrc_local
+! [ -f ~/.zsh_profile   ] || source ~/.zsh_profile
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
