@@ -2,5 +2,10 @@
 
 branch=$(git branch --all | fzf | tr -d ‘[:space:]’)
 
-git checkout $branch
+if [ ! -z $branch ]
+then
+    git checkout $branch
+fi
+
+
 
