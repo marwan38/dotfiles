@@ -60,6 +60,19 @@ local function lsp_code_lens_refresh(client)
     end
 end
 
+local function common_capabilities()
+    local capabilities = vim.lsp.protocol.make_client_capabilities()
+    -- capabilities.textDocument.completion.completionItem.snippetSupport = true
+    -- capabilities.textDocument.completion.completionItem.resolveSupport = {
+    --     properties = {
+    --         "documentation",
+    --         "detail",
+    --         "additionalTextEdits",
+    --     },
+    -- }
+    return require("cmp_nvim_lsp").update_capabilities(capabilities)
+end
+
 return {
     plugins = function(use)
         use "neovim/nvim-lspconfig"
@@ -130,22 +143,10 @@ return {
             toggle_key = "<M-s>",
         }, bufnr)
 
-        -- lsp_code_lens_refresh(client)
-        -- lsp_highlight_document(client)
+        lsp_code_lens_refresh(client)
+        lsp_highlight_document(client)
         add_lsp_buffer_keybindings(bufnr)
     end,
 
-    common_capabilities = function()
-        local capabilities = vim.lsp.protocol.make_client_capabilities()
-        -- capabilities.textDocument.completion.completionItem.snippetSupport = true
-        -- capabilities.textDocument.completion.completionItem.resolveSupport = {
-        --     properties = {
-        --         "documentation",
-        --         "detail",
-        --         "additionalTextEdits",
-        --     },
-        -- }
-        capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
-        return capabilities
-    end,
+    common_capabilities = common_capabilities(),
 }

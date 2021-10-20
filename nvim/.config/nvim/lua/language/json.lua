@@ -88,7 +88,7 @@ return {
                 client.resolved_capabilities.document_formatting = false
                 lsp.on_attach(client, bufnr)
             end,
-            capabilities = lsp.common_capabilities(),
+            capabilities = lsp.common_capabilities,
             settings = {
                 json = {
                     schemas = schemas,

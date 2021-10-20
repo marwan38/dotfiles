@@ -14,7 +14,7 @@ return {
                     DATA_PATH .. "/lspinstall/lua/main.lua",
                 },
                 on_attach = require("lsp").on_attach,
-                capabilities = require("lsp").common_capabilities(),
+                capabilities = require("lsp").common_capabilities,
             },
         }
 

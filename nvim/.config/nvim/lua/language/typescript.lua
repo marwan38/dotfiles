@@ -4,13 +4,15 @@ return {
     end,
 
     setup = function()
-        require("lspconfig").tsserver.setup {
+        local lspconfig = require "lspconfig"
+        local lsp = require "lsp"
+        local capabilities = lsp.common_capabilities
+
+        lspconfig.tsserver.setup {
             on_attach = function(client, bufnr)
                 -- disable tsserver formatting if you plan on formatting via null-ls
                 client.resolved_capabilities.document_formatting = false
                 client.resolved_capabilities.document_range_formatting = false
-
-                require("lsp").on_attach(client, bufnr)
 
                 local ts_utils = require "nvim-lsp-ts-utils"
 
@@ -22,9 +24,9 @@ return {
 
                     eslint_enable_diagnostics = true,
                     eslint_opts = {
-                        -- condition = function(utils)
-                        --     return utils.root_has_file ".eslintrc.js"
-                        -- end,
+                        condition = function(utils)
+                            return utils.root_has_file ".eslintrc.js" or utils.root_has_file "package.json"
+                        end,
 
                         diagnostics_format = "#{m} [#{c}]",
                     },
@@ -36,23 +38,77 @@ return {
                 }
 
                 ts_utils.setup_client(client)
+                lsp.on_attach(client, bufnr)
             end,
-            capabilities = require("lsp").common_capabilities(),
+            capabilities,
             flags = {
                 debounce_text_changes = 150,
             },
         }
 
         local null_ls = require "null-ls"
-        -- null_ls.register(null_ls.builtins.diagnostics.stylelint.with {
-        --     filetypes = { "typescript", "typescriptreact" },
-        --     command = "./node_modules/.bin/stylelint",
-        -- })
-        -- null_ls.register(null_ls.builtins.formatting.stylelint.with {
-        --     filetypes = { "typescript", "typescriptreact" },
-        --     command = "./node_modules/.bin/stylelint",
-        -- })
+        null_ls.register(null_ls.builtins.diagnostics.stylelint.with {
+            filetypes = { "typescript", "typescriptreact" },
+            command = "./node_modules/.bin/stylelint",
+            condition = function(utils)
+                return utils.root_has_file ".stylelintrc"
+            end,
+        })
+        null_ls.register(null_ls.builtins.formatting.stylelint.with {
+            filetypes = { "typescript", "typescriptreact" },
+            command = "./node_modules/.bin/stylelint",
+            condition = function(utils)
+                return utils.root_has_file ".stylelintrc"
+            end,
+        })
     end,
 
     on_ft = function() end,
 }
+
+-- For when ESLint LSP is stable
+-- return {
+
+--     setup = function()
+--         local lspconfig = require "lspconfig"
+--         local lsp = require "lsp"
+--         local capabilities = lsp.common_capabilities
+
+--         lspconfig.tsserver.setup {
+--             on_attach = function(client, bufnr)
+--                 -- disable tsserver formatting if you plan on formatting via null-ls
+--                 client.resolved_capabilities.document_formatting = false
+--                 client.resolved_capabilities.document_range_formatting = false
+
+--                 lsp.on_attach(client, bufnr)
+--             end,
+--             capabilities,
+--             flags = {
+--                 debounce_text_changes = 150,
+--             },
+--         }
+
+--         lspconfig.eslint.setup {
+--             on_attach = lsp.on_attach,
+--             capabilities,
+--         }
+
+--         -- local null_ls = require "null-ls"
+--         -- null_ls.register(null_ls.builtins.diagnostics.stylelint.with {
+--         --     filetypes = { "typescript", "typescriptreact" },
+--         --     command = "./node_modules/.bin/stylelint",
+--         -- })
+--         -- null_ls.register(null_ls.builtins.formatting.stylelint.with {
+--         --     filetypes = { "typescript", "typescriptreact" },
+--         --     command = "./node_modules/.bin/stylelint",
+--         -- })
+--     end,
+
+--     on_ft = function()
+--         local wk = require "which-key"
+
+--         wk.register {
+--             ["<leader>lf"] = { "<cmd> EslintFixAll<CR>", "EslintFixAll" },
+--         }
+--     end,
+-- }

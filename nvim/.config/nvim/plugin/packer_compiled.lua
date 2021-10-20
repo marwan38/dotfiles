@@ -254,6 +254,7 @@ _G.packer_plugins = {
   phpactor = {
     loaded = false,
     needs_bufread = true,
+    only_cond = false,
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/opt/phpactor"
   },
   playground = {

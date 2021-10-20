@@ -27,7 +27,7 @@ return {
 
                 require("lsp").on_attach(client, bufnr)
             end,
-            capabilities = require("lsp").common_capabilities(),
+            capabilities = require("lsp").common_capabilities,
             flags = {
                 debounce_text_changes = 300,
             },
