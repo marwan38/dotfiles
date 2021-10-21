@@ -1,6 +1,5 @@
 return {
     plugins = function(use)
-        use "windwp/nvim-autopairs"
         use "hrsh7th/nvim-cmp"
         use "hrsh7th/cmp-buffer"
         use "hrsh7th/cmp-path"
@@ -19,6 +18,7 @@ return {
                 },
             },
         }
+        use "windwp/nvim-autopairs"
     end,
 
     setup = function()

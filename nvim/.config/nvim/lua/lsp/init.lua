@@ -70,8 +70,12 @@ local function common_capabilities()
     --         "additionalTextEdits",
     --     },
     -- }
-    return require("cmp_nvim_lsp").update_capabilities(capabilities)
+    local ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
+    if ok then
+	    return cmp_nvim_lsp.update_capabilities(capabilities)
+    end
 end
+	    
 
 return {
     plugins = function(use)
@@ -143,8 +147,8 @@ return {
             toggle_key = "<M-s>",
         }, bufnr)
 
-        lsp_code_lens_refresh(client)
-        lsp_highlight_document(client)
+        -- lsp_code_lens_refresh(client)
+        -- lsp_highlight_document(client)
         add_lsp_buffer_keybindings(bufnr)
     end,
 
