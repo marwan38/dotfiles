@@ -8,3 +8,4 @@ alias thist="tmux capture-pane -epS - > /tmp/tmuxhist && vim -c 'te cat /tmp/tmu
 alias rs="./devops/rsync.sh marwan"
 alias gql="npm run graphql:introspect && npm run graphql:generate"
 alias n="/usr/bin/nvim@0.5.1"
+alias cb='git branch --sort=-committerdate | fzf --header Checkout| xargs git checkout'
