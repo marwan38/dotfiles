@@ -1,4 +1,4 @@
-#! /usr/local/env bash
+#!/usr/bin/env bash
 
 # Attach or create tmux session named the same as current directory.
 
@@ -24,21 +24,16 @@ create_if_needed_and_attach() {
     tmux new-session -Ad -s "$session_name"
 
     tmux rename-window -t "$session_name:1" "editor"
-    tmux send-keys -t "editor" "vim" C-m
-    tmux splitw -h -p 35
-    tmux send-keys -t "editor" "exa --tree -a -I=.git --git-ignore" C-m
-    tmux selectp -t 1
+    tmux send-keys -t "editor" "nvim" C-m
 
     tmux new-window -t "$session_name:2" -n "server"
-
+    tmux splitw -h -p 25
+    tmux select-layout even-horizontal
+    tmux splitw -v -p 25
     tmux send-keys -t "server" "htop" C-m
+    tmux selectp -t 1
 
-    tmux new-window -t "$session_name:3" -n "git"
-    tmux send-keys -t "git" "lazygit" C-m
-
-
-    tmux new-window -t "$session_name:4" -n "scratch"
-    tmux send-keys -t "scratch" "archey" C-m
+    tmux new-window -t "$session_name:3" -n "scratch"
 
     tmux attach-session -t "$session_name:1"
   else
