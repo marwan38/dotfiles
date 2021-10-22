@@ -27,7 +27,6 @@ return {
                 "graphql",
                 "dockerfile",
                 "rust",
- --               "norg",
             },
             playground = {
                 enable = true,
@@ -117,7 +116,6 @@ return {
         }
 
         -- vim.cmd [[ autocmd ColorScheme * highlight TSError cterm=undercurl ctermfg=1 gui=undercurl guifg=NONE guisp=#BF616A ]]
-
     end,
 
     bindings = function(_, wk)

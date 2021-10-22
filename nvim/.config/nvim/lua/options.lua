@@ -11,7 +11,7 @@ return {
         opt.termguicolors = true
         opt.laststatus = 2
         opt.showcmd = true
-        opt.autoindent = true
+        -- opt.autoindent = true
         opt.smartindent = true
         opt.cindent = true
         opt.wildmenu = true

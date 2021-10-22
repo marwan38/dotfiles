@@ -23,7 +23,6 @@ local layers = {
     require "homepage",
     require "yanking",
     require "completion",
-    -- require "org",
     require "treesitter",
     require "finder",
 
@@ -69,15 +68,15 @@ packer.startup {
     end,
 }
 
- for _, layer in pairs(layers) do
-     if layer.setup ~= nil then
-         layer.setup()
-     end
- end
- 
- local map = vim.api.nvim_set_keymap
- for _, layer in pairs(layers) do
-     if layer.bindings ~= nil then
-         layer.bindings(map, require "which-key")
-     end
- end
+for _, layer in pairs(layers) do
+    if layer.setup ~= nil then
+        layer.setup()
+    end
+end
+
+local map = vim.api.nvim_set_keymap
+for _, layer in pairs(layers) do
+    if layer.bindings ~= nil then
+        layer.bindings(map, require "which-key")
+    end
+end

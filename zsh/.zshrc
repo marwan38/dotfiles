@@ -22,6 +22,8 @@ plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting
     zsh-history-substring-search
+    docker
+    docker-compose
 )
 source $ZSH/oh-my-zsh.sh
 

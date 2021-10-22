@@ -47,10 +47,9 @@ return {
             sources = {
                 { name = "nvim_lsp" },
                 { name = "vsnip" },
-                { name = "buffer" },
+                { name = "buffer", keyword_length = 3 },
                 { name = "path" },
                 { name = "nvim_lua" },
-                { name = "neorg" },
             },
             formatting = {
                 format = require("lspkind").cmp_format {
@@ -66,6 +65,10 @@ return {
                         latex_symbols = "[Latex]",
                     },
                 },
+            },
+            experimental = {
+                native_menu = false,
+                ghost_text = true,
             },
         }
 
