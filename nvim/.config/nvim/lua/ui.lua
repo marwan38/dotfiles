@@ -3,8 +3,13 @@ return {
         use { "Mofiqul/dracula.nvim" }
         use { "sainnhe/gruvbox-material" }
         use "monsonjeremy/onedark.nvim"
-        use "shadmansaleh/lualine.nvim"
-        use "kyazdani42/nvim-web-devicons"
+        use {
+            "nvim-lualine/lualine.nvim",
+            requires = {
+                "kyazdani42/nvim-web-devicons",
+                opt = true,
+            },
+        }
         use "lukas-reineke/indent-blankline.nvim"
         use "folke/which-key.nvim"
         use "akinsho/nvim-bufferline.lua"
