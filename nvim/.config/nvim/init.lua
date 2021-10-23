@@ -80,3 +80,5 @@ for _, layer in pairs(layers) do
         layer.bindings(map, require "which-key")
     end
 end
+
+require('bindings')

@@ -19,6 +19,10 @@ key_bindings:
   - { key: Key4, mods: Control, chars: "\x1c" }
   - { key: Key5, mods: Control, chars: "\x1d" }
   - { key: Key6, mods: Control, chars: "\x1e" }
+  - { Key: H, mods: Control|Alt, chars: "\x1b\x08" }
+  - { Key: J, mods: Control|Alt, chars: "\x1b\x0a" }
+  - { Key: K, mods: Control|Alt, chars: "\x1b\x0b" }
+  - { Key: L, mods: Control|Alt, chars: "\x1b\x0c" }
 
 draw_bold_text_with_bright_colors: true
 
