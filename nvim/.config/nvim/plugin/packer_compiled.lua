@@ -127,6 +127,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim"
   },
+  ["lsp-status.nvim"] = {
+    loaded = true,
+    path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/lsp-status.nvim"
+  },
   ["lsp-trouble.nvim"] = {
     loaded = true,
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/lsp-trouble.nvim"

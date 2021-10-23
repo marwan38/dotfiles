@@ -71,11 +71,12 @@ local function common_capabilities()
     --     },
     -- }
     local ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
-    if ok then
-	    return cmp_nvim_lsp.update_capabilities(capabilities)
+    local status_ok, lsp_status = pcall(require, "lsp-status")
+    if ok and status_ok then
+        capabilities = vim.tbl_extend("keep", capabilities, lsp_status.capabilities)
+        return cmp_nvim_lsp.update_capabilities(capabilities)
     end
 end
-	    
 
 return {
     plugins = function(use)
@@ -150,6 +151,11 @@ return {
         -- lsp_code_lens_refresh(client)
         -- lsp_highlight_document(client)
         add_lsp_buffer_keybindings(bufnr)
+
+        local status_ok, lsp_status = pcall(require, "lsp-status")
+        if status_ok then
+            lsp_status.on_attach(client)
+        end
     end,
 
     common_capabilities = common_capabilities(),

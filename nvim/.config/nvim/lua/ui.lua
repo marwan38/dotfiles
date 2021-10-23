@@ -16,6 +16,7 @@ return {
         use "ojroques/nvim-bufdel"
         use "kevinhwang91/nvim-bqf"
         use "norcalli/nvim-colorizer.lua"
+        use "nvim-lua/lsp-status.nvim"
     end,
 
     setup = function()
@@ -30,7 +31,7 @@ return {
         require("which-key").setup {}
 
         vim.cmd [[
-            let g:gruvbox_material_background = 'hard'
+            let g:gruvbox_material_background = 'medium'
             let g:gruvbox_material_diagnostic_virtual_text = 'colored'
             let g:gruvbox_material_enable_italic = 1
             colorscheme gruvbox-material
@@ -38,13 +39,20 @@ return {
 
         -- vim.cmd [[colorscheme dracula]]
 
+        require("lsp-status").register_progress()
+
         require("lualine").setup {
             options = {
                 theme = "auto",
-                component_separators = { left = "", right = "" },
-                section_separators = { left = "", right = "" },
+                -- component_separators = { left = "", right = "" },
+                -- section_separators = { left = "", right = "" },
             },
             extensions = { "fugitive", "nvim-tree", "quickfix" },
+            sections = {
+                lualine_c = {
+                    "require'lsp-status'.status()",
+                },
+            },
         }
 
         require("indent_blankline").setup {
