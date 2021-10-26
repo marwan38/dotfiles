@@ -66,10 +66,7 @@ return {
                     },
                 },
             },
-            experimental = {
-                native_menu = false,
-                ghost_text = true,
-            },
+            -- experimental = {},
         }
 
         require("nvim-autopairs").setup {

@@ -90,7 +90,7 @@ return {
 
     setup = function()
         require("lsp.handlers").setup()
-        require("null-ls").config { debug = true }
+        require("null-ls").config { debug = false }
         require("lspconfig")["null-ls"].setup {}
         vim.cmd [[autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()]]
     end,
