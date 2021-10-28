@@ -1,0 +1,3429 @@
+
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/etc/xdg//nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+could not source "/etc/xdg//nvim/sysinit.vim"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+could not source "$VIM/sysinit.vim"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.config/nvim/init.lua"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/autoload)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 0: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/autoload/nvim_treesitter.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/autoload/nvim_treesitter.vim
+continuing in /home/marwan38/.dotfiles/nvim/.config/nvim/init.lua
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/gruvbox-material/colors)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 0: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/gruvbox-material/colors/gruvbox-material.vim"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/gruvbox-material/autoload)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 10: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/gruvbox-material/autoload/gruvbox_material.vim"
+Executing command: "'/usr/bin/zsh' '-c' 'tmux -V | grep -oE '[0-9]+.[0-9]*''"
+
+
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/gruvbox-material/autoload/gruvbox_material.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/gruvbox-material/colors/gruvbox-material.vim
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/gruvbox-material/colors/gruvbox-material.vim
+continuing in nvim_exec() called at /home/marwan38/.dotfiles/nvim/.config/nvim/init.lua:0
+Executing ColorScheme Autocommands for "*"
+autocommand highlight ExtraWhitespace guibg=#3B4252
+
+Error detected while processing nvim_exec() called at /home/marwan38/.dotfiles/nvim/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Executing FileType Autocommands for "*"
+autocommand lua COLORIZER_SETUP_HOOK()
+
+finished sourcing /home/marwan38/.config/nvim/init.lua
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/filetype.vim"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 1: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 148: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/filetype.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/filetype.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 148: sourcing "/usr/share/nvim/runtime/filetype.vim"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/elixir.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/elixir.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/fish.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/fish.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/gdresource.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/gdresource.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/gdscript.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/gdscript.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/gomod.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/gomod.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/graphql.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/graphql.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/hcl.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/hcl.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/heex.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/heex.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/hjson.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/hjson.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/json5.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/json5.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/julia.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/julia.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/ledger.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/ledger.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/nix.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/nix.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/ql.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/ql.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/query.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/query.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/surface.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/surface.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/teal.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/teal.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/tlaplus.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/tlaplus.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/yang.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/yang.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/zig.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/zig.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/orgmode.nvim/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/orgmode.nvim/ftdetect/org.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/orgmode.nvim/ftdetect/org.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/orgmode.nvim/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/orgmode.nvim/ftdetect/org_archive.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/orgmode.nvim/ftdetect/org_archive.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-fugitive/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-fugitive/ftdetect/fugitive.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-fugitive/ftdetect/fugitive.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2356: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/ftdetect/polyglot.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/ftdetect/polyglot.vim
+continuing in /usr/share/nvim/runtime/filetype.vim
+not found in runtime path: "ftdetect/*.lua"
+finished sourcing /usr/share/nvim/runtime/filetype.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/elixir.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/elixir.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/fish.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/fish.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/gdresource.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/gdresource.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/gdscript.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/gdscript.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/gomod.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/gomod.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/graphql.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/graphql.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/hcl.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/hcl.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/heex.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/heex.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/hjson.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/hjson.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/json5.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/json5.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/julia.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/julia.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/ledger.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/ledger.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/nix.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/nix.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/ql.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/ql.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/query.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/query.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/surface.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/surface.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/teal.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/teal.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/tlaplus.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/tlaplus.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/yang.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/yang.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/zig.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/ftdetect/zig.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/orgmode.nvim/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/orgmode.nvim/ftdetect/org.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/orgmode.nvim/ftdetect/org.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/orgmode.nvim/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/orgmode.nvim/ftdetect/org_archive.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/orgmode.nvim/ftdetect/org_archive.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-fugitive/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-fugitive/ftdetect/fugitive.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-fugitive/ftdetect/fugitive.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/ftdetect)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 149: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/ftdetect/polyglot.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/ftdetect/polyglot.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/init.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/filetype.vim
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/usr/share/nvim/runtime/filetype.vim"
+finished sourcing /usr/share/nvim/runtime/filetype.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/usr/share/nvim/runtime/ftplugin.vim"
+finished sourcing /usr/share/nvim/runtime/ftplugin.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/usr/share/nvim/runtime/indent.vim"
+finished sourcing /usr/share/nvim/runtime/indent.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime/syntax)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/usr/share/nvim/runtime/syntax/syntax.vim"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime/syntax)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 19: sourcing "/usr/share/nvim/runtime/syntax/synload.vim"
+finished sourcing /usr/share/nvim/runtime/syntax/synload.vim
+continuing in /usr/share/nvim/runtime/syntax/syntax.vim
+Executing FileType Autocommands for "*"
+autocommand exe "set syntax=" . expand("<amatch>")
+
+Executing Syntax Autocommands for "*"
+autocommand lua require('headlines').refresh()
+
+Executing Syntax Autocommands for "*"
+autocommand call s:SynSet()
+
+not found in runtime path: "syntax/NvimTree.vim syntax/NvimTree/*.vim"
+not found in runtime path: "syntax/NvimTree.lua syntax/NvimTree/*.lua"
+Executing FileType Autocommands for "*"
+autocommand exe "set syntax=" . expand("<amatch>")
+
+Executing Syntax Autocommands for "*"
+autocommand lua require('headlines').refresh()
+
+Executing Syntax Autocommands for "*"
+autocommand call s:SynSet()
+
+finished sourcing /usr/share/nvim/runtime/syntax/syntax.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/etc/xdg/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/plugin/polyglot.vim"
+--- Autocommands ---
+CursorHold
+    *         lua require'nvim-lightbulb'.update_lightbulb()
+	Last set from anonymous :source
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/plugin/polyglot.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/usr/share/nvim/runtime/plugin/gzip.vim"
+finished sourcing /usr/share/nvim/runtime/plugin/gzip.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/usr/share/nvim/runtime/plugin/health.vim"
+finished sourcing /usr/share/nvim/runtime/plugin/health.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/usr/share/nvim/runtime/plugin/man.vim"
+finished sourcing /usr/share/nvim/runtime/plugin/man.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/usr/share/nvim/runtime/plugin/matchit.vim"
+not found in 'packpath': "pack/*/start/matchit"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/etc/xdg/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/*/start/*)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/local/share/nvim/site)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/site)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime/pack/dist/opt)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime/pack/dist/opt/matchit/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 3: sourcing "/usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim"
+finished sourcing /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim
+continuing in /usr/share/nvim/runtime/plugin/matchit.vim
+finished sourcing /usr/share/nvim/runtime/plugin/matchit.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/usr/share/nvim/runtime/plugin/matchparen.vim"
+finished sourcing /usr/share/nvim/runtime/plugin/matchparen.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/usr/share/nvim/runtime/plugin/netrwPlugin.vim"
+finished sourcing /usr/share/nvim/runtime/plugin/netrwPlugin.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/usr/share/nvim/runtime/plugin/rplugin.vim"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 3: sourcing "/home/marwan38/.local/share/nvim/rplugin.vim"
+finished sourcing /home/marwan38/.local/share/nvim/rplugin.vim
+continuing in function <SNR>44_LoadRemotePlugins
+finished sourcing /usr/share/nvim/runtime/plugin/rplugin.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/usr/share/nvim/runtime/plugin/shada.vim"
+finished sourcing /usr/share/nvim/runtime/plugin/shada.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/usr/share/nvim/runtime/plugin/spellfile.vim"
+finished sourcing /usr/share/nvim/runtime/plugin/spellfile.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/usr/share/nvim/runtime/plugin/tarPlugin.vim"
+finished sourcing /usr/share/nvim/runtime/plugin/tarPlugin.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/usr/share/nvim/runtime/plugin/tohtml.vim"
+finished sourcing /usr/share/nvim/runtime/plugin/tohtml.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/usr/share/nvim/runtime/plugin/tutor.vim"
+finished sourcing /usr/share/nvim/runtime/plugin/tutor.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/usr/share/nvim/runtime/plugin/zipPlugin.vim"
+finished sourcing /usr/share/nvim/runtime/plugin/zipPlugin.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.config/nvim/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.config/nvim/plugin/packer_compiled.lua"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/etc/xdg/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+not found in 'packpath': "pack/*/opt/packer.nvim"
+not found in 'packpath': "pack/*/start/vim-test"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/etc/xdg/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/opt)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/opt/vim-test/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 0: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/opt/vim-test/plugin/test.vim"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/opt/vim-test/autoload)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 47: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/opt/vim-test/autoload/test.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/opt/vim-test/autoload/test.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/opt/vim-test/plugin/test.vim
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/opt/vim-test/plugin/test.vim
+continuing in nvim_exec() called at /home/marwan38/.dotfiles/nvim/.config/nvim/plugin/packer_compiled.lua:0
+not found in 'packpath': "pack/*/start/cmp-vsnip"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/etc/xdg/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/opt)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+not found in 'packpath': "pack/*/start/friendly-snippets"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/etc/xdg/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/opt)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+finished sourcing /home/marwan38/.config/nvim/plugin/packer_compiled.lua
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/dashboard-nvim/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/dashboard-nvim/plugin/dashboard.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/dashboard-nvim/plugin/dashboard.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/hop.nvim/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/hop.nvim/plugin/hop.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/hop.nvim/plugin/hop.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim/plugin/indent_blankline.vim"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim/autoload)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 0: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim/autoload/indent_blankline.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim/autoload/indent_blankline.vim
+continuing in nvim_exec() called at /home/marwan38/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim/plugin/indent_blankline.vim:31
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim/plugin/indent_blankline.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim/plugin/lsp-colors.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim/plugin/lsp-colors.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/lsp-trouble.nvim/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/lsp-trouble.nvim/plugin/trouble.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/lsp-trouble.nvim/plugin/trouble.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-bqf/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-bqf/plugin/bqf.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-bqf/plugin/bqf.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-bufdel/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-bufdel/plugin/bufdel.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-bufdel/plugin/bufdel.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-cmp/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-cmp/plugin/cmp.lua"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-cmp/plugin/cmp.lua
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua/plugin/colorizer.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua/plugin/colorizer.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text/plugin/nvim-dap-virtual-text.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text/plugin/nvim-dap-virtual-text.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-lspconfig/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-lspconfig/plugin/lspconfig.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-lspconfig/plugin/lspconfig.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-lspinstall/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-lspinstall/plugin/lspinstall.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-lspinstall/plugin/lspinstall.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/plugin/nvim-tree-startup.lua"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/plugin/nvim-tree-startup.lua
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/plugin/nvim-treesitter.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter/plugin/nvim-treesitter.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects/plugin/nvim-treesitter-textobjects.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects/plugin/nvim-treesitter-textobjects.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag/plugin/nvim-ts-autotag.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag/plugin/nvim-ts-autotag.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring/plugin/ts_context_commentstring.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring/plugin/ts_context_commentstring.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-web-devicons/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-web-devicons/plugin/nvim-web-devicons.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/nvim-web-devicons/plugin/nvim-web-devicons.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/playground/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/playground/plugin/nvim-treesitter-playground.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/playground/plugin/nvim-treesitter-playground.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/plenary.nvim/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/plenary.nvim/plugin/plenary.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/plenary.nvim/plugin/plenary.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/plugin/rust-tools.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/rust-tools.nvim/plugin/rust-tools.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/sniprun/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/sniprun/plugin/sniprun.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/sniprun/plugin/sniprun.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/splitjoin.vim/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/splitjoin.vim/plugin/splitjoin.vim"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/splitjoin.vim/autoload/sj)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 12: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/splitjoin.vim/autoload/sj/settings.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/splitjoin.vim/autoload/sj/settings.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/splitjoin.vim/plugin/splitjoin.vim
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/splitjoin.vim/plugin/splitjoin.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/suda.vim/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/suda.vim/plugin/suda.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/suda.vim/plugin/suda.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/telescope.nvim/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/telescope.nvim/plugin/telescope.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/telescope.nvim/plugin/telescope.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/todo-comments.nvim/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/todo-comments.nvim/plugin/todo.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/todo-comments.nvim/plugin/todo.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/toggleterm.nvim/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/toggleterm.nvim/plugin/toggleterm.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/toggleterm.nvim/plugin/toggleterm.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-asterisk/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-asterisk/plugin/asterisk.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-asterisk/plugin/asterisk.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-better-whitespace/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-better-whitespace/plugin/better-whitespace.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-better-whitespace/plugin/better-whitespace.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-cutlass/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-cutlass/plugin/cutlass.vim"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-cutlass/autoload)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 9: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-cutlass/autoload/cutlass.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-cutlass/autoload/cutlass.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-cutlass/plugin/cutlass.vim
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-cutlass/plugin/cutlass.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-eunuch/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-eunuch/plugin/eunuch.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-eunuch/plugin/eunuch.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-fugitive/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-fugitive/plugin/fugitive.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-fugitive/plugin/fugitive.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/plugin/matchup.vim"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 28: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup/unmatchit.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup/unmatchit.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/plugin/matchup.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 34: sourcing "/usr/share/nvim/runtime/plugin/matchparen.vim"
+finished sourcing /usr/share/nvim/runtime/plugin/matchparen.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/plugin/matchup.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 54: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/plugin/matchup.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 1: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup/perf.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup/perf.vim
+continuing in function matchup#init
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 6: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup/loader.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup/loader.vim
+continuing in function matchup#init[4]..<SNR>92_init_modules
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 6: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup/matchparen.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup/matchparen.vim
+continuing in function matchup#init[4]..<SNR>92_init_modules
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/plugin/matchup.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/plugin/polyglot.vim"
+--- Autocommands ---
+CursorHold
+    *         lua require'nvim-lightbulb'.update_lightbulb()
+	Last set from anonymous :source
+polyglot-sensible  CursorHold
+    *         silent! checktime
+	Last set from ~/.local/share/nvim/site/pack/packer/start/vim-polyglot/plugin/polyglot.vim line 79
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/plugin/polyglot.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-surround/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-surround/plugin/surround.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-surround/plugin/surround.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-table-mode/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-table-mode/plugin/table-mode.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-table-mode/plugin/table-mode.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator/plugin/tmux_navigator.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator/plugin/tmux_navigator.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-unimpaired/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-unimpaired/plugin/unimpaired.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-unimpaired/plugin/unimpaired.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/plugin/vsnip.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/plugin/vsnip.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ/plugin/vsnip_integ.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ/plugin/vsnip_integ.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/which-key.nvim/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/which-key.nvim/plugin/which-key.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/which-key.nvim/plugin/which-key.vim
+not found in 'packpath': "start/*"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/after/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/after/plugin/matchit.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/after/plugin/matchit.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ/after/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ/after/plugin/vsnip_integ.vim"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ/autoload/vsnip_integ)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 1: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ/autoload/vsnip_integ/integration.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ/autoload/vsnip_integ/integration.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ/after/plugin/vsnip_integ.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ/autoload/vsnip_integ)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 6: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ/autoload/vsnip_integ/detection.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ/autoload/vsnip_integ/detection.vim
+continuing in function vsnip_integ#integration#attach
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ/after/plugin/vsnip_integ.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/opt/cmp-vsnip/after/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/opt/cmp-vsnip/after/plugin/cmp_vsnip.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/opt/cmp-vsnip/after/plugin/cmp_vsnip.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/cmp-buffer/after/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/cmp-buffer/after/plugin/cmp_buffer.lua"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/cmp-buffer/after/plugin/cmp_buffer.lua
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/after/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/after/plugin/cmp_nvim_lsp.lua"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/after/plugin/cmp_nvim_lsp.lua
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua/after/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua/after/plugin/cmp_nvim_lua.lua"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua/after/plugin/cmp_nvim_lua.lua
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/cmp-path/after/plugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/cmp-path/after/plugin/cmp_path.lua"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/cmp-path/after/plugin/cmp_path.lua
+Reading ShaDa file "/home/marwan38/.local/share/nvim/shada/main.shada" info marks oldfiles
+Executing BufWinEnter Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand :lua require("nvim-autopairs").on_attach()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand if &ft == "" && expand("<afile>:e") == "" | call s:Observe('shebang#Detect') | endif
+
+Executing BufWinEnter Autocommands for "*"
+autocommand IndentBlanklineRefresh
+
+Executing BufWinEnter Autocommands for "*"
+autocommand lua require("trouble").action("on_win_enter")
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <SID>SetupAutoCommands()
+
+Error detected while processing function <SNR>85_SetupAutoCommands[11]..<SNR>85_HighlightEOLWhitespace[1]..<SNR>85_ClearHighlighting:
+line    1:
+E802: Invalid ID: -1 (must be greater than or equal to 1)
+Executing BufWinEnter Autocommands for "*"
+autocommand call matchup#loader#bufwinenter()
+
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 5: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup/ts_engine.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup/ts_engine.vim
+continuing in function matchup#loader#bufwinenter[4]..matchup#loader#init_buffer
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 17: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup/re.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup/re.vim
+continuing in function matchup#loader#bufwinenter[4]..matchup#loader#init_buffer[31]..<SNR>94_init_delim_regexes
+Executing BufEnter Autocommands for "*"
+autocommand lua require'nvim-tree'.open_on_directory()
+
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+[window] /home/marwan38/.dotfiles/nvim/.config/nvim
+Executing command: "'/usr/bin/zsh' '-c' 'git -C '/home/marwan38/.dotfiles/nvim/.config/nvim' rev-parse --show-toplevel'"
+
+
+Executing command: "'/usr/bin/zsh' '-c' 'git -C '/home/marwan38/.dotfiles' config --type=bool status.showUntrackedFiles'"
+
+
+Executing command: "'/usr/bin/zsh' '-c' 'git -C '/home/marwan38/.dotfiles' status --porcelain=v1 --ignored=matching -u'"
+
+
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+not found in runtime path: "parser/NvimTree.*"
+auto-removing autocommand: CursorHold <buffer=1>
+auto-removing autocommand: CursorHoldI <buffer=1>
+Executing BufEnter Autocommands for "*"
+autocommand lua require'nvim-tree'.find_file(false)
+
+Executing BufEnter Autocommands for "*"
+autocommand :lua require("nvim-autopairs").on_attach()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("package-info").show()
+
+Executing BufEnter Autocommands for "*"
+autocommand call s:detect_indent()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("project_nvim.project").on_buf_enter()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("trouble").action("on_win_enter")
+
+Executing VimEnter Autocommands for "*"
+autocommand WipeReg
+
+Executing VimEnter Autocommands for "*"
+autocommand lua require("which-key").load()
+
+Executing VimEnter Autocommands for "*"
+autocommand lua require('bufferline').__load()
+
+Executing VimEnter Autocommands for "*"
+autocommand lua require("todo-comments.config")._setup()
+
+autocommand lua require('gitsigns.manager').setup_signs_and_highlights()
+
+autocommand call PolyglotVerify()
+
+Executing VimEnter Autocommands for "*"
+autocommand lua require("project_nvim.project").on_buf_enter()
+
+Executing VimEnter Autocommands for "*"
+autocommand call s:loaded_dashboard()
+
+Executing VimEnter Autocommands for "*"
+autocommand lua require("indent_blankline").init()
+
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime/autoload/provider)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+sourcing "/usr/share/nvim/runtime/autoload/provider/clipboard.vim"
+finished sourcing /usr/share/nvim/runtime/autoload/provider/clipboard.vim
+Executing CursorMoved Autocommands for "NvimTree"
+autocommand lua require'nvim-tree'.place_cursor_on_node()
+
+Executing CursorMoved Autocommands for "?*"
+autocommand call Sniprun_fw_close_wrapper()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:matchparen.highlight_deferred()
+
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 21: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup/pos.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup/pos.vim
+continuing in function 3[3]..4
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 71: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup/delim.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup/delim.vim
+continuing in function 3[3]..4
+Executing TextChanged Autocommands for "*"
+autocommand lua require('headlines').refresh()
+
+Executing TextChanged Autocommands for "*"
+autocommand IndentBlanklineRefresh
+
+Executing TextChanged Autocommands for "*"
+autocommand call s:matchparen.highlight_deferred()
+
+Executing TextChanged Autocommands for "*"
+autocommand call s:on_text_changed()
+
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 1: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vsnip.vim"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vsnip)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 1: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vsnip/session.vim"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vsnip)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 1: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vsnip/snippet.vim"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 2: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital/vsnip.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital/vsnip.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vsnip/snippet.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital/_vsnip/VS/LSP)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 3: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital/_vsnip/VS/LSP/Position.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital/_vsnip/VS/LSP/Position.vim
+continuing in function vital#vsnip#import[4]..<SNR>120_import[11]..<SNR>120__import[4]..<SNR>120__get_module
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 1: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital/_vsnip.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital/_vsnip.vim
+continuing in function vital#vsnip#import[4]..<SNR>120_import[11]..<SNR>120__import[4]..<SNR>120__get_module[3]..vital#_vsnip#VS#LSP#Position#import
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vsnip/snippet.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vsnip/session.vim
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital/_vsnip/VS/LSP)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 3: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital/_vsnip/VS/LSP/TextEdit.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital/_vsnip/VS/LSP/TextEdit.vim
+continuing in function vital#vsnip#import[4]..<SNR>120_import[11]..<SNR>120__import[4]..<SNR>120__get_module
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital/_vsnip/VS/LSP)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 3: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital/_vsnip/VS/LSP/Text.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital/_vsnip/VS/LSP/Text.vim
+continuing in function vital#vsnip#import[4]..<SNR>120_import[11]..<SNR>120__import[15]..<SNR>123__vital_loaded[1]..<SNR>120_import[11]..<SNR>120__import[4]..<SNR>120__get_module
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital/_vsnip/VS/Vim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 3: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital/_vsnip/VS/Vim/Buffer.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital/_vsnip/VS/Vim/Buffer.vim
+continuing in function vital#vsnip#import[4]..<SNR>120_import[11]..<SNR>120__import[15]..<SNR>123__vital_loaded[3]..<SNR>120_import[11]..<SNR>120__import[4]..<SNR>120__get_module
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital/_vsnip/VS/Vim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 3: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital/_vsnip/VS/Vim/Option.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital/_vsnip/VS/Vim/Option.vim
+continuing in function vital#vsnip#import[4]..<SNR>120_import[11]..<SNR>120__import[15]..<SNR>123__vital_loaded[4]..<SNR>120_import[11]..<SNR>120__import[4]..<SNR>120__get_module
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital/_vsnip/VS/LSP)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 3: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital/_vsnip/VS/LSP/Diff.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vital/_vsnip/VS/LSP/Diff.vim
+continuing in function vital#vsnip#import[4]..<SNR>120_import[11]..<SNR>120__import[4]..<SNR>120__get_module
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vsnip/session.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vsnip.vim
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip/autoload/vsnip.vim
+continuing in function <SNR>100_on_text_changed
+Executing WinScrolled Autocommands for "*"
+autocommand lua require('headlines').refresh()
+
+Executing WinScrolled Autocommands for "*"
+autocommand IndentBlanklineRefreshScroll
+
+Executing WinScrolled Autocommands for "*"
+autocommand lua require("todo-comments.highlight").highlight_win()
+
+--- Autocommands ---
+--- Autocommands ---
+lualine  BufEnter
+    *         lua require'lualine.components.branch.git_branch'.find_git_dir()
+	Last set from anonymous :source
+--- Autocommands ---
+
+--- Terminal info --- {{{
+&term: tmux-256color
+Description: tmux with 256 colors
+Aliases: tmux-256color
+Boolean capabilities:
+  auto_left_margin          bw         = false
+  auto_right_margin         am         = true
+  no_esc_ctlc               xsb        = false
+  ceol_standout_glitch      xhp        = false
+  eat_newline_glitch        xenl       = true
+  erase_overstrike          eo         = false
+  generic_type              gn         = false
+  hard_copy                 hc         = false
+  has_meta_key              km         = true
+  has_status_line           hs         = true
+  insert_null_glitch        in         = false
+  memory_above              da         = false
+  memory_below              db         = false
+  move_insert_mode          mir        = true
+  move_standout_mode        msgr       = true
+  over_strike               os         = false
+  status_line_esc_ok        eslok      = false
+  dest_tabs_magic_smso      xt         = false
+  tilde_glitch              hz         = false
+  transparent_underline     ul         = false
+  xon_xoff                  xon        = false
+  needs_xon_xoff            nxon       = false
+  prtr_silent               mc5i       = false
+  hard_cursor               chts       = false
+  non_rev_rmcup             nrrmc      = false
+  no_pad_char               npc        = false
+  non_dest_scroll_region    ndscr      = false
+  can_change                ccc        = false
+  back_color_erase          bce        = false
+  hue_lightness_saturation  hls        = false
+  col_addr_glitch           xhpa       = false
+  cr_cancels_micro_mode     crxm       = false
+  has_print_wheel           daisy      = false
+  row_addr_glitch           xvpa       = false
+  semi_auto_right_margin    sam        = false
+  cpi_changes_res           cpix       = false
+  lpi_changes_res           lpix       = false
+  backspaces_with_bs        OTbs       = true
+  crt_no_scrolling          OTns       = false
+  no_correctly_working_cr   OTnc       = false
+  gnu_has_meta_key          OTMT       = false
+  linefeed_is_newline       OTNL       = false
+  has_hardware_tabs         OTpt       = true
+  return_does_clr_eol       OTxr       = false
+Numeric capabilities:
+  columns                   cols       = 80
+  init_tabs                 it         = 8
+  lines                     lines      = 24
+  lines_of_memory           lm         = -1
+  magic_cookie_glitch       xmc        = -1
+  padding_baud_rate         pb         = -1
+  virtual_terminal          vt         = -1
+  width_status_line         wsl        = -1
+  num_labels                nlab       = -1
+  label_height              lh         = -1
+  label_width               lw         = -1
+  max_attributes            ma         = -1
+  maximum_windows           wnum       = -1
+  max_colors                colors     = 256
+  max_pairs                 pairs      = 65536
+  no_color_video            ncv        = -1
+  buffer_capacity           bufsz      = -1
+  dot_vert_spacing          spinv      = -1
+  dot_horz_spacing          spinh      = -1
+  max_micro_address         maddr      = -1
+  max_micro_jump            mjump      = -1
+  micro_col_size            mcs        = -1
+  micro_line_size           mls        = -1
+  number_of_pins            npins      = -1
+  output_res_char           orc        = -1
+  output_res_line           orl        = -1
+  output_res_horz_inch      orhi       = -1
+  output_res_vert_inch      orvi       = -1
+  print_rate                cps        = -1
+  wide_char_size            widcs      = -1
+  buttons                   btns       = -1
+  bit_image_entwining       bitwin     = -1
+  bit_image_type            bitype     = -1
+  magic_cookie_glitch_ul    OTug       = -1
+  carriage_return_delay     OTdC       = -1
+  new_line_delay            OTdN       = -1
+  backspace_delay           OTdB       = -1
+  horizontal_tab_delay      OTdT       = -1
+  number_of_function_keys   OTkn       = -1
+String capabilities:
+  back_tab                  cbt        = <Esc>[Z
+  bell                      bel        = <C-G>
+  carriage_return           cr         = <CR>
+  change_scroll_region      csr        = <Esc>[%i%p1%d;%p2%dr
+  clear_all_tabs            tbc        = <Esc>[3g
+  clear_screen              clear      = <Esc>[H<Esc>[J
+  clr_eol                   el         = <Esc>[K
+  clr_eos                   ed         = <Esc>[J
+  column_address            hpa        = <Esc>[%i%p1%dG
+  cursor_address            cup        = <Esc>[%i%p1%d;%p2%dH
+  cursor_down               cud1       = <NL>
+  cursor_home               home       = <Esc>[H
+  cursor_invisible          civis      = <Esc>[?25l
+  cursor_left               cub1       = <C-H>
+  cursor_normal             cnorm      = <Esc>[34h<Esc>[?25h
+  cursor_right              cuf1       = <Esc>[C
+  cursor_up                 cuu1       = <Esc>M
+  cursor_visible            cvvis      = <Esc>[34l
+  delete_character          dch1       = <Esc>[P
+  delete_line               dl1        = <Esc>[M
+  dis_status_line           dsl        = <Esc>]0;<C-G>
+  enter_alt_charset_mode    smacs      = <C-N>
+  enter_blink_mode          blink      = <Esc>[5m
+  enter_bold_mode           bold       = <Esc>[1m
+  enter_ca_mode             smcup      = <Esc>[?1049h
+  enter_dim_mode            dim        = <Esc>[2m
+  enter_insert_mode         smir       = <Esc>[4h
+  enter_secure_mode         invis      = <Esc>[8m
+  enter_reverse_mode        rev        = <Esc>[7m
+  enter_standout_mode       smso       = <Esc>[7m
+  enter_underline_mode      smul       = <Esc>[4m
+  exit_alt_charset_mode     rmacs      = <C-O>
+  exit_attribute_mode       sgr0       = <Esc>[m<C-O>
+  exit_ca_mode              rmcup      = <Esc>[?1049l
+  exit_insert_mode          rmir       = <Esc>[4l
+  exit_standout_mode        rmso       = <Esc>[27m
+  exit_underline_mode       rmul       = <Esc>[24m
+  flash_screen              flash      = <Esc>g
+  from_status_line          fsl        = <C-G>
+  init_2string              is2        = <Esc>)0
+  insert_line               il1        = <Esc>[L
+  key_backspace             kbs        = <^?>
+  key_dc                    kdch1      = <Esc>[3~
+  key_down                  kcud1      = <Esc>OB
+  key_f1                    kf1        = <Esc>OP
+  key_f10                   kf10       = <Esc>[21~
+  key_f2                    kf2        = <Esc>OQ
+  key_f3                    kf3        = <Esc>OR
+  key_f4                    kf4        = <Esc>OS
+  key_f5                    kf5        = <Esc>[15~
+  key_f6                    kf6        = <Esc>[17~
+  key_f7                    kf7        = <Esc>[18~
+  key_f8                    kf8        = <Esc>[19~
+  key_f9                    kf9        = <Esc>[20~
+  key_home                  khome      = <Esc>[1~
+  key_ic                    kich1      = <Esc>[2~
+  key_left                  kcub1      = <Esc>OD
+  key_npage                 knp        = <Esc>[6~
+  key_ppage                 kpp        = <Esc>[5~
+  key_right                 kcuf1      = <Esc>OC
+  key_sf                    kind       = <Esc>[1;2B
+  key_sr                    kri        = <Esc>[1;2A
+  key_up                    kcuu1      = <Esc>OA
+  keypad_local              rmkx       = <Esc>[?1l<Esc>>
+  keypad_xmit               smkx       = <Esc>[?1h<Esc>=
+  newline                   nel        = <Esc>E
+  parm_dch                  dch        = <Esc>[%p1%dP
+  parm_delete_line          dl         = <Esc>[%p1%dM
+  parm_down_cursor          cud        = <Esc>[%p1%dB
+  parm_ich                  ich        = <Esc>[%p1%d@
+  parm_index                indn       = <Esc>[%p1%dS
+  parm_insert_line          il         = <Esc>[%p1%dL
+  parm_left_cursor          cub        = <Esc>[%p1%dD
+  parm_right_cursor         cuf        = <Esc>[%p1%dC
+  parm_up_cursor            cuu        = <Esc>[%p1%dA
+  reset_2string             rs2        = <Esc>c<Esc>[?1000l<Esc>[?25h
+  restore_cursor            rc         = <Esc>8
+  row_address               vpa        = <Esc>[%i%p1%dd
+  save_cursor               sc         = <Esc>7
+  scroll_forward            ind        = <NL>
+  scroll_reverse            ri         = <Esc>M
+  set_attributes            sgr        = <Esc>[0%?%p6%t;1%;%?%p2%t;4%;%?%p1%p3%|%t;7%;%?%p4%t;5%;%?%p5%t;2%;%?%p7%t;8%;m%?%p9%t<C-N>%e<C-O>%;
+  set_tab                   hts        = <Esc>H
+  tab                       ht         = <Tab>
+  to_status_line            tsl        = <Esc>]0;
+  acs_chars                 acsc       = ++,,--..00``aaffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz{{||}}~~
+  key_btab                  kcbt       = <Esc>[Z
+  ena_acs                   enacs      = <Esc>(B<Esc>)0
+  key_end                   kend       = <Esc>[4~
+  key_sdc                   kDC        = <Esc>[3;2~
+  key_send                  kEND       = <Esc>[1;2F
+  key_shome                 kHOM       = <Esc>[1;2H
+  key_sic                   kIC        = <Esc>[2;2~
+  key_sleft                 kLFT       = <Esc>[1;2D
+  key_snext                 kNXT       = <Esc>[6;2~
+  key_sprevious             kPRV       = <Esc>[5;2~
+  key_sright                kRIT       = <Esc>[1;2C
+  key_f11                   kf11       = <Esc>[23~
+  key_f12                   kf12       = <Esc>[24~
+  key_f13                   kf13       = <Esc>[1;2P
+  key_f14                   kf14       = <Esc>[1;2Q
+  key_f15                   kf15       = <Esc>[1;2R
+  key_f16                   kf16       = <Esc>[1;2S
+  key_f17                   kf17       = <Esc>[15;2~
+  key_f18                   kf18       = <Esc>[17;2~
+  key_f19                   kf19       = <Esc>[18;2~
+  key_f20                   kf20       = <Esc>[19;2~
+  key_f21                   kf21       = <Esc>[20;2~
+  key_f22                   kf22       = <Esc>[21;2~
+  key_f23                   kf23       = <Esc>[23;2~
+  key_f24                   kf24       = <Esc>[24;2~
+  key_f25                   kf25       = <Esc>[1;5P
+  key_f26                   kf26       = <Esc>[1;5Q
+  key_f27                   kf27       = <Esc>[1;5R
+  key_f28                   kf28       = <Esc>[1;5S
+  key_f29                   kf29       = <Esc>[15;5~
+  key_f30                   kf30       = <Esc>[17;5~
+  key_f31                   kf31       = <Esc>[18;5~
+  key_f32                   kf32       = <Esc>[19;5~
+  key_f33                   kf33       = <Esc>[20;5~
+  key_f34                   kf34       = <Esc>[21;5~
+  key_f35                   kf35       = <Esc>[23;5~
+  key_f36                   kf36       = <Esc>[24;5~
+  key_f37                   kf37       = <Esc>[1;6P
+  key_f38                   kf38       = <Esc>[1;6Q
+  key_f39                   kf39       = <Esc>[1;6R
+  key_f40                   kf40       = <Esc>[1;6S
+  key_f41                   kf41       = <Esc>[15;6~
+  key_f42                   kf42       = <Esc>[17;6~
+  key_f43                   kf43       = <Esc>[18;6~
+  key_f44                   kf44       = <Esc>[19;6~
+  key_f45                   kf45       = <Esc>[20;6~
+  key_f46                   kf46       = <Esc>[21;6~
+  key_f47                   kf47       = <Esc>[23;6~
+  key_f48                   kf48       = <Esc>[24;6~
+  key_f49                   kf49       = <Esc>[1;3P
+  key_f50                   kf50       = <Esc>[1;3Q
+  key_f51                   kf51       = <Esc>[1;3R
+  key_f52                   kf52       = <Esc>[1;3S
+  key_f53                   kf53       = <Esc>[15;3~
+  key_f54                   kf54       = <Esc>[17;3~
+  key_f55                   kf55       = <Esc>[18;3~
+  key_f56                   kf56       = <Esc>[19;3~
+  key_f57                   kf57       = <Esc>[20;3~
+  key_f58                   kf58       = <Esc>[21;3~
+  key_f59                   kf59       = <Esc>[23;3~
+  key_f60                   kf60       = <Esc>[24;3~
+  key_f61                   kf61       = <Esc>[1;4P
+  key_f62                   kf62       = <Esc>[1;4Q
+  key_f63                   kf63       = <Esc>[1;4R
+  clr_bol                   el1        = <Esc>[1K
+  orig_pair                 op         = <Esc>[39;49m
+  enter_italics_mode        sitm       = <Esc>[3m
+  exit_italics_mode         ritm       = <Esc>[23m
+  key_mouse                 kmous      = <Esc>[M
+  set_a_foreground          setaf      = <Esc>[%?%p1%{8}%<%t3%p1%d%e%p1%{16}%<%t9%p1%{8}%-%d%e38;5;%p1%d%;m
+  set_a_background          setab      = <Esc>[%?%p1%{8}%<%t4%p1%d%e%p1%{16}%<%t10%p1%{8}%-%d%e48;5;%p1%d%;m
+Extended boolean capabilities:
+  AX                        = true
+  G0                        = true
+Extended numeric capabilities:
+  U8                        = 1
+Extended string capabilities:
+  Cr                        = <Esc>]112<C-G>
+  Cs                        = <Esc>]12;%p1%s<C-G>
+  E0                        = <Esc>(B
+  E3                        = <Esc>[3J
+  Ms                        = <Esc>]52;%p1%s;%p2%s<C-G>
+  S0                        = <Esc>(%p1%c
+  Se                        = <Esc>[2 q
+  Smulx                     = <Esc>[4:%p1%dm
+  Ss                        = <Esc>[%p1%d q
+  TS                        = <Esc>]0;
+  kDC3                      = <Esc>[3;3~
+  kDC4                      = <Esc>[3;4~
+  kDC5                      = <Esc>[3;5~
+  kDC6                      = <Esc>[3;6~
+  kDC7                      = <Esc>[3;7~
+  kDN                       = <Esc>[1;2B
+  kDN3                      = <Esc>[1;3B
+  kDN4                      = <Esc>[1;4B
+  kDN5                      = <Esc>[1;5B
+  kDN6                      = <Esc>[1;6B
+  kDN7                      = <Esc>[1;7B
+  kEND3                     = <Esc>[1;3F
+  kEND4                     = <Esc>[1;4F
+  kEND5                     = <Esc>[1;5F
+  kEND6                     = <Esc>[1;6F
+  kEND7                     = <Esc>[1;7F
+  kHOM3                     = <Esc>[1;3H
+  kHOM4                     = <Esc>[1;4H
+  kHOM5                     = <Esc>[1;5H
+  kHOM6                     = <Esc>[1;6H
+  kHOM7                     = <Esc>[1;7H
+  kIC3                      = <Esc>[2;3~
+  kIC4                      = <Esc>[2;4~
+  kIC5                      = <Esc>[2;5~
+  kIC6                      = <Esc>[2;6~
+  kIC7                      = <Esc>[2;7~
+  kLFT3                     = <Esc>[1;3D
+  kLFT4                     = <Esc>[1;4D
+  kLFT5                     = <Esc>[1;5D
+  kLFT6                     = <Esc>[1;6D
+  kLFT7                     = <Esc>[1;7D
+  kNXT3                     = <Esc>[6;3~
+  kNXT4                     = <Esc>[6;4~
+  kNXT5                     = <Esc>[6;5~
+  kNXT6                     = <Esc>[6;6~
+  kNXT7                     = <Esc>[6;7~
+  kPRV3                     = <Esc>[5;3~
+  kPRV4                     = <Esc>[5;4~
+  kPRV5                     = <Esc>[5;5~
+  kPRV6                     = <Esc>[5;6~
+  kPRV7                     = <Esc>[5;7~
+  kRIT3                     = <Esc>[1;3C
+  kRIT4                     = <Esc>[1;4C
+  kRIT5                     = <Esc>[1;5C
+  kRIT6                     = <Esc>[1;6C
+  kRIT7                     = <Esc>[1;7C
+  kUP                       = <Esc>[1;2A
+  kUP3                      = <Esc>[1;3A
+  kUP4                      = <Esc>[1;4A
+  kUP5                      = <Esc>[1;5A
+  kUP6                      = <Esc>[1;6A
+  kUP7                      = <Esc>[1;7A
+  rmxx                      = <Esc>[29m
+  smxx                      = <Esc>[9m
+  ext.get_bg                = <Esc>]11;?<C-G>
+  setrgbf                   = <Esc>[38;2;%p1%d;%p2%d;%p3%dm
+  setrgbb                   = <Esc>[48;2;%p1%d;%p2%d;%p3%dm
+  ext.set_cursor_color      = <Esc>]12;#%p1%06x<C-G>
+  ext.reset_cursor_color    = <Esc>]112<C-G>
+  ext.save_title            = <Esc>[22;0t
+  ext.restore_title         = <Esc>[23;0t
+  ext.enable_lr_margin      = <Esc>[?69h
+  ext.disable_lr_margin     = <Esc>[?69l
+  ext.enable_bpaste         = <Esc>[?2004h
+  ext.disable_bpaste        = <Esc>[?2004l
+  ext.enable_focus          = <Esc>[?1004h
+  ext.disable_focus         = <Esc>[?1004l
+  ext.enable_mouse          = <Esc>[?1002h<Esc>[?1006h
+  ext.disable_mouse         = <Esc>[?1002l<Esc>[?1006l
+  ext.set_underline_color   = <Esc>[58:2::%p1%d:%p2%d:%p3%dm
+}}}
+
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+Executing command: "'/usr/bin/zsh' '-c' 'git -C '/home/marwan38/.dotfiles' config --type=bool status.showUntrackedFiles'"
+
+
+Executing command: "'/usr/bin/zsh' '-c' 'git -C '/home/marwan38/.dotfiles' status --porcelain=v1 --ignored=matching -u'"
+
+
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+Executing CursorMoved Autocommands for "NvimTree"
+autocommand lua require'nvim-tree'.place_cursor_on_node()
+
+Executing CursorMoved Autocommands for "?*"
+autocommand call Sniprun_fw_close_wrapper()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:matchparen.highlight_deferred()
+
+Executing TextChanged Autocommands for "*"
+autocommand lua require('headlines').refresh()
+
+Executing TextChanged Autocommands for "*"
+autocommand IndentBlanklineRefresh
+
+Executing TextChanged Autocommands for "*"
+autocommand call s:matchparen.highlight_deferred()
+
+Executing TextChanged Autocommands for "*"
+autocommand call s:on_text_changed()
+
+Executing CursorHold Autocommands for "*"
+autocommand lua require'nvim-lightbulb'.update_lightbulb()
+
+Executing CursorHold Autocommands for "*"
+autocommand silent! checktime
+
+
+  2u%a-  "NvimTree"                     1 second ago
+Executing User Autocommands for "TelescopeFindPre"
+autocommand call dashboard#close_preview()
+
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/dashboard-nvim/autoload)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 0: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/dashboard-nvim/autoload/dashboard.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/dashboard-nvim/autoload/dashboard.vim
+continuing in User Autocommands for "TelescopeFindPre"
+Executing BufLeave Autocommands for "*"
+autocommand call s:matchparen.clear()
+
+Executing WinLeave Autocommands for "*"
+autocommand call dashboard#close_preview()
+
+Executing WinLeave Autocommands for "*"
+autocommand call s:matchparen.clear()
+
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+Executing WinEnter Autocommands for "*"
+autocommand call <SID>SetupAutoCommands()
+
+Error detected while processing function <SNR>85_SetupAutoCommands[30]..<SNR>85_ClearHighlighting:
+line    1:
+E803: ID not found: 4
+Executing WinEnter Autocommands for "*"
+autocommand call s:matchparen.highlight(1)
+
+Executing WinEnter Autocommands for "*"
+autocommand let s:tmux_is_last_pane = 0
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'nvim-tree'.open_on_directory()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'nvim-tree'.find_file(false)
+
+Executing BufEnter Autocommands for "*"
+autocommand :lua require("nvim-autopairs").on_attach()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("package-info").show()
+
+Executing BufEnter Autocommands for "*"
+autocommand call s:detect_indent()
+
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 17: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/sleuth.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/autoload/polyglot/sleuth.vim
+continuing in function <SNR>6_detect_indent
+Executing BufEnter Autocommands for "*"
+autocommand lua require("project_nvim.project").on_buf_enter()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("trouble").action("on_win_enter")
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'lualine.components.branch.git_branch'.find_git_dir()
+
+autocommand lua require'lualine.components.diff.git_diff'.update_diff_args()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:matchparen.highlight_deferred()
+
+Executing FileType Autocommands for "*"
+autocommand lua COLORIZER_SETUP_HOOK()
+
+Executing FileType Autocommands for "*"
+autocommand :lua require("nvim-autopairs").force_attach()
+
+Executing FileType Autocommands for "*"
+autocommand unsilent lua require("null-ls.lspconfig").try_add()
+
+Executing FileType Autocommands for "*"
+autocommand call s:LoadFTPlugin()
+
+not found in runtime path: "ftplugin/TelescopePrompt.vim ftplugin/TelescopePrompt_*.vim ftplugin/TelescopePrompt/*.vim"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/telescope.nvim/ftplugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 19: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/telescope.nvim/ftplugin/TelescopePrompt.lua"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/telescope.nvim/ftplugin/TelescopePrompt.lua
+continuing in function <SNR>32_LoadFTPlugin
+Executing FileType Autocommands for "*"
+autocommand call s:LoadIndent()
+
+not found in runtime path: "indent/TelescopePrompt.vim"
+not found in runtime path: "indent/TelescopePrompt.lua"
+Executing FileType Autocommands for "*"
+autocommand exe "set syntax=" . expand("<amatch>")
+
+Executing Syntax Autocommands for "*"
+autocommand lua require('headlines').refresh()
+
+Executing Syntax Autocommands for "*"
+autocommand call s:SynSet()
+
+not found in runtime path: "syntax/TelescopePrompt.vim syntax/TelescopePrompt/*.vim"
+not found in runtime path: "syntax/TelescopePrompt.lua syntax/TelescopePrompt/*.lua"
+Executing FileType Autocommands for "*"
+autocommand IndentBlanklineRefresh
+
+Executing FileType Autocommands for "*"
+autocommand lua require'nvim-treesitter.configs'.reattach_module('highlight')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('indent')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('textobjects.move')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('textobjects.select')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('autotag')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('context_commentstring')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('playground')
+
+Executing FileType Autocommands for "*"
+autocommand call <SID>SetupAutoCommands()
+
+Error detected while processing function <SNR>85_SetupAutoCommands[30]..<SNR>85_ClearHighlighting:
+line    1:
+E803: ID not found: 4
+Executing FileType Autocommands for "*"
+autocommand call matchup#loader#init_buffer()
+
+Executing FileType Autocommands for "*"
+autocommand lua require'nvim-treesitter.configs'.reattach_module('matchup')
+
+Executing FileType Autocommands for "*"
+autocommand lua COLORIZER_SETUP_HOOK()
+
+Executing FileType Autocommands for "*"
+autocommand :lua require("nvim-autopairs").force_attach()
+
+Executing FileType Autocommands for "*"
+autocommand unsilent lua require("null-ls.lspconfig").try_add()
+
+Executing FileType Autocommands for "*"
+autocommand call s:LoadFTPlugin()
+
+not found in runtime path: "ftplugin/TelescopeResults.vim ftplugin/TelescopeResults_*.vim ftplugin/TelescopeResults/*.vim"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/telescope.nvim/ftplugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 19: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/telescope.nvim/ftplugin/TelescopeResults.lua"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/telescope.nvim/ftplugin/TelescopeResults.lua
+continuing in function <SNR>32_LoadFTPlugin
+Executing FileType Autocommands for "*"
+autocommand call s:LoadIndent()
+
+not found in runtime path: "indent/TelescopeResults.vim"
+not found in runtime path: "indent/TelescopeResults.lua"
+Executing FileType Autocommands for "*"
+autocommand exe "set syntax=" . expand("<amatch>")
+
+Executing Syntax Autocommands for "*"
+autocommand lua require('headlines').refresh()
+
+Executing Syntax Autocommands for "*"
+autocommand call s:SynSet()
+
+not found in runtime path: "syntax/TelescopeResults.vim syntax/TelescopeResults/*.vim"
+not found in runtime path: "syntax/TelescopeResults.lua syntax/TelescopeResults/*.lua"
+Executing FileType Autocommands for "*"
+autocommand IndentBlanklineRefresh
+
+Executing FileType Autocommands for "*"
+autocommand lua require'nvim-treesitter.configs'.reattach_module('highlight')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('indent')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('textobjects.move')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('textobjects.select')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('autotag')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('context_commentstring')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('playground')
+
+Executing FileType Autocommands for "*"
+autocommand call <SID>SetupAutoCommands()
+
+Error detected while processing function <SNR>85_SetupAutoCommands[30]..<SNR>85_ClearHighlighting:
+line    1:
+E803: ID not found: 4
+Executing FileType Autocommands for "*"
+autocommand call matchup#loader#init_buffer()
+
+Executing FileType Autocommands for "*"
+autocommand lua require'nvim-treesitter.configs'.reattach_module('matchup')
+
+Executing InsertEnter Autocommands for "*"
+autocommand lua require'cmp.utils.autocmd'.emit('InsertEnter')
+
+Executing InsertEnter Autocommands for "*"
+autocommand call s:matchparen.highlight(1, 1)
+
+Executing InsertEnter Autocommands for "*"
+autocommand lua require'cmp_nvim_lsp'._on_insert_enter()
+
+Executing CursorMovedI Autocommands for "*"
+autocommand lua require'cmp.utils.autocmd'.emit('CursorMoved')
+
+Executing CursorMovedI Autocommands for "*"
+autocommand call s:matchparen.highlight_deferred()
+
+Executing TextChangedI Autocommands for "*"
+autocommand IndentBlanklineRefresh
+
+Executing TextChangedI Autocommands for "*"
+autocommand lua require'cmp.utils.autocmd'.emit('TextChanged')
+
+Executing TextChangedI Autocommands for "*"
+autocommand call s:matchparen.highlight_deferred()
+
+Executing TextChangedI Autocommands for "*"
+autocommand call s:on_text_changed()
+
+Executing WinScrolled Autocommands for "*"
+autocommand lua require('headlines').refresh()
+
+Executing WinScrolled Autocommands for "*"
+autocommand IndentBlanklineRefreshScroll
+
+Executing WinScrolled Autocommands for "*"
+autocommand lua require("todo-comments.highlight").highlight_win()
+
+Executing OptionSet Autocommands for "signcolumn"
+autocommand call s:matchparen.highlight(1)
+
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+Executing BufLeave Autocommands for "*"
+autocommand call s:matchparen.clear()
+
+Executing BufWinLeave Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+auto-removing autocommand: BufDelete <buffer=5>
+auto-removing autocommand: WinClosed <buffer=5>
+Executing BufEnter Autocommands for "*"
+autocommand lua require'nvim-tree'.open_on_directory()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'nvim-tree'.find_file(false)
+
+Executing BufEnter Autocommands for "*"
+autocommand :lua require("nvim-autopairs").on_attach()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("package-info").show()
+
+Executing BufEnter Autocommands for "*"
+autocommand call s:detect_indent()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("project_nvim.project").on_buf_enter()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("trouble").action("on_win_enter")
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'lualine.components.branch.git_branch'.find_git_dir()
+
+autocommand lua require'lualine.components.diff.git_diff'.update_diff_args()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand :lua require("nvim-autopairs").on_attach()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand if &ft == "" && expand("<afile>:e") == "" | call s:Observe('shebang#Detect') | endif
+
+Executing BufWinEnter Autocommands for "*"
+autocommand IndentBlanklineRefresh
+
+Executing BufWinEnter Autocommands for "*"
+autocommand lua require("trouble").action("on_win_enter")
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <SID>SetupAutoCommands()
+
+Error detected while processing function <SNR>85_SetupAutoCommands[30]..<SNR>85_ClearHighlighting:
+line    1:
+E803: ID not found: 4
+Executing BufWinEnter Autocommands for "*"
+autocommand call matchup#loader#bufwinenter()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand lua require("todo-comments.highlight").attach()
+
+Executing Syntax Autocommands for "*"
+autocommand lua require('headlines').refresh()
+
+Executing Syntax Autocommands for "*"
+autocommand call s:SynSet()
+
+Executing CursorHoldI Autocommands for "*"
+autocommand lua require'nvim-lightbulb'.update_lightbulb()
+
+
+Executing BufWinLeave Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+auto-removing autocommand: CursorHold <buffer=9>
+auto-removing autocommand: CursorHoldI <buffer=9>
+Executing BufLeave Autocommands for "*"
+autocommand call s:matchparen.clear()
+
+Executing BufLeave Autocommands for "<buffer=7>"
+autocommand :silent lua require('telescope.pickers').on_close_prompt(7)
+
+Executing WinClosed Autocommands for "<buffer=3>"
+autocommand :lua require('plenary.window').try_close(1003, true)
+
+Executing BufWinLeave Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+Executing BufWinLeave Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+auto-removing autocommand: BufDelete <buffer=3>
+auto-removing autocommand: WinClosed <buffer=3>
+Executing BufWinLeave Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+Executing BufWinLeave Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+Executing WinLeave Autocommands for "*"
+autocommand call dashboard#close_preview()
+
+Executing WinLeave Autocommands for "*"
+autocommand call s:matchparen.clear()
+
+Executing WinClosed Autocommands for "<buffer=7>"
+autocommand :lua require('plenary.window').try_close(1007, true)
+
+Executing BufWinLeave Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+auto-removing autocommand: BufDelete <buffer=7>
+auto-removing autocommand: VimResized <buffer=7>
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+Executing WinEnter Autocommands for "*"
+autocommand call <SID>SetupAutoCommands()
+
+Executing WinEnter Autocommands for "*"
+autocommand call s:matchparen.highlight(1)
+
+Executing WinEnter Autocommands for "*"
+autocommand let s:tmux_is_last_pane = 0
+
+Executing CursorMoved Autocommands for "NvimTree"
+autocommand lua require'nvim-tree'.place_cursor_on_node()
+
+Executing CursorMoved Autocommands for "?*"
+autocommand call Sniprun_fw_close_wrapper()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:matchparen.highlight_deferred()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'nvim-tree'.open_on_directory()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'nvim-tree'.find_file(false)
+
+Executing BufEnter Autocommands for "*"
+autocommand :lua require("nvim-autopairs").on_attach()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("package-info").show()
+
+Executing BufEnter Autocommands for "*"
+autocommand call s:detect_indent()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("project_nvim.project").on_buf_enter()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("trouble").action("on_win_enter")
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'lualine.components.branch.git_branch'.find_git_dir()
+
+autocommand lua require'lualine.components.diff.git_diff'.update_diff_args()
+
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+Executing BufLeave Autocommands for "*"
+autocommand call s:matchparen.clear()
+
+Executing BufWinLeave Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+Executing BufWinLeave Autocommands for "?*"
+autocommand call Sniprun_fw_close_wrapper()
+
+Executing BufWinLeave Autocommands for "?*"
+autocommand call Sniprun_clear_vt_on_leave()
+
+Executing BufWinLeave Autocommands for "?*"
+autocommand call Sniprun_close_term_on_leave()
+
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+"lua/filetree.lua" 82L, 2339C
+Reading ShaDa file "/home/marwan38/.local/share/nvim/shada/main.shada" marks
+Reading undo file: /home/marwan38/.local/share/nvim/undo/%home%marwan38%.dotfiles%nvim%.config%nvim%lua%filetree.lua
+Executing BufReadPost Autocommands for "*"
+autocommand if getline(1) =~# '\v^#!%(\f*/|/usr/bin/env\s*<)fish>' |   setfiletype fish | endif
+
+Executing BufReadPost Autocommands for "*.lua"
+autocommand setf lua
+
+Executing FileType Autocommands for "*"
+autocommand lua COLORIZER_SETUP_HOOK()
+
+Executing FileType Autocommands for "*"
+autocommand :lua require("nvim-autopairs").force_attach()
+
+Executing FileType Autocommands for "*"
+autocommand unsilent lua require("null-ls.lspconfig").try_add()
+
+Executing FileType Autocommands for "lua"
+autocommand unsilent lua require'lspconfig'["sumneko_lua"].manager.try_add()
+
+Executing FileType Autocommands for "*"
+autocommand call s:LoadFTPlugin()
+
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/splitjoin.vim/ftplugin/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 17: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/splitjoin.vim/ftplugin/lua/splitjoin.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/splitjoin.vim/ftplugin/lua/splitjoin.vim
+continuing in function <SNR>32_LoadFTPlugin
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime/ftplugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 17: sourcing "/usr/share/nvim/runtime/ftplugin/lua.vim"
+finished sourcing /usr/share/nvim/runtime/ftplugin/lua.vim
+continuing in function <SNR>32_LoadFTPlugin
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/after/ftplugin)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 17: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/after/ftplugin/lua_matchup.vim"
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 19: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup/util.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/autoload/matchup/util.vim
+continuing in /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/after/ftplugin/lua_matchup.vim
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-matchup/after/ftplugin/lua_matchup.vim
+continuing in function <SNR>32_LoadFTPlugin
+not found in runtime path: "ftplugin/lua.lua ftplugin/lua_*.lua ftplugin/lua/*.lua"
+Executing FileType Autocommands for "*"
+autocommand call s:LoadIndent()
+
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/indent)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 14: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/indent/lua.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/indent/lua.vim
+continuing in function <SNR>33_LoadIndent
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime/indent)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 14: sourcing "/usr/share/nvim/runtime/indent/lua.vim"
+finished sourcing /usr/share/nvim/runtime/indent/lua.vim
+continuing in function <SNR>33_LoadIndent
+not found in runtime path: "indent/lua.lua"
+Executing FileType Autocommands for "*"
+autocommand exe "set syntax=" . expand("<amatch>")
+
+Executing Syntax Autocommands for "*"
+autocommand lua require('headlines').refresh()
+
+Executing Syntax Autocommands for "*"
+autocommand call s:SynSet()
+
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/syntax)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 25: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/syntax/lua.vim"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/vim-polyglot/syntax/lua.vim
+continuing in function <SNR>35_SynSet
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/usr/share/nvim/runtime/syntax)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+line 25: sourcing "/usr/share/nvim/runtime/syntax/lua.vim"
+finished sourcing /usr/share/nvim/runtime/syntax/lua.vim
+continuing in function <SNR>35_SynSet
+not found in runtime path: "syntax/lua.lua syntax/lua/*.lua"
+Executing FileType Autocommands for "*"
+autocommand IndentBlanklineRefresh
+
+Executing FileType Autocommands for "*"
+autocommand lua require'nvim-treesitter.configs'.reattach_module('highlight')
+
+Executing Syntax Autocommands for "*"
+autocommand lua require('headlines').refresh()
+
+Executing Syntax Autocommands for "*"
+autocommand call s:SynSet()
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('indent')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('textobjects.move')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('textobjects.select')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('autotag')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('context_commentstring')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('playground')
+
+Executing FileType Autocommands for "*"
+autocommand call <SID>SetupAutoCommands()
+
+Error detected while processing function <SNR>85_SetupAutoCommands[11]..<SNR>85_HighlightEOLWhitespace[1]..<SNR>85_ClearHighlighting:
+line    1:
+E803: ID not found: 4
+Executing FileType Autocommands for "*"
+autocommand call matchup#loader#init_buffer()
+
+Executing FileType Autocommands for "*"
+autocommand lua require'nvim-treesitter.configs'.reattach_module('matchup')
+
+Executing BufReadPost Autocommands for "*"
+autocommand if (&ft == "" || &ft == "conf") && expand("<afile>:e") == "" | call polyglot#shebang#Detect() | endif
+
+Executing BufReadPost Autocommands for "*"
+autocommand if !did_filetype() && expand("<amatch>") !~ g:ft_ignore_pat | runtime! scripts.vim | endif
+
+Executing BufReadPost Autocommands for "*"
+autocommand call dashboard#change_to_dir(expand("%:p"))
+
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+Executing BufReadPost Autocommands for "*"
+autocommand call FugitiveDetect(expand('<amatch>:p'), 0)
+
+Executing BufReadPost Autocommands for "*"
+autocommand call s:matchparen.transmute_reset()
+
+Executing BufReadPost Autocommands for "*"
+autocommand lua _G.package.loaded.gitsigns.attach(nil, 'BufRead')
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'nvim-tree'.open_on_directory()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'nvim-tree'.find_file(false)
+
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+Executing BufEnter Autocommands for "*"
+autocommand :lua require("nvim-autopairs").on_attach()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("package-info").show()
+
+Executing BufEnter Autocommands for "*"
+autocommand call s:detect_indent()
+
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+Executing BufEnter Autocommands for "*"
+autocommand lua require("project_nvim.project").on_buf_enter()
+
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(lua)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles)
+Executing DirChanged Autocommands for "*"
+autocommand lua _G.package.loaded.gitsigns._update_cwd_head()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("trouble").action("on_win_enter")
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'lualine.components.branch.git_branch'.find_git_dir()
+
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+autocommand lua require'lualine.components.diff.git_diff'.update_diff_args()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand :lua require("nvim-autopairs").on_attach()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand if &ft == "" && expand("<afile>:e") == "" | call s:Observe('shebang#Detect') | endif
+
+Executing BufWinEnter Autocommands for "*"
+autocommand IndentBlanklineRefresh
+
+Executing BufWinEnter Autocommands for "*"
+autocommand lua require("trouble").action("on_win_enter")
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <SID>SetupAutoCommands()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call matchup#loader#bufwinenter()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand lua require("todo-comments.highlight").attach()
+
+Executing InsertLeave Autocommands for "*"
+autocommand lua require('headlines').refresh()
+
+Executing InsertLeave Autocommands for "*"
+autocommand lua require'cmp.utils.autocmd'.emit('InsertLeave')
+
+Executing InsertLeave Autocommands for "*"
+autocommand call s:matchparen.highlight(1)
+
+Executing InsertLeave Autocommands for "*"
+autocommand call s:on_insert_leave()
+
+Executing InsertLeave Autocommands for "*"
+autocommand call <SID>HighlightEOLWhitespace()
+
+Executing CursorMoved Autocommands for "?*"
+autocommand call Sniprun_fw_close_wrapper()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:matchparen.highlight_deferred()
+
+Executing CursorMoved Autocommands for "<buffer=10>"
+autocommand lua require'nvim-treesitter-playground.internal'._highlight_playground_node_debounced(10)
+
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+Executing BufLeave Autocommands for "*"
+autocommand call s:matchparen.clear()
+
+Executing BufLeave Autocommands for "<buffer=10>"
+autocommand lua require'nvim-treesitter-playground.internal'.clear_playground_highlights(10)
+
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+Executing BufWinLeave Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+Executing BufWinLeave Autocommands for "?*"
+autocommand call Sniprun_fw_close_wrapper()
+
+Executing BufWinLeave Autocommands for "?*"
+autocommand call Sniprun_clear_vt_on_leave()
+
+Executing BufWinLeave Autocommands for "?*"
+autocommand call Sniprun_close_term_on_leave()
+
+Executing BufWinLeave Autocommands for "*"
+autocommand if expand("<afile>") == expand("%") | call <SID>ClearHighlighting() | endif
+
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+Executing BufEnter Autocommands for "*"
+autocommand lua require'nvim-tree'.open_on_directory()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'nvim-tree'.find_file(false)
+
+Executing BufEnter Autocommands for "*"
+autocommand :lua require("nvim-autopairs").on_attach()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("package-info").show()
+
+Executing BufEnter Autocommands for "*"
+autocommand call s:detect_indent()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("project_nvim.project").on_buf_enter()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("trouble").action("on_win_enter")
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'lualine.components.branch.git_branch'.find_git_dir()
+
+autocommand lua require'lualine.components.diff.git_diff'.update_diff_args()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand :lua require("nvim-autopairs").on_attach()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand if &ft == "" && expand("<afile>:e") == "" | call s:Observe('shebang#Detect') | endif
+
+Executing BufWinEnter Autocommands for "*"
+autocommand IndentBlanklineRefresh
+
+Executing BufWinEnter Autocommands for "*"
+autocommand lua require("trouble").action("on_win_enter")
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <SID>SetupAutoCommands()
+
+Error detected while processing function <SNR>85_SetupAutoCommands[30]..<SNR>85_ClearHighlighting:
+line    1:
+E803: ID not found: 4
+Executing BufWinEnter Autocommands for "*"
+autocommand call matchup#loader#bufwinenter()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand lua require("todo-comments.highlight").attach()
+
+Executing WinLeave Autocommands for "*"
+autocommand call dashboard#close_preview()
+
+Executing WinLeave Autocommands for "*"
+autocommand call s:matchparen.clear()
+
+Executing WinNew Autocommands for "*"
+autocommand lua require("todo-comments.highlight").attach()
+
+Executing WinEnter Autocommands for "*"
+autocommand call <SID>SetupAutoCommands()
+
+Error detected while processing function <SNR>85_SetupAutoCommands[30]..<SNR>85_ClearHighlighting:
+line    1:
+E803: ID not found: 4
+Executing WinEnter Autocommands for "*"
+autocommand call s:matchparen.highlight(1)
+
+Executing WinEnter Autocommands for "*"
+autocommand let s:tmux_is_last_pane = 0
+
+Executing CursorMoved Autocommands for "NvimTree"
+autocommand lua require'nvim-tree'.place_cursor_on_node()
+
+Executing CursorMoved Autocommands for "?*"
+autocommand call Sniprun_fw_close_wrapper()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:matchparen.highlight_deferred()
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:matchparen.clear()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'nvim-tree'.open_on_directory()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'nvim-tree'.find_file(false)
+
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+Executing BufEnter Autocommands for "*"
+autocommand :lua require("nvim-autopairs").on_attach()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("package-info").show()
+
+Executing BufEnter Autocommands for "*"
+autocommand call s:detect_indent()
+
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+Executing BufEnter Autocommands for "*"
+autocommand lua require("project_nvim.project").on_buf_enter()
+
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+Executing BufEnter Autocommands for "*"
+autocommand lua require("trouble").action("on_win_enter")
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'lualine.components.branch.git_branch'.find_git_dir()
+
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+autocommand lua require'lualine.components.diff.git_diff'.update_diff_args()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand :lua require("nvim-autopairs").on_attach()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand if &ft == "" && expand("<afile>:e") == "" | call s:Observe('shebang#Detect') | endif
+
+Executing BufWinEnter Autocommands for "*"
+autocommand IndentBlanklineRefresh
+
+Executing BufWinEnter Autocommands for "*"
+autocommand lua require("trouble").action("on_win_enter")
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <SID>SetupAutoCommands()
+
+Error detected while processing function <SNR>85_SetupAutoCommands[11]..<SNR>85_HighlightEOLWhitespace[1]..<SNR>85_ClearHighlighting:
+line    1:
+E803: ID not found: 4
+Executing BufWinEnter Autocommands for "*"
+autocommand call matchup#loader#bufwinenter()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand lua require("todo-comments.highlight").attach()
+
+Executing BufWinLeave Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+Executing BufWinLeave Autocommands for "?*"
+autocommand call Sniprun_fw_close_wrapper()
+
+Executing BufWinLeave Autocommands for "?*"
+autocommand call Sniprun_clear_vt_on_leave()
+
+Executing BufWinLeave Autocommands for "?*"
+autocommand call Sniprun_close_term_on_leave()
+
+Executing BufWinLeave Autocommands for "*"
+autocommand if expand("<afile>") == expand("%") | call <SID>ClearHighlighting() | endif
+
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+Executing User Autocommands for "DiagnosticsChanged"
+autocommand lua require'nvim-tree.diagnostics'.update()
+
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+Executing CursorMoved Autocommands for "?*"
+autocommand call Sniprun_fw_close_wrapper()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:matchparen.highlight_deferred()
+
+Executing CursorMoved Autocommands for "<buffer=10>"
+autocommand lua require'nvim-treesitter-playground.internal'._highlight_playground_node_debounced(10)
+
+Executing WinScrolled Autocommands for "*"
+autocommand lua require('headlines').refresh()
+
+Executing WinScrolled Autocommands for "*"
+autocommand IndentBlanklineRefreshScroll
+
+Executing WinScrolled Autocommands for "*"
+autocommand lua require("todo-comments.highlight").highlight_win()
+
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+Executing CursorHold Autocommands for "*"
+autocommand lua require'nvim-lightbulb'.update_lightbulb()
+
+Executing CursorHold Autocommands for "*"
+autocommand silent! checktime
+
+Executing CursorHold Autocommands for "<buffer=10>"
+autocommand lua require("lsp-status").update_current_function()
+
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+
+Executing User Autocommands for "TelescopeFindPre"
+autocommand call dashboard#close_preview()
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:matchparen.clear()
+
+Executing BufLeave Autocommands for "<buffer=10>"
+autocommand lua require'nvim-treesitter-playground.internal'.clear_playground_highlights(10)
+
+Executing WinLeave Autocommands for "*"
+autocommand call dashboard#close_preview()
+
+Executing WinLeave Autocommands for "*"
+autocommand call s:matchparen.clear()
+
+Executing WinEnter Autocommands for "*"
+autocommand call <SID>SetupAutoCommands()
+
+Error detected while processing function <SNR>85_SetupAutoCommands[30]..<SNR>85_ClearHighlighting:
+line    1:
+E803: ID not found: 4
+Executing WinEnter Autocommands for "*"
+autocommand call s:matchparen.highlight(1)
+
+Executing WinEnter Autocommands for "*"
+autocommand let s:tmux_is_last_pane = 0
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'nvim-tree'.open_on_directory()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'nvim-tree'.find_file(false)
+
+Executing BufEnter Autocommands for "*"
+autocommand :lua require("nvim-autopairs").on_attach()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("package-info").show()
+
+Executing BufEnter Autocommands for "*"
+autocommand call s:detect_indent()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("project_nvim.project").on_buf_enter()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("trouble").action("on_win_enter")
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'lualine.components.branch.git_branch'.find_git_dir()
+
+autocommand lua require'lualine.components.diff.git_diff'.update_diff_args()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:matchparen.highlight_deferred()
+
+Executing FileType Autocommands for "*"
+autocommand lua COLORIZER_SETUP_HOOK()
+
+Executing FileType Autocommands for "*"
+autocommand :lua require("nvim-autopairs").force_attach()
+
+Executing FileType Autocommands for "*"
+autocommand unsilent lua require("null-ls.lspconfig").try_add()
+
+Executing FileType Autocommands for "*"
+autocommand call s:LoadFTPlugin()
+
+not found in runtime path: "ftplugin/TelescopePrompt.vim ftplugin/TelescopePrompt_*.vim ftplugin/TelescopePrompt/*.vim"
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/telescope.nvim/ftplugin)
+chdir(/home/marwan38/.dotfiles)
+line 19: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/telescope.nvim/ftplugin/TelescopePrompt.lua"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/telescope.nvim/ftplugin/TelescopePrompt.lua
+continuing in function <SNR>32_LoadFTPlugin
+Executing FileType Autocommands for "*"
+autocommand call s:LoadIndent()
+
+not found in runtime path: "indent/TelescopePrompt.vim"
+not found in runtime path: "indent/TelescopePrompt.lua"
+Executing FileType Autocommands for "*"
+autocommand exe "set syntax=" . expand("<amatch>")
+
+Executing Syntax Autocommands for "*"
+autocommand lua require('headlines').refresh()
+
+Executing Syntax Autocommands for "*"
+autocommand call s:SynSet()
+
+not found in runtime path: "syntax/TelescopePrompt.vim syntax/TelescopePrompt/*.vim"
+not found in runtime path: "syntax/TelescopePrompt.lua syntax/TelescopePrompt/*.lua"
+Executing FileType Autocommands for "*"
+autocommand IndentBlanklineRefresh
+
+Executing FileType Autocommands for "*"
+autocommand lua require'nvim-treesitter.configs'.reattach_module('highlight')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('indent')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('textobjects.move')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('textobjects.select')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('autotag')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('context_commentstring')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('playground')
+
+Executing FileType Autocommands for "*"
+autocommand call <SID>SetupAutoCommands()
+
+Error detected while processing function <SNR>85_SetupAutoCommands[30]..<SNR>85_ClearHighlighting:
+line    1:
+E803: ID not found: 4
+Executing FileType Autocommands for "*"
+autocommand call matchup#loader#init_buffer()
+
+Executing FileType Autocommands for "*"
+autocommand lua require'nvim-treesitter.configs'.reattach_module('matchup')
+
+Executing FileType Autocommands for "*"
+autocommand lua COLORIZER_SETUP_HOOK()
+
+Executing FileType Autocommands for "*"
+autocommand :lua require("nvim-autopairs").force_attach()
+
+Executing FileType Autocommands for "*"
+autocommand unsilent lua require("null-ls.lspconfig").try_add()
+
+Executing FileType Autocommands for "*"
+autocommand call s:LoadFTPlugin()
+
+not found in runtime path: "ftplugin/TelescopeResults.vim ftplugin/TelescopeResults_*.vim ftplugin/TelescopeResults/*.vim"
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.local/share/nvim/site/pack/packer/start/telescope.nvim/ftplugin)
+chdir(/home/marwan38/.dotfiles)
+line 19: sourcing "/home/marwan38/.local/share/nvim/site/pack/packer/start/telescope.nvim/ftplugin/TelescopeResults.lua"
+finished sourcing /home/marwan38/.local/share/nvim/site/pack/packer/start/telescope.nvim/ftplugin/TelescopeResults.lua
+continuing in function <SNR>32_LoadFTPlugin
+Executing FileType Autocommands for "*"
+autocommand call s:LoadIndent()
+
+not found in runtime path: "indent/TelescopeResults.vim"
+not found in runtime path: "indent/TelescopeResults.lua"
+Executing FileType Autocommands for "*"
+autocommand exe "set syntax=" . expand("<amatch>")
+
+Executing Syntax Autocommands for "*"
+autocommand lua require('headlines').refresh()
+
+Executing Syntax Autocommands for "*"
+autocommand call s:SynSet()
+
+not found in runtime path: "syntax/TelescopeResults.vim syntax/TelescopeResults/*.vim"
+not found in runtime path: "syntax/TelescopeResults.lua syntax/TelescopeResults/*.lua"
+Executing FileType Autocommands for "*"
+autocommand IndentBlanklineRefresh
+
+Executing FileType Autocommands for "*"
+autocommand lua require'nvim-treesitter.configs'.reattach_module('highlight')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('indent')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('textobjects.move')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('textobjects.select')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('autotag')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('context_commentstring')
+
+autocommand lua require'nvim-treesitter.configs'.reattach_module('playground')
+
+Executing FileType Autocommands for "*"
+autocommand call <SID>SetupAutoCommands()
+
+Error detected while processing function <SNR>85_SetupAutoCommands[30]..<SNR>85_ClearHighlighting:
+line    1:
+E803: ID not found: 4
+Executing FileType Autocommands for "*"
+autocommand call matchup#loader#init_buffer()
+
+Executing FileType Autocommands for "*"
+autocommand lua require'nvim-treesitter.configs'.reattach_module('matchup')
+
+Executing InsertEnter Autocommands for "*"
+autocommand lua require'cmp.utils.autocmd'.emit('InsertEnter')
+
+Executing InsertEnter Autocommands for "*"
+autocommand call s:matchparen.highlight(1, 1)
+
+Executing InsertEnter Autocommands for "*"
+autocommand lua require'cmp_nvim_lsp'._on_insert_enter()
+
+Executing CursorMovedI Autocommands for "*"
+autocommand lua require'cmp.utils.autocmd'.emit('CursorMoved')
+
+Executing CursorMovedI Autocommands for "*"
+autocommand call s:matchparen.highlight_deferred()
+
+Executing TextChangedI Autocommands for "*"
+autocommand IndentBlanklineRefresh
+
+Executing TextChangedI Autocommands for "*"
+autocommand lua require'cmp.utils.autocmd'.emit('TextChanged')
+
+Executing TextChangedI Autocommands for "*"
+autocommand call s:matchparen.highlight_deferred()
+
+Executing TextChangedI Autocommands for "*"
+autocommand call s:on_text_changed()
+
+Executing WinScrolled Autocommands for "*"
+autocommand lua require('headlines').refresh()
+
+Executing WinScrolled Autocommands for "*"
+autocommand IndentBlanklineRefreshScroll
+
+Executing WinScrolled Autocommands for "*"
+autocommand lua require("todo-comments.highlight").highlight_win()
+
+Executing OptionSet Autocommands for "signcolumn"
+autocommand call s:matchparen.highlight(1)
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:matchparen.clear()
+
+Executing BufWinLeave Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+auto-removing autocommand: BufDelete <buffer=13>
+auto-removing autocommand: WinClosed <buffer=13>
+Executing BufEnter Autocommands for "*"
+autocommand lua require'nvim-tree'.open_on_directory()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'nvim-tree'.find_file(false)
+
+Executing BufEnter Autocommands for "*"
+autocommand :lua require("nvim-autopairs").on_attach()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("package-info").show()
+
+Executing BufEnter Autocommands for "*"
+autocommand call s:detect_indent()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("project_nvim.project").on_buf_enter()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("trouble").action("on_win_enter")
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'lualine.components.branch.git_branch'.find_git_dir()
+
+autocommand lua require'lualine.components.diff.git_diff'.update_diff_args()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand :lua require("nvim-autopairs").on_attach()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand if &ft == "" && expand("<afile>:e") == "" | call s:Observe('shebang#Detect') | endif
+
+Executing BufWinEnter Autocommands for "*"
+autocommand IndentBlanklineRefresh
+
+Executing BufWinEnter Autocommands for "*"
+autocommand lua require("trouble").action("on_win_enter")
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <SID>SetupAutoCommands()
+
+Error detected while processing function <SNR>85_SetupAutoCommands[30]..<SNR>85_ClearHighlighting:
+line    1:
+E803: ID not found: 4
+Executing BufWinEnter Autocommands for "*"
+autocommand call matchup#loader#bufwinenter()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand lua require("todo-comments.highlight").attach()
+
+not found in runtime path: "parser/text.*"
+Executing Syntax Autocommands for "*"
+autocommand lua require('headlines').refresh()
+
+Executing Syntax Autocommands for "*"
+autocommand call s:SynSet()
+
+not found in runtime path: "syntax/text.vim syntax/text/*.vim"
+not found in runtime path: "syntax/text.lua syntax/text/*.lua"
+
+Executing BufWinLeave Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+auto-removing autocommand: CursorHold <buffer=17>
+auto-removing autocommand: CursorHoldI <buffer=17>
+Executing BufLeave Autocommands for "*"
+autocommand call s:matchparen.clear()
+
+Executing BufLeave Autocommands for "<buffer=15>"
+autocommand :silent lua require('telescope.pickers').on_close_prompt(15)
+
+Executing WinClosed Autocommands for "<buffer=11>"
+autocommand :lua require('plenary.window').try_close(1010, true)
+
+Executing BufWinLeave Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+Executing BufWinLeave Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+auto-removing autocommand: BufDelete <buffer=11>
+auto-removing autocommand: WinClosed <buffer=11>
+Executing BufWinLeave Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+Executing BufWinLeave Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+Executing WinLeave Autocommands for "*"
+autocommand call dashboard#close_preview()
+
+Executing WinLeave Autocommands for "*"
+autocommand call s:matchparen.clear()
+
+Executing WinClosed Autocommands for "<buffer=15>"
+autocommand :lua require('plenary.window').try_close(1014, true)
+
+Executing BufWinLeave Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+auto-removing autocommand: BufDelete <buffer=15>
+auto-removing autocommand: VimResized <buffer=15>
+Executing WinEnter Autocommands for "*"
+autocommand call <SID>SetupAutoCommands()
+
+Executing WinEnter Autocommands for "*"
+autocommand call s:matchparen.highlight(1)
+
+Executing WinEnter Autocommands for "*"
+autocommand let s:tmux_is_last_pane = 0
+
+Executing CursorMoved Autocommands for "?*"
+autocommand call Sniprun_fw_close_wrapper()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:matchparen.highlight_deferred()
+
+Executing CursorMoved Autocommands for "<buffer=10>"
+autocommand lua require'nvim-treesitter-playground.internal'._highlight_playground_node_debounced(10)
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'nvim-tree'.open_on_directory()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'nvim-tree'.find_file(false)
+
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+Executing BufEnter Autocommands for "*"
+autocommand :lua require("nvim-autopairs").on_attach()
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require("package-info").show()
+
+Executing BufEnter Autocommands for "*"
+autocommand call s:detect_indent()
+
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+Executing BufEnter Autocommands for "*"
+autocommand lua require("project_nvim.project").on_buf_enter()
+
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+Executing BufEnter Autocommands for "*"
+autocommand lua require("trouble").action("on_win_enter")
+
+Executing BufEnter Autocommands for "*"
+autocommand lua require'lualine.components.branch.git_branch'.find_git_dir()
+
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+autocommand lua require'lualine.components.diff.git_diff'.update_diff_args()
+
+Executing InsertLeave Autocommands for "*"
+autocommand lua require('headlines').refresh()
+
+Executing InsertLeave Autocommands for "*"
+autocommand lua require'cmp.utils.autocmd'.emit('InsertLeave')
+
+Executing InsertLeave Autocommands for "*"
+autocommand call s:matchparen.highlight(1)
+
+Executing InsertLeave Autocommands for "*"
+autocommand call s:on_insert_leave()
+
+Executing InsertLeave Autocommands for "<buffer=10>"
+autocommand lua require'lsp_signature'.on_InsertLeave()
+
+Executing InsertLeave Autocommands for "*"
+autocommand call <SID>HighlightEOLWhitespace()
+
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+
+Executing QuitPre Autocommands for "?*"
+autocommand call Sniprun_close_term_on_leave()
+
+Executing ExitPre Autocommands for "*"
+autocommand lua require('dap')._vim_exit_handler()
+
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+Executing BufWinLeave Autocommands for "*"
+autocommand lua require'nvim-tree.view'._prevent_buffer_override()
+
+Executing BufWinLeave Autocommands for "?*"
+autocommand call Sniprun_fw_close_wrapper()
+
+Executing BufWinLeave Autocommands for "?*"
+autocommand call Sniprun_clear_vt_on_leave()
+
+Executing BufWinLeave Autocommands for "?*"
+autocommand call Sniprun_close_term_on_leave()
+
+Executing BufWinLeave Autocommands for "*"
+autocommand if expand("<afile>") == expand("%") | call <SID>ClearHighlighting() | endif
+
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+Executing VimLeavePre Autocommands for "*"
+autocommand lua vim.lsp._vim_exit_handler()
+
+Executing User Autocommands for "DiagnosticsChanged"
+autocommand lua require'nvim-tree.diagnostics'.update()
+
+Executing User Autocommands for "DiagnosticsChanged"
+autocommand lua require'nvim-tree.diagnostics'.update()
+
+chdir(/home/marwan38/.dotfiles)
+chdir(nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+Executing VimLeavePre Autocommands for "*"
+autocommand lua require("project_nvim.utils.history").write_projects_to_history()
+
+Executing VimLeavePre Autocommands for "*"
+autocommand if ! empty(v:this_session) && ! exists('g:SessionLoad') |   execute 'mksession! ' . fnameescape(v:this_session) | endif
+
+Executing VimLeavePre Autocommands for "*"
+autocommand lua _G.package.loaded.gitsigns.detach_all()
+
+Writing ShaDa file "/home/marwan38/.local/share/nvim/shada/main.shada"
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/lua)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles)
+chdir(/home/marwan38/.dotfiles/nvim/.config/nvim/after/ftplugin)
+chdir(/home/marwan38/.dotfiles)
+Executing VimLeave Autocommands for "?*"
+autocommand call Sniprun_close_term_on_leave()

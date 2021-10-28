@@ -20,6 +20,9 @@ packer.init {
     },
 }
 
+require "bindings"
+require "globals"
+
 local layers = {
     require "options",
     require "commands",
@@ -37,10 +40,10 @@ local layers = {
     require "git",
     require "search",
     require "terminal",
-    require "project",
     require "debugging",
     require "tmux",
     require "testing",
+    require "notes",
 
     require "lsp",
     require "language/php",
@@ -51,9 +54,6 @@ local layers = {
     require "language/css",
     require "language/rust",
 }
-
-require "bindings"
-require "globals"
 
 packer.startup(function(use)
     use "wbthomason/packer.nvim"
