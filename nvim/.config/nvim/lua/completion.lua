@@ -50,7 +50,7 @@ return {
                 { name = "buffer", keyword_length = 3 },
                 { name = "path" },
                 { name = "nvim_lua" },
-                -- { name = "orgmode" },
+                { name = "orgmode" },
             },
             formatting = {
                 format = require("lspkind").cmp_format {
@@ -64,6 +64,7 @@ return {
                         emoji = "(Emoji)",
                         nvim_lua = "[Lua]",
                         latex_symbols = "[Latex]",
+                        orgmode = "[ORG]"
                     },
                 },
             },

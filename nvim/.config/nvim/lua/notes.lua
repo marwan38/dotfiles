@@ -17,7 +17,7 @@ return {
     setup = function()
         require("orgmode").setup {
             org_agenda_files = { "~/org/**/*" },
-            org_default_notes_file = "~/org/main.org",
+            org_default_notes_file = "~/org/notes.org",
         }
 
         require("org-bullets").setup {

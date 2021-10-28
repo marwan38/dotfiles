@@ -281,11 +281,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/plenary.nvim"
   },
-  ["project.nvim"] = {
-    config = { "\27LJ\2\2ˆ\1\0\0\2\0\a\0\r6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\0016\0\0\0'\1\4\0B\0\2\0029\0\5\0'\1\6\0B\0\2\1K\0\1\0\rprojects\19load_extension\14telescope\1\0\1\16manual_mode\2\nsetup\17project_nvim\frequire\0" },
-    loaded = true,
-    path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/project.nvim"
-  },
   ["rust-tools.nvim"] = {
     loaded = true,
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/rust-tools.nvim"
@@ -397,10 +392,6 @@ time([[packadd for vim-test]], false)
 time([[Config for hop.nvim]], true)
 try_loadstring("\27LJ\2\0021\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\bhop\frequire\0", "config", "hop.nvim")
 time([[Config for hop.nvim]], false)
--- Config for: project.nvim
-time([[Config for project.nvim]], true)
-try_loadstring("\27LJ\2\2ˆ\1\0\0\2\0\a\0\r6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\0016\0\0\0'\1\4\0B\0\2\0029\0\5\0'\1\6\0B\0\2\1K\0\1\0\rprojects\19load_extension\14telescope\1\0\1\16manual_mode\2\nsetup\17project_nvim\frequire\0", "config", "project.nvim")
-time([[Config for project.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd cmp-vsnip ]]
