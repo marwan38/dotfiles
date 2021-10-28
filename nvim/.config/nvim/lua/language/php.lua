@@ -4,7 +4,7 @@ return {
             "phpactor/phpactor",
             branch = "master",
             ft = "php",
-            run = "composer install --no-dev -o && bin/phpactor extension:install phpactor/phpunit-extension",
+            run = "composer install --no-dev -o && bin/phpactor extension:install phpactor/phpunit-extension && bin/phpactor extension:install phpactor/language-server-phpstan-extension",
         }
     end,
 
@@ -13,7 +13,11 @@ return {
     on_ft = function()
         -- require("lspconfig").phpactor.setup {
         --     cmd = { require("packer").config.package_root .. "/packer/opt/phpactor/bin/phpactor", "language-server" },
-        --     on_attach = require("lsp").on_attach,
+        --     on_attach = function(client, bufnr)
+        --         client.resolved_capabilities.dynamicRegistration = true
+        --         require("lsp").on_attach(client, bufnr)
+        --     end,
+        --     capabilities = require("lsp").common_capabilities,
         --     flags = {
         --         debounce_text_changes = 300,
         --     },
@@ -42,13 +46,23 @@ return {
 
         local null_ls = require "null-ls"
 
-        null_ls.register(null_ls.builtins.diagnostics.phpstan.with {
-            args = { "analyze", "--error-format", "json", "--no-progress", "--memory-limit", "512M", "$FILENAME", "--debug", "-vvv" },
-            command = "./vendor/bin/phpstan",
-            condition = function(utils)
-                return utils.root_has_file "phpstan.neon"
-            end,
-        })
+        -- null_ls.register(null_ls.builtins.diagnostics.phpstan.with {
+        --     args = {
+        --         "analyze",
+        --         "--error-format",
+        --         "json",
+        --         "--no-progress",
+        --         "--memory-limit",
+        --         "2048M",
+        --         "$FILENAME",
+        --         -- "--debug",
+        --         -- "-vvv",
+        --     },
+        --     command = "./vendor/bin/phpstan",
+        --     -- condition = function(utils)
+        --     --     return utils.root_has_file "phpstan.neon"
+        --     -- end,
+        -- })
 
         null_ls.register(null_ls.builtins.diagnostics.phpcs.with {
             command = "./vendor/bin/phpcs",

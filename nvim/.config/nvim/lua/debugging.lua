@@ -75,7 +75,7 @@ return {
                 i = { "<cmd>lua require'dap'.step_into()<cr>", "Step Into" },
                 o = { "<cmd>lua require'dap'.step_over()<cr>", "Step Over" },
                 u = { "<cmd>lua require'dap'.step_out()<cr>", "Step Out" },
-                U = { "<cmd>lua require'dapui'.toggle()<cr>", "Step Out" },
+                U = { "<cmd>lua require'dapui'.toggle()<cr>", "UI Toggle" },
                 p = { "<cmd>lua require'dap'.pause.toggle()<cr>", "Pause" },
                 r = { "<cmd>lua require'dap'.repl.toggle()<cr>", "Toggle Repl" },
 

@@ -72,7 +72,7 @@ return {
         map("n", "<leader>/", ":CommentToggle<CR>", { noremap = true, silent = true })
         map("v", "<leader>/", ":CommentToggle<CR>", { noremap = true, silent = true })
 
-        map("n", "<ESC>", ":nohl<CR>", { silent = true })
+        map("n", "<ESC>", ":nohl<CR>:mod<CR>", { silent = true })
 
         map("n", "n", "nzz", { silent = true })
         map("n", "N", "Nzz", { silent = true })
