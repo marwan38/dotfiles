@@ -97,7 +97,7 @@ return {
                 pathMappings = {
                     ["/srv/archipro/www/marwan/"] = "${workspaceFolder}/",
                 },
-                stopOnEntry = true,
+                stopOnEntry = false,
                 ignore = {
                     "**/silverstripe-cache/**/*.php",
                     "**/vendor/**/*.php",

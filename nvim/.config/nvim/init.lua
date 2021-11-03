@@ -19,9 +19,11 @@ packer.init {
         clone_timeout = 1500, -- Timeout, in seconds, for git clones
     },
 }
-
-require "bindings"
 require "globals"
+require "bindings"
+
+_G.__theme = "gruvchad"
+require("colors").init(__theme)
 
 local layers = {
     require "options",

@@ -9,9 +9,12 @@ return {
             "lukas-reineke/headlines.nvim",
             requires = { "kristijanhusak/orgmode.nvim" },
         }
-
         use { "michaelb/sniprun", run = "bash ./install.sh" }
         use { "dhruvasagar/vim-table-mode" }
+
+        -- use {
+        --     "vimwiki/vimwiki",
+        -- }
     end,
 
     setup = function()
@@ -27,5 +30,3 @@ return {
         require("headlines").setup {}
     end,
 }
-
-

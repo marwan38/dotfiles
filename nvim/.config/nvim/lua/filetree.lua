@@ -13,9 +13,7 @@ return {
                 folder_arrows = 1,
                 tree_width = 30,
             },
-            ignore = { ".git", "node_modules", ".cache" },
             quit_on_open = 1,
-            hide_dotfiles = 0,
             git_hl = 1,
             root_folder_modifier = table.concat { ":t:gs?$?/..", string.rep(" ", 1000), "?:gs?^??" },
             highlight_opened_files = 1,
@@ -67,6 +65,11 @@ return {
                 allow_resize = true,
                 side = "left",
                 width = 40,
+            },
+
+            filters = {
+                dotfiles = false,
+                custom = { ".git" },
             },
         }
     end,

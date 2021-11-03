@@ -2,14 +2,10 @@ return {
     plugins = function(use)
         use { "Mofiqul/dracula.nvim" }
         use { "sainnhe/gruvbox-material" }
+        use { "rmehri01/onenord.nvim" }
         use "monsonjeremy/onedark.nvim"
-        use {
-            "nvim-lualine/lualine.nvim",
-            requires = {
-                "kyazdani42/nvim-web-devicons",
-                opt = true,
-            },
-        }
+        use "kyazdani42/nvim-web-devicons"
+        use "famiu/feline.nvim"
         use "lukas-reineke/indent-blankline.nvim"
         use "folke/which-key.nvim"
         use "akinsho/nvim-bufferline.lua"
@@ -30,61 +26,30 @@ return {
 
         require("which-key").setup {}
 
-        vim.cmd [[
-            let g:gruvbox_material_background = 'medium'
-            let g:gruvbox_material_diagnostic_virtual_text = 'colored'
-            let g:gruvbox_material_enable_italic = 1
-            colorscheme gruvbox-material
-        ]]
-
-        -- vim.cmd [[colorscheme dracula]]
-
         require("lsp-status").register_progress()
 
-        require("lualine").setup {
-            options = {
-                theme = "auto",
-                -- component_separators = { left = "", right = "" },
-                -- section_separators = { left = "", right = "" },
-            },
-            extensions = { "fugitive", "nvim-tree", "quickfix" },
-            sections = {
-                lualine_c = {
-                    "require'lsp-status'.status()",
-                },
-            },
-        }
+        require "plugins.configs.feline"
 
         require("indent_blankline").setup {
+            indentLine_enabled = 1,
             char = "▏",
-            space_char_blankline = " ",
-            buftype_exclude = { "terminal" },
-            filetype_exclude = { "dashboard" },
-        }
-        -- fix https://github.com/lukas-reineke/indent-blankline.nvim/issues/59
-        vim.opt.colorcolumn = "99999"
 
-        require("bufferline").setup {
-            options = {
-                numbers = "ordinal",
-                -- close_command = function(bufnum)
-                --     require("bufdelete").bufdelete(bufnum, true)
-                -- end,
-                right_mouse_command = nil,
-                diagnostics = "nvim_lsp",
-                diagnostics_indicator = function(count, level)
-                    return "(" .. count .. ")"
-                end,
-                offsets = { { filetype = "NvimTree", text = "File Explorer", text_align = "left" } },
-                custom_filter = function(buf_number)
-                    if vim.bo[buf_number].filetype == "" then
-                        return false
-                    end
+            filetype_exclude = {
+                "help",
+                "terminal",
+                "dashboard",
+                "packer",
+                "lspinfo",
+                "TelescopePrompt",
 
-                    return true
-                end,
+                "TelescopeResults",
             },
+            buftype_exclude = { "terminal" },
+            show_trailing_blankline_indent = true,
+            show_first_indent_level = false,
         }
+
+        require "plugins.configs.bufferline"
     end,
 
     bindings = function(map)

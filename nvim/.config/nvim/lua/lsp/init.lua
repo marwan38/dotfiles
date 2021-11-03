@@ -30,7 +30,6 @@ local function add_lsp_buffer_keybindings(bufnr)
 end
 
 local function lsp_highlight_document(client)
-    -- Set autocommands conditional on server_capabilities
     if client.resolved_capabilities.document_highlight then
         vim.api.nvim_exec(
             [[
@@ -54,6 +53,7 @@ local function lsp_code_lens_refresh(client)
         autocmd InsertLeave <buffer> lua vim.lsp.codelens.refresh()
         autocmd InsertLeave <buffer> lua vim.lsp.codelens.display()
       augroup END
+
     ]],
             false
         )
@@ -136,20 +136,26 @@ return {
 
     on_attach = function(client, bufnr)
         require("lsp_signature").on_attach({
-            bind = false,
-            hint_enable = false,
+            bind = true,
 
-            padding = " ",
+            doc_lines = 0,
+            floating_window = true,
+            fix_pos = true,
+            hint_enable = true,
+            hint_prefix = " ",
+            hint_scheme = "String",
+            hi_parameter = "Search",
+            max_height = 22,
+            max_width = 120, -- max_width of signature floating_window, line will be wrapped if exceed max_width
             handler_opts = {
-                border = "none",
+                border = "single", -- double, single, shadow, none
             },
-            always_trigger = false,
-            auto_close_after = 10,
-            toggle_key = "<M-s>",
+            zindex = 200, -- by default it will be on top of all floating windows, set to 50 send it to bottom
+            padding = "", -- character to pad on left and right of signature can be ' ', or '|'  etc
         }, bufnr)
 
-        -- lsp_code_lens_refresh(client)
-        -- lsp_highlight_document(client)
+        lsp_code_lens_refresh(client)
+        lsp_highlight_document(client)
         add_lsp_buffer_keybindings(bufnr)
 
         local status_ok, lsp_status = pcall(require, "lsp-status")
