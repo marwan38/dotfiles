@@ -57,7 +57,7 @@ local config = { -- statusline related options
     shown = {},
 
     -- default, round , slant , block , arrow
-    style = "default",
+    style = "block",
 }
 
 -- statusline style
@@ -206,7 +206,7 @@ components.active[2][1] = {
         if Lsp then
             local msg = Lsp.message or ""
             local percentage = Lsp.percentage or 0
-            local title = Lsp.title or ""
+            local title = (Lsp.title ~= "empty title" and Lsp.title) or Lsp.name
             local spinners = {
                 "",
                 "",

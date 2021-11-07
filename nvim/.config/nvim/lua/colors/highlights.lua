@@ -102,9 +102,10 @@ fg("DashboardHeader", grey_fg)
 fg("DashboardShortcut", grey_fg)
 
 -- Git signs
-fg_bg("DiffAdd", nord_blue, "none")
+fg_bg("DiffAdd", green, "none")
 fg_bg("DiffChange", grey_fg, "none")
-fg_bg("DiffModified", nord_blue, "none")
+fg_bg("DiffModified", yellow, "none")
+fg_bg("DiffDelete", red, "none")
 
 -- Indent blankline plugin
 fg("IndentBlanklineChar", line)

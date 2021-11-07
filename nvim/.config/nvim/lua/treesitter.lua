@@ -5,6 +5,7 @@ return {
         use "nvim-treesitter/nvim-treesitter-textobjects"
         use "JoosepAlviste/nvim-ts-context-commentstring"
         use "windwp/nvim-ts-autotag"
+        use "RRethy/nvim-treesitter-textsubjects"
         use "andymass/vim-matchup"
         use { "nvim-treesitter/playground", run = ":TSInstall query" }
     end,
@@ -102,6 +103,13 @@ return {
                     goto_previous_end = {
                         ["[M"] = "@function.outer",
                     },
+                },
+            },
+            textsubjects = {
+                enable = true,
+                keymaps = {
+                    ["."] = "textsubjects-smart",
+                    [";"] = "textsubjects-container-outer",
                 },
             },
             highlight = {

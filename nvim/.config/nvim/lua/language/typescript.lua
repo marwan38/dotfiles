@@ -9,6 +9,7 @@ return {
         local capabilities = lsp.common_capabilities
 
         lspconfig.tsserver.setup {
+            init_options = require("nvim-lsp-ts-utils").init_options,
             on_attach = function(client, bufnr)
                 -- disable tsserver formatting if you plan on formatting via null-ls
                 client.resolved_capabilities.document_formatting = false
@@ -35,6 +36,10 @@ return {
                     update_imports_on_move = true,
                     -- filter out dumb module warning
                     filter_out_diagnostics_by_code = { 80001 },
+
+                    -- inlay hints
+                    auto_inlay_hints = true,
+                    inlay_hints_highlight = "Comment",
                 }
 
                 ts_utils.setup_client(client)
