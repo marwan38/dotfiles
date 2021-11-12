@@ -38,7 +38,7 @@ return {
                     filter_out_diagnostics_by_code = { 80001 },
 
                     -- inlay hints
-                    auto_inlay_hints = true,
+                    auto_inlay_hints = false, -- getting many annoynig errors
                     inlay_hints_highlight = "Comment",
                 }
 

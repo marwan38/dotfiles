@@ -48,7 +48,7 @@ return {
                 --                 qflist_previewer = require("telescope.previewers").vim_buffer_qflist.new,
                 --                 -- Developer configurations: Not meant for general override
                 --                 buffer_previewer_maker = require("telescope.previewers").buffer_previewer_maker,
-                path_display = { shorten = 3 },
+                -- path_display = { shorten = 3 },
                 mappings = {
                     i = {
                         ["<C-j>"] = actions.move_selection_next,

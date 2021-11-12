@@ -1,6 +1,6 @@
 return {
     plugins = function(use)
-        use { "kristijanhusak/orgmode.nvim", branch = "tree-sitter" }
+        use { "kristijanhusak/orgmode.nvim" }
         use {
             "akinsho/org-bullets.nvim",
             requires = { "kristijanhusak/orgmode.nvim" },
