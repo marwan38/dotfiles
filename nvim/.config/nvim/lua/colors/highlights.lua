@@ -103,9 +103,11 @@ fg("DashboardShortcut", grey_fg)
 
 -- Git signs
 fg_bg("DiffAdd", green, "none")
+fg_bg("DiffAdded", green, "none")
 fg_bg("DiffChange", grey_fg, "none")
 fg_bg("DiffModified", yellow, "none")
 fg_bg("DiffDelete", red, "none")
+fg_bg("DiffRemoved", red, "none")
 
 -- Indent blankline plugin
 fg("IndentBlanklineChar", line)
