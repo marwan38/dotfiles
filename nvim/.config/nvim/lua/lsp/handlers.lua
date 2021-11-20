@@ -10,11 +10,11 @@ function M.setup()
 
     local config = { -- your config
         signs = true,
-        -- virtual_text = false,
-        virtual_text = {
-            source = "always",
-            -- spacing = 0,
-        },
+        virtual_text = false,
+        -- virtual_text = {
+        --     source = "always",
+        --     -- spacing = 0,
+        -- },
         update_in_insert = false,
 
         underline = true,

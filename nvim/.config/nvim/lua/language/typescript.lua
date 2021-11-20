@@ -21,24 +21,13 @@ return {
                     -- debug = true,
                     enable_import_on_completion = true,
                     import_all_scan_buffers = 100,
-                    eslint_bin = "eslint_d",
 
-                    eslint_enable_diagnostics = true,
-                    eslint_opts = {
-                        condition = function(utils)
-                            return utils.root_has_file ".eslintrc.js" or utils.root_has_file "package.json"
-                        end,
-
-                        diagnostics_format = "#{m} [#{c}]",
-                    },
-                    enable_formatting = true,
-                    formatter = "eslint_d",
                     update_imports_on_move = true,
                     -- filter out dumb module warning
                     filter_out_diagnostics_by_code = { 80001 },
 
                     -- inlay hints
-                    auto_inlay_hints = false, -- getting many annoynig errors
+                    auto_inlay_hints = true, -- getting many annoynig errors
                     inlay_hints_highlight = "Comment",
                 }
 
@@ -51,10 +40,16 @@ return {
             },
         }
 
+        lspconfig.eslint.setup {
+            on_attach = lsp.on_attach,
+            capabilities,
+        }
+
         local null_ls = require "null-ls"
         null_ls.register(null_ls.builtins.diagnostics.stylelint.with {
             filetypes = { "typescript", "typescriptreact" },
             command = "./node_modules/.bin/stylelint",
+            -- args = { "--formatter", "json", "--stdin", "$FILENAME" },
             condition = function(utils)
                 return utils.root_has_file ".stylelintrc"
             end,
@@ -68,7 +63,13 @@ return {
         })
     end,
 
-    on_ft = function() end,
+    on_ft = function()
+        local wk = require "which-key"
+
+        wk.register {
+            ["<leader>lf"] = { "<cmd> EslintFixAll<CR>", "EslintFixAll" },
+        }
+    end,
 }
 
 -- For when ESLint LSP is stable
