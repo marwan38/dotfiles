@@ -4,11 +4,14 @@ return {
             "vim-test/vim-test",
             setup = function()
                 vim.cmd [[
-                    let test#strategy = "neovim"
-                    let test#neovim#term_position = "vert botright 200"
+                    let test#strategy = "vimux"
                 ]]
             end,
+            requires = {
+                "preservim/vimux",
+            },
         }
+        use { "rcarriga/vim-ultest", requires = { "vim-test/vim-test" }, run = ":UpdateRemotePlugins" }
     end,
 
     bindings = function(_, wk)

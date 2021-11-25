@@ -448,6 +448,11 @@ _G.packer_plugins = {
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
   },
+  ["vim-ultest"] = {
+    loaded = true,
+    path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-ultest",
+    url = "https://github.com/rcarriga/vim-ultest"
+  },
   ["vim-unimpaired"] = {
     loaded = true,
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-unimpaired",
@@ -463,6 +468,11 @@ _G.packer_plugins = {
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ",
     url = "https://github.com/hrsh7th/vim-vsnip-integ"
   },
+  vimux = {
+    loaded = true,
+    path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/vimux",
+    url = "https://github.com/preservim/vimux"
+  },
   ["which-key.nvim"] = {
     loaded = true,
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/which-key.nvim",
@@ -473,7 +483,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Setup for: vim-test
 time([[Setup for vim-test]], true)
-try_loadstring("\27LJ\2\2®\1\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0Ž\1                    let test#strategy = \"neovim\"\n                    let test#neovim#term_position = \"vert botright 200\"\n                \bcmd\bvim\0", "setup", "vim-test")
+try_loadstring("\27LJ\2\2d\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0E                    let test#strategy = \"vimux\"\n                \bcmd\bvim\0", "setup", "vim-test")
 time([[Setup for vim-test]], false)
 time([[packadd for vim-test]], true)
 vim.cmd [[packadd vim-test]]

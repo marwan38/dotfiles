@@ -97,8 +97,18 @@ M.buf_augroup = function(name, event, fn)
             event,
             fn
         ),
-        false
+        true
     )
+end
+
+M.contains = function(table, key)
+    for _, value in ipairs(table) do
+        if value == key then
+            return true
+        end
+    end
+
+    return false
 end
 
 return M

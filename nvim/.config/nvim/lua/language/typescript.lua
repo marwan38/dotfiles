@@ -41,7 +41,9 @@ return {
         }
 
         lspconfig.eslint.setup {
-            on_attach = lsp.on_attach,
+            on_attach = function(client, bufnr)
+                lsp.on_attach(client, bufnr)
+            end,
             capabilities,
         }
 
@@ -61,14 +63,6 @@ return {
                 return utils.root_has_file ".stylelintrc"
             end,
         })
-    end,
-
-    on_ft = function()
-        local wk = require "which-key"
-
-        wk.register {
-            ["<leader>lf"] = { "<cmd> EslintFixAll<CR>", "EslintFixAll" },
-        }
     end,
 }
 

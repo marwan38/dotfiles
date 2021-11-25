@@ -8,9 +8,7 @@ return {
         }
     end,
 
-    setup = function() end,
-
-    on_ft = function()
+    setup = function()
         -- require("lspconfig").phpactor.setup {
         --     cmd = { require("packer").config.package_root .. "/packer/opt/phpactor/bin/phpactor", "language-server" },
         --     on_attach = function(client, bufnr)
@@ -139,7 +137,9 @@ return {
         --         port = 9000,
         --     },
         -- })
+    end,
 
+    on_ft = function()
         require("which-key").register {
             ["<leader>l"] = {
                 name = "+Php",
