@@ -6,7 +6,7 @@ return {
         use "JoosepAlviste/nvim-ts-context-commentstring"
         use "windwp/nvim-ts-autotag"
         use "RRethy/nvim-treesitter-textsubjects"
-        use "andymass/vim-matchup"
+        -- use "andymass/vim-matchup"
         use { "nvim-treesitter/playground", run = ":TSInstall query" }
     end,
 
@@ -123,10 +123,10 @@ return {
             autopairs = {
                 enable = false,
             },
-            matchup = {
-                enable = true,
-                disable = {},
-            },
+            -- matchup = {
+            --     enable = false, -- Keeps erroring out with PHP
+            --     disable = {},
+            -- },
             context_commentstring = {
                 enable = true,
                 enable_autocmd = false, -- for nvim-comment integration

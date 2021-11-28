@@ -56,16 +56,4 @@ return {
             true
         )
     end,
-
-    on_gitrebase_ft = function()
-        require("which-key").register {
-            ["<leader>grp"] = { ":Pick<CR>", "Pick", buffer = 0 },
-            ["<leader>grr"] = { ":Reword<CR>", "Reword", buffer = 0 },
-            ["<leader>gre"] = { ":Edit<CR>", "Edit", buffer = 0 },
-            ["<leader>grs"] = { ":Squash<CR>", "Squash", buffer = 0 },
-            ["<leader>grf"] = { ":Fixup<CR>", "Fixup", buffer = 0 },
-            ["<leader>grb"] = { ":Break<CR>", "Break", buffer = 0 },
-            ["<leader>grd"] = { ":Drop<CR>", "Drop", buffer = 0 },
-        }
-    end,
 }

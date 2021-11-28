@@ -49,7 +49,7 @@ return {
         require("nvim-tree").setup {
             diagnostics = { enable = true },
 
-            disable_netrw = true,
+            disable_netrw = false,
             hijack_netrw = true,
             ignore_ft_on_setup = { "dashboard" },
             auto_close = false,
