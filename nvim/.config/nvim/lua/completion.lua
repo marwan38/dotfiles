@@ -31,14 +31,15 @@ return {
             },
 
             mapping = {
-                ["<C-p>"] = cmp.mapping.select_prev_item(),
-                ["<C-n>"] = cmp.mapping.select_next_item(),
-                ["<C-d>"] = cmp.mapping.scroll_docs(-4),
-                ["<C-f>"] = cmp.mapping.scroll_docs(4),
-                ["<C-Space>"] = cmp.mapping.complete(),
-                ["<C-e>"] = cmp.mapping.close(),
-                ["<Tab>"] = cmp.mapping(cmp.mapping.select_next_item(), { "i", "s" }),
-                ["<S-Tab>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "s" }),
+                ["<C-b>"] = cmp.mapping(cmp.mapping.scroll_docs(-4), { "i", "c" }),
+                ["<C-f>"] = cmp.mapping(cmp.mapping.scroll_docs(4), { "i", "c" }),
+                ["<C-Space>"] = cmp.mapping(cmp.mapping.complete(), { "i", "c" }),
+                ["<C-e>"] = cmp.mapping {
+                    i = cmp.mapping.abort(),
+                    c = cmp.mapping.close(),
+                },
+                ["<C-n>"] = cmp.mapping(cmp.mapping.select_next_item(), { "i", "s" }),
+                ["<C-p>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "s" }),
                 ["<CR>"] = cmp.mapping.confirm {
                     behavior = cmp.ConfirmBehavior.Replace,
                     select = true,
@@ -73,6 +74,11 @@ return {
 
         require("nvim-autopairs").setup {
             check_ts = true,
+            enable_check_bracket_line = false,
+            ts_config = {
+                lua = { "string" },
+                javascript = { "template_string" },
+            },
         }
     end,
     bindings = function(map)

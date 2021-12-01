@@ -16,6 +16,7 @@ local one_bg = colors.one_bg
 local one_bg2 = colors.one_bg2
 local pmenu_bg = colors.pmenu_bg
 local purple = colors.purple
+local dark_purple = colors.dark_purple
 local red = colors.red
 local white = colors.white
 local yellow = colors.yellow
@@ -161,3 +162,16 @@ fg("TelescopeBorder", one_bg)
 fg_bg("TelescopePreviewTitle", green, one_bg)
 fg_bg("TelescopePromptTitle", blue, one_bg)
 fg_bg("TelescopeResultsTitle", red, one_bg)
+
+-- Nvim-cmp
+fg("CmpItemAbbrDeprecated", grey_fg)
+fg("CmpItemAbbrMatch", blue)
+fg("CmpItemAbbrMatchFuzzy", blue)
+fg("CmpItemKindVariable", nord_blue)
+fg("CmpItemKindInterface", nord_blue)
+fg("CmpItemKindText", nord_blue)
+fg("CmpItemKindFunction", purple)
+fg("CmpItemKindMethod", purple)
+fg("CmpItemKindKeyword", white)
+fg("CmpItemKindProperty", white)
+fg("CmpItemKindUnit", white)

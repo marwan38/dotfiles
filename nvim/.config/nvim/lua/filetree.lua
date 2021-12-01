@@ -15,7 +15,7 @@ return {
             },
             quit_on_open = 1,
             git_hl = 1,
-            root_folder_modifier = table.concat { ":t:gs?$?/..", string.rep(" ", 1000), "?:gs?^??" },
+            root_folder_modifier = ":t",
             highlight_opened_files = 1,
             allow_resize = 1,
             auto_ignore_ft = { "dashboard" },

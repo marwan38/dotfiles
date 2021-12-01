@@ -22,7 +22,7 @@ packer.init {
 require "globals"
 require "bindings"
 
-_G.__theme = "gruvchad"
+_G.__theme = "chadracula"
 require("colors").init(__theme)
 
 local layers = {

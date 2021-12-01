@@ -106,9 +106,9 @@ return {
                 name = "Launch currently open script",
                 type = "php",
                 request = "launch",
-                program = "${file}",
-                cwd = "${fileDirname}",
-                port = 9000,
+                -- program = "${file}",
+                cwd = "${workspaceRoot}",
+                port = 9003,
             },
         }
         -- local dap_install = require "dap-install"

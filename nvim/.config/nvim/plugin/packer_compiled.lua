@@ -129,13 +129,8 @@ _G.packer_plugins = {
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/gruvbox-material",
     url = "https://github.com/sainnhe/gruvbox-material"
   },
-  ["headlines.nvim"] = {
-    loaded = true,
-    path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/headlines.nvim",
-    url = "https://github.com/lukas-reineke/headlines.nvim"
-  },
   ["hop.nvim"] = {
-    config = { "\27LJ\2\0021\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\bhop\frequire\0" },
+    config = { "\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\bhop\frequire\0" },
     loaded = true,
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/hop.nvim",
     url = "https://github.com/phaazon/hop.nvim"
@@ -305,16 +300,6 @@ _G.packer_plugins = {
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/onenord.nvim",
     url = "https://github.com/rmehri01/onenord.nvim"
   },
-  ["org-bullets.nvim"] = {
-    loaded = true,
-    path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/org-bullets.nvim",
-    url = "https://github.com/akinsho/org-bullets.nvim"
-  },
-  ["orgmode.nvim"] = {
-    loaded = true,
-    path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/orgmode.nvim",
-    url = "https://github.com/kristijanhusak/orgmode.nvim"
-  },
   ["package-info.nvim"] = {
     loaded = true,
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/package-info.nvim",
@@ -346,11 +331,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
     url = "https://github.com/simrat39/rust-tools.nvim"
-  },
-  sniprun = {
-    loaded = true,
-    path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/sniprun",
-    url = "https://github.com/michaelb/sniprun"
   },
   ["splitjoin.vim"] = {
     loaded = true,
@@ -427,11 +407,6 @@ _G.packer_plugins = {
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
   },
-  ["vim-table-mode"] = {
-    loaded = true,
-    path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-table-mode",
-    url = "https://github.com/dhruvasagar/vim-table-mode"
-  },
   ["vim-test"] = {
     loaded = true,
     needs_bufread = false,
@@ -444,6 +419,7 @@ _G.packer_plugins = {
     url = "https://github.com/christoomey/vim-tmux-navigator"
   },
   ["vim-ultest"] = {
+    config = { "\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0" },
     loaded = true,
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/vim-ultest",
     url = "https://github.com/rcarriga/vim-ultest"
@@ -468,6 +444,11 @@ _G.packer_plugins = {
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/vimux",
     url = "https://github.com/preservim/vimux"
   },
+  vimwiki = {
+    loaded = true,
+    path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/vimwiki",
+    url = "https://github.com/vimwiki/vimwiki"
+  },
   ["which-key.nvim"] = {
     loaded = true,
     path = "/home/marwan38/.local/share/nvim/site/pack/packer/start/which-key.nvim",
@@ -478,14 +459,18 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Setup for: vim-test
 time([[Setup for vim-test]], true)
-try_loadstring("\27LJ\2\2d\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0E                    let test#strategy = \"vimux\"\n                \bcmd\bvim\0", "setup", "vim-test")
+try_loadstring("\27LJ\2\nd\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0E                    let test#strategy = \"vimux\"\n                \bcmd\bvim\0", "setup", "vim-test")
 time([[Setup for vim-test]], false)
 time([[packadd for vim-test]], true)
 vim.cmd [[packadd vim-test]]
 time([[packadd for vim-test]], false)
+-- Config for: vim-ultest
+time([[Config for vim-ultest]], true)
+try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0", "config", "vim-ultest")
+time([[Config for vim-ultest]], false)
 -- Config for: hop.nvim
 time([[Config for hop.nvim]], true)
-try_loadstring("\27LJ\2\0021\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\bhop\frequire\0", "config", "hop.nvim")
+try_loadstring("\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\bhop\frequire\0", "config", "hop.nvim")
 time([[Config for hop.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
