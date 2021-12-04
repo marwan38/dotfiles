@@ -117,7 +117,6 @@ return require'packer'.startup {
       cond = vim.g.neovide or vim.g.nvui
     }
     use { 'windwp/nvim-spectre', config = conf("spectre") }
-    use { 'mileszs/ack.vim' }
     use { 'mattn/emmet-vim', setup = function ()
       vim.g.user_emmet_leader_key = "<C-Z>"
     end }
