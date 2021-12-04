@@ -45,25 +45,8 @@ return function()
       ["<CR>"] = cmp.mapping.confirm { select = true, behavior = cmp.ConfirmBehavior.Replace },
     },
     formatting = {
-      deprecated = true,
-      fields = { "kind", "abbr", "menu" },
-      format = function(entry, vim_item)
-        vim_item.kind = lsp_kinds[vim_item.kind]
-        vim_item.menu = ({
-          nvim_lsp = "[LSP]",
-          nvim_lua = "[Lua]",
-          emoji = "[Emoji]",
-          path = "[Path]",
-          calc = "[Calc]",
-          neorg = "[Neorg]",
-          orgmode = "[Org]",
-          luasnip = "[Luasnip]",
-          buffer = "[Buffer]",
-          spell = "[Spell]",
-          snippet = "[Snippet]"
-        })[entry.source.name]
-        return vim_item
-      end,
+      -- fields = { "kind", "abbr", "menu" },
+      format = require("lspkind").cmp_format { with_text = true, maxwidth = 300 },
     },
     documentation = {
       border = "single",

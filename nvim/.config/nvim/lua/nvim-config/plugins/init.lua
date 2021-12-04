@@ -48,6 +48,7 @@ return require("packer").startup {
     use { "neovim/nvim-lspconfig" }
     use { "jose-elias-alvarez/null-ls.nvim" }
     use { "jose-elias-alvarez/nvim-lsp-ts-utils" }
+    use { "onsails/lspkind-nvim" }
 
     use {
       "ray-x/lsp_signature.nvim",
@@ -226,7 +227,6 @@ return require("packer").startup {
         vim.g.mkdp_browserfunc = "MkdpOpenInNewWindow"
       end,
     }
-    use { "honza/vim-snippets" }
 
     -- THEMES
     use { "rktjmp/lush.nvim" }
