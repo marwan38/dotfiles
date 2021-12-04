@@ -1,8 +1,15 @@
+local opt = vim.opt
+
+local function list(value, str, sep)
+    sep = sep or ","
+    str = str or ""
+    value = type(value) == "table" and table.concat(value, sep) or value
+    return str ~= "" and table.concat({ value, str }, sep) or value
+end
+
 return {
     setup = function()
         vim.g.mapleader = " "
-
-        local opt = vim.opt
 
         opt.cursorline = true
         opt.number = true
@@ -43,7 +50,7 @@ return {
         opt.undofile = true
         opt.signcolumn = "yes"
         opt.lazyredraw = true
-        opt.clipboard = "unnamedplus"
+        -- opt.clipboard = "unnamedplus"
         opt.splitbelow = true -- open help menu at the bottom
         opt.splitright = true -- open help menu at the bottom
         opt.updatetime = 300
@@ -51,5 +58,47 @@ return {
         opt.foldmethod = "expr"
         opt.foldexpr = "nvim_treesitter#foldexpr()"
         opt.foldlevel = 99
+
+        vim.cmd [[
+set clipboard+=unnamedplus
+let g:clipboard = {
+          \   'name': 'win32yank-wsl',
+          \   'copy': {
+          \      '+': 'win32yank.exe -i --crlf',
+          \      '*': 'win32yank.exe -i --crlf',
+          \    },
+          \   'paste': {
+          \      '+': 'win32yank.exe -o --lf',
+          \      '*': 'win32yank.exe -o --lf',
+          \   },
+          \   'cache_enabled': 0,
+          \ }
+        ]]
+
+        -- opt.diffopt = list {
+        --     "algorithm:histogram",
+        --     "internal",
+        --     "indent-heuristic",
+        --     "filler",
+        --     "closeoff",
+        --     "iwhite",
+        --     "vertical",
+        -- }
+        -- opt.listchars = list {
+        --     "tab: ──",
+        --     "space:·",
+        --     "nbsp:␣",
+        --     "trail:•",
+        --     "eol:↵",
+        --     "precedes:«",
+        --     "extends:»",
+        -- }
+        opt.fillchars = list {
+            "vert:▏",
+            "diff:╱",
+            "foldclose:",
+            "foldopen:",
+        }
+        opt.showbreak = "⤷ "
     end,
 }

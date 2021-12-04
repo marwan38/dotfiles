@@ -16,6 +16,7 @@ return {
     end,
 
     setup = function()
+        -- vim.cmd [[colorscheme dracula]]
         require("bqf").setup {}
         require("colorizer").setup()
 

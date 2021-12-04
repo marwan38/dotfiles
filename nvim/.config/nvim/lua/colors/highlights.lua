@@ -1,6 +1,9 @@
 local cmd = vim.cmd
 
 local colors = require("colors").get()
+local hl = require "colors.hl"
+local Color = require "colors.color".Color
+local hi, hi_link, hi_clear = hl.hi, hl.hi_link, hl.hi_clear
 
 local black = colors.black
 local black2 = colors.black2
@@ -56,6 +59,27 @@ else
     fg("Comment", grey_fg)
 end
 
+local function generate_diff_colors()
+    local bg = vim.o.bg
+    local hl_bg_normal = hl.get_bg "Normal" or (bg == "dark" and "#111111" or "#eeeeee")
+
+    local bg_normal = Color.from_hex(hl_bg_normal)
+
+    local base_add = Color.from_hex(hl.get_fg "diffAdded" or "#b7ce42")
+    local base_del = Color.from_hex(hl.get_fg "diffRemoved" or "#e84f4f")
+    local base_mod = Color.from_hex(hl.get_fg "diffChanged" or "#51afef")
+
+    local bg_add = base_add:blend(bg_normal, 0.85):mod_saturation(0.05)
+    local bg_del = base_del:blend(bg_normal, 0.85):mod_saturation(0.05)
+    local bg_mod = base_mod:blend(bg_normal, 0.85):mod_saturation(0.05)
+    local bg_mod_text = base_mod:blend(bg_normal, 0.7):mod_saturation(0.05)
+
+    hi("DiffAdd", { bg = bg_add:to_css(), fg = "NONE", gui = "NONE" })
+    hi("DiffDelete", { bg = bg_del:to_css(), fg = "NONE", gui = "NONE" })
+    hi("DiffChange", { bg = bg_mod:to_css(), fg = "NONE", gui = "NONE" })
+    hi("DiffText", { bg = bg_mod_text:to_css(), fg = "NONE", gui = "NONE" })
+end
+
 -- Disable cusror line
 -- cmd "hi clear CursorLine"
 -- Line number
@@ -103,12 +127,13 @@ fg("DashboardHeader", grey_fg)
 fg("DashboardShortcut", grey_fg)
 
 -- Git signs
-fg_bg("DiffAdd", green, "none")
-fg_bg("DiffAdded", green, "none")
-fg_bg("DiffChange", grey_fg, "none")
-fg_bg("DiffModified", yellow, "none")
-fg_bg("DiffDelete", red, "none")
-fg_bg("DiffRemoved", red, "none")
+-- generate_diff_colors()
+-- fg_bg("DiffAdd", "NONE", green)
+-- fg_bg("DiffAdded", "NONE", green)
+-- fg_bg("DiffChange", "NONE", grey_fg)
+-- fg_bg("DiffModified", "NONE", yellow)
+-- fg_bg("DiffDelete", "NONE", red)
+-- fg_bg("DiffRemoved", "NONE", red)
 
 -- Indent blankline plugin
 fg("IndentBlanklineChar", line)
