@@ -60,6 +60,7 @@ return function()
           luasnip = "[Luasnip]",
           buffer = "[Buffer]",
           spell = "[Spell]",
+          snippet = "[Snippet]"
         })[entry.source.name]
         return vim_item
       end,
