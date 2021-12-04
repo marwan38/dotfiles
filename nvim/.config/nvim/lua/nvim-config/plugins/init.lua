@@ -48,8 +48,8 @@ return require("packer").startup {
     use { "neovim/nvim-lspconfig" }
     use { "jose-elias-alvarez/null-ls.nvim" }
     use { "jose-elias-alvarez/nvim-lsp-ts-utils" }
+    use "simrat39/rust-tools.nvim"
     use { "onsails/lspkind-nvim" }
-
     use {
       "ray-x/lsp_signature.nvim",
       config = function()
@@ -64,6 +64,10 @@ return require("packer").startup {
         }
       end,
     }
+
+    use { "mfussenegger/nvim-dap", config = conf "dap" }
+    use "rcarriga/nvim-dap-ui"
+
     use {
       "hrsh7th/nvim-cmp",
       requires = {

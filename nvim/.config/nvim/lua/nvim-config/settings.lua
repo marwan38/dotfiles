@@ -4,7 +4,7 @@ local function list(value, str, sep)
   sep = sep or ","
   str = str or ""
   value = type(value) == "table" and table.concat(value, sep) or value
-  return str ~= "" and table.concat({value, str}, sep) or value
+  return str ~= "" and table.concat({ value, str }, sep) or value
 end
 
 opt.number = true
@@ -30,36 +30,36 @@ opt.swapfile = true
 opt.shortmess = "filnxtToOFIA"
 opt.updatetime = 4096 -- change cursorhold time with 'vim.g.cursorhold_updatetime'
 opt.termguicolors = true
-opt.backspace = list { "indent", "eol", "start" }
+opt.backspace = list({ "indent", "eol", "start" })
 opt.inccommand = "split"
 -- opt.foldmethod = "expr"
 -- opt.foldexpr = "nvim_treesitter#foldexpr()"
 opt.foldlevelstart = 99
 opt.foldlevel = 99 -- 'foldlevelstart' isn't working correctly?
 opt.scrolloff = 3
-opt.completeopt = list { "menuone", "noselect" }
+opt.completeopt = list({ "menuone", "noselect" })
 opt.signcolumn = "yes:2"
-opt.colorcolumn = list { "100" }
-opt.sessionoptions = list {
+opt.colorcolumn = list({ "100" })
+opt.sessionoptions = list({
   "blank",
   "buffers",
   "curdir",
   "folds",
   "help",
   "tabpages",
-  "winsize"
-}
-opt.diffopt = list {
+  "winsize",
+})
+opt.diffopt = list({
   "algorithm:histogram",
   "internal",
   "indent-heuristic",
   "filler",
   "closeoff",
   "iwhite",
-  "vertical"
-}
+  "vertical",
+})
 opt.pyxversion = 3
-opt.shada = list {
+opt.shada = list({
   "!",
   "'10",
   "/100",
@@ -68,24 +68,24 @@ opt.shada = list {
   "@1",
   "f1",
   "h",
-  "s1"
-}
+  "s1",
+})
 opt.list = true
-opt.listchars = list {
+opt.listchars = list({
   "tab: ──",
   "space:·",
   "nbsp:␣",
   "trail:•",
   "eol:↵",
   "precedes:«",
-  "extends:»"
-}
-opt.fillchars = list {
+  "extends:»",
+})
+opt.fillchars = list({
   "vert:▏",
   "diff:╱",
   "foldclose:",
-  "foldopen:"
-}
+  "foldopen:",
+})
 opt.showbreak = "⤷ "
 opt.writebackup = true
 opt.undofile = true

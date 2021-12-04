@@ -60,13 +60,18 @@ _G.LspGetDefaultConfig = function()
 end
 
 -- Typescript
-require("nvim-config.lsp.typescript")
+require "nvim-config.lsp.typescript"
 
 -- PHP
-require("nvim-config.lsp.php")
+require "nvim-config.lsp.php"
 
 -- Lua
 require "nvim-config.lsp.lua"
+
+-- Rust
+require("rust-tools").setup {
+  server = LspGetDefaultConfig(),
+}
 
 -- Null-ls
 local null_ls = require "null-ls"
