@@ -1,87 +1,97 @@
-local execute = vim.api.nvim_command
-local fn = vim.fn
-
-local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
-
-if fn.empty(fn.glob(install_path)) > 0 then
-    fn.system { "git", "clone", "--depth", "1", "https://github.com/wbthomason/packer.nvim", install_path }
-    execute "packadd packer.nvim"
-end
-
-local packer = require "packer"
-packer.init {
-    display = {
-        open_fn = function()
-            return require("packer.util").float { border = "single" }
-        end,
-    },
-    git = {
-        clone_timeout = 1500, -- Timeout, in seconds, for git clones
-    },
-}
-require "globals"
-require "bindings"
-
-_G.__theme = "chadracula"
-require("colors").init(__theme)
-
-local layers = {
-    require "options",
-    require "commands",
-    require "system",
-    require "edit",
-    require "ui",
-    require "filetree",
-    require "homepage",
-    require "yanking",
-    require "completion",
-    require "treesitter",
-    require "finder",
-
-    require "diagnostics",
-    require "git",
-    require "search",
-    require "terminal",
-    require "debugging",
-    require "tmux",
-    require "testing",
-    require "notes",
-
-    require "lsp",
-    require "language/php",
-    require "language/typescript",
-    require "language/html",
-    require "language/lua",
-    require "language/json",
-    require "language/css",
-    require "language/rust",
+_G.Config = {
+  common = require("nvim-config.common"),
 }
 
-packer.startup(function(use)
-    use "wbthomason/packer.nvim"
+Config.lib = require("nvim-config.lib")
 
-    for _, layer in pairs(layers) do
-        if layer.plugins ~= nil then
-            layer.plugins(use)
-        end
-    end
-end)
+local lib = Config.lib
+local utils = Config.common.utils
+local api = vim.api
 
-for _, layer in pairs(layers) do
-    if layer.setup ~= nil then
-        layer.setup()
-    end
+_G.pi = function(a, opt)
+  print(vim.inspect(a, opt))
 end
 
-local map = vim.api.nvim_set_keymap
-for _, layer in pairs(layers) do
-    if layer.bindings ~= nil then
-        layer.bindings(map, require "which-key")
+require'nvim-config'
+
+ToggleTermSplit = lib.create_buf_toggler(
+  function()
+    return utils.find_buf_with_pattern("term_split")
+  end,
+  function()
+    vim.cmd("100 wincmd j")
+    vim.cmd("belowright sp")
+    local bufid = utils.find_buf_with_pattern("term_split")
+    if bufid then
+      vim.api.nvim_set_current_buf(bufid)
+    else
+      vim.cmd("term")
+      vim.bo.buflisted = false
+      vim.api.nvim_buf_set_name(0, "term_split")
     end
+    vim.cmd("startinsert")
+  end,
+  function()
+    local bufid = utils.find_buf_with_pattern("term_split")
+    if bufid then
+      local wins = vim.fn.win_findbuf(bufid)
+      if #wins > 0 then
+        vim.api.nvim_win_hide(wins[1])
+      end
+    end
+  end,
+  { focus = true, height = 16, remember_height = true }
+)
+
+ToggleQF = lib.create_buf_toggler(
+  function() return utils.find_buf_with_option("buftype", "quickfix") end,
+  function() vim.cmd("100 wincmd j | belowright cope") end,
+  function()
+    if vim.fn.win_gettype() == "quickfix" then
+      vim.cmd("ccl")
+    else
+      vim.cmd("lcl")
+    end
+  end,
+  { focus = true, remember_height = true }
+)
+
+ToggleSymbolsOutline = lib.create_buf_toggler(
+  function() return utils.find_buf_with_pattern("OUTLINE") end,
+  function() vim.cmd("SymbolsOutlineOpen") end,
+  function()
+    vim.cmd("SymbolsOutlineClose")
+    vim.cmd("wincmd =")
+  end
+)
+
+function OpenMessagesWin()
+  local msgs = vim.api.nvim_exec("mes", true)
+  local lines = vim.split(msgs, "\n")
+  vim.cmd("belowright new")
+  vim.cmd("wincmd J")
+  vim.api.nvim_buf_set_lines(0, 0, -1, false, lines)
+  vim.api.nvim_buf_set_var(0, "bufid", "messages_window")
+  vim.cmd("setl nolist winfixheight buftype=nofile bh=delete ft=log scl=no | f Messages")
+  vim.cmd("res " .. math.min(math.max(#lines, 3), 14))
+  vim.cmd("norm! G")
 end
 
-vim.cmd [[
-nnoremap <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
-\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
-\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
-]]
+function UpdateMessagesWin()
+  local bufid = utils.find_buf_with_var("bufid", "messages_window")
+  if bufid then
+    local msgs = vim.api.nvim_exec("mes", true)
+    local lines = vim.split(msgs, "\n")
+    vim.api.nvim_buf_set_lines(bufid, 0, -1, false, lines)
+    vim.bo[bufid].modified = false
+    local winids = vim.fn.win_findbuf(bufid)
+    if #winids > 0 then
+      api.nvim_set_current_win(winids[1])
+      vim.cmd("norm! G")
+    end
+  else
+    OpenMessagesWin()
+  end
+end
+
+return Config
