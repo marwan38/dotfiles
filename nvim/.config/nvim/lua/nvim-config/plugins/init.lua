@@ -1,4 +1,8 @@
-vim.cmd "packadd packer.nvim"
+local fn = vim.fn
+local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+if fn.empty(fn.glob(install_path)) > 0 then
+  packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+end
 
 local function conf(config_name)
   return require(string.format("nvim-config.plugins.%s", config_name))
@@ -36,6 +40,9 @@ return require("packer").startup {
       run = ":TSUpdate",
       config = conf "treesitter",
     }
+    use { "nvim-treesitter/nvim-treesitter-textobjects" }
+    use { "windwp/nvim-ts-autotag" }
+    use { "JoosepAlviste/nvim-ts-context-commentstring" }
     use { "nvim-treesitter/playground", requires = "nvim-treesitter/nvim-treesitter" }
     -- use {
     --   'lewis6991/spellsitter.nvim', config = function()
@@ -139,16 +146,16 @@ return require("packer").startup {
     }
     use { "tpope/vim-abolish" }
     use { "tpope/vim-unimpaired" }
+    use { "tpope/vim-surround" }
     use {
-      "alvan/vim-closetag",
-      setup = function()
-        vim.g.closetag_filenames = "*.html,*.xhtml,*.phtml,*.xml"
-        vim.g.closetag_filetypes = "html,xhtml,phtml,xml"
+      "phaazon/hop.nvim",
+      config = function()
+        -- you can configure Hop the way you like here; see :h hop-config
+        require("hop").setup {}
       end,
     }
-    use { "Rasukarusan/nvim-block-paste" }
+
     use { "godlygeek/tabular" }
-    use { "tpope/vim-surround" }
     use { "tweekmonster/startuptime.vim" }
     use {
       "RRethy/vim-illuminate",

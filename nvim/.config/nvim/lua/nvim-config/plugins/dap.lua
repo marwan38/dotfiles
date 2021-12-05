@@ -1,3 +1,4 @@
+return function ()
 vim.fn.sign_define("DapBreakpoint", {
   text = "",
   texthl = "LspDiagnosticsSignError",
@@ -83,3 +84,4 @@ require("dapui").setup {
   },
   windows = { indent = 1 },
 }
+end
