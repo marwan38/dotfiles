@@ -258,8 +258,8 @@ command! -bar -bang Bd lua require'nvim-config.lib'.remove_buffer("<bang>" == "!
 command! -nargs=+ Grep lua require'nvim-config.lib'.comfy_grep(<f-args>)
 command! -bar Spectre lua require'spectre'.open()
 command! -bar SpectreFile lua require'spectre'.open_file_search()
-command! -bar HiShow exe 'redir=>a | silent hi | redir END | enew | silent put=a '
-            \ . '| exe "norm! ggdj" | setl buftype=nofile | f Highlights | ColorizerAttachToBuffer'
+command! -bar HiShow exe 'redir=>a | silent hi | redir END | exe "e " . tempname() . "/Highlights" '
+            \ . '| call setline(1, split(g:a, "\n")) | setl bt=nofile | ColorizerAttachToBuffer'
 command! -bar Messages lua UpdateMessagesWin()
 command! -bar Scratch lua require'nvim-config.lib'.new_scratch_buf()
 command! -bar -nargs=1 -complete=help HelpHere lua require'nvim-config.lib'.cmd_help_here([[<args>]])
