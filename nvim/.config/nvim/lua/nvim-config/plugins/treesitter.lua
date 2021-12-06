@@ -25,6 +25,8 @@ return function()
           -- You can use the capture groups defined in textobjects.scm
           ["af"] = "@function.outer",
           ["if"] = "@function.inner",
+          ["ia"] = "@parameter.inner",
+          ["aa"] = "@parameter.outer",
         },
       },
       swap = {

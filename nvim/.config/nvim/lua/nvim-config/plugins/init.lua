@@ -115,9 +115,9 @@ return require("packer").startup {
       requires = "kyazdani42/nvim-web-devicons",
     }
     use {
-      'tamago324/lir.nvim',
-      requires = { 'tamago324/lir-git-status.nvim' },
-      config = conf("lir"),
+      "tamago324/lir.nvim",
+      requires = { "tamago324/lir-git-status.nvim" },
+      config = conf "lir",
       after = "nvim-web-devicons",
     }
     use {
@@ -136,10 +136,33 @@ return require("packer").startup {
     use { "windwp/nvim-autopairs", config = conf "nvim-autopairs" }
     use { "norcalli/nvim-colorizer.lua", config = conf "nvim-colorizer" }
     use {
-      "scrooloose/nerdcommenter",
-      setup = function()
-        vim.g.NERDSpaceDelims = 1
-        vim.g.NERDDefaultAlign = "left"
+      "numToStr/Comment.nvim",
+      config = function()
+        require("Comment").setup {
+          ---@param ctx Ctx
+          pre_hook = function(ctx)
+            -- Only calculate commentstring for tsx filetypes
+            if vim.bo.filetype == "typescriptreact" then
+              local U = require "Comment.utils"
+
+              -- Detemine whether to use linewise or blockwise commentstring
+              local type = ctx.ctype == U.ctype.line and "__default" or "__multiline"
+
+              -- Determine the location where to calculate commentstring from
+              local location = nil
+              if ctx.ctype == U.ctype.block then
+                location = require("ts_context_commentstring.utils").get_cursor_location()
+              elseif ctx.cmotion == U.cmotion.v or ctx.cmotion == U.cmotion.V then
+                location = require("ts_context_commentstring.utils").get_visual_start_location()
+              end
+
+              return require("ts_context_commentstring.internal").calculate_commentstring {
+                key = type,
+                location = location,
+              }
+            end
+          end,
+        }
       end,
     }
     use { "nvim-telescope/telescope.nvim", config = conf "telescope" }
@@ -298,6 +321,6 @@ return require("packer").startup {
     use { "olimorris/onedarkpro.nvim", branch = "main" }
     use { "RRethy/nvim-base16" }
     use { "NTBBloodbath/doom-one.nvim" }
-    use { 'catppuccin/nvim', as = "catppuccin" }
+    use { "catppuccin/nvim", as = "catppuccin" }
   end,
 }

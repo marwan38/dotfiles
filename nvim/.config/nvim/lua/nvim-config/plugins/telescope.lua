@@ -1,17 +1,35 @@
-return function ()
-  local actions = require('telescope.actions')
-  local action_state = require('telescope.actions.state')
+return function()
+  local actions = require "telescope.actions"
+  local action_state = require "telescope.actions.state"
+  local previewers = require "telescope.previewers"
 
-  require('telescope').setup{
+  -- Ignore files bigger than a threshold
+  local new_maker = function(filepath, bufnr, opts)
+    opts = opts or {}
+
+    filepath = vim.fn.expand(filepath)
+    vim.loop.fs_stat(filepath, function(_, stat)
+      if not stat then
+        return
+      end
+      if stat.size > 100000 then
+        return
+      else
+        previewers.buffer_previewer_maker(filepath, bufnr, opts)
+      end
+    end)
+  end
+
+  require("telescope").setup {
     defaults = {
       vimgrep_arguments = {
-        'rg',
-        '--color=never',
-        '--no-heading',
-        '--with-filename',
-        '--line-number',
-        '--column',
-        '--smart-case'
+        "rg",
+        "--color=never",
+        "--no-heading",
+        "--with-filename",
+        "--line-number",
+        "--column",
+        "--smart-case",
       },
       prompt_prefix = "  ",
       selection_caret = "➤ ",
@@ -32,23 +50,23 @@ return function ()
         },
       },
       path_display = {
-        "absolute"
+        "absolute",
       },
-      file_sorter =  require'telescope.sorters'.get_fuzzy_file,
+      file_sorter = require("telescope.sorters").get_fuzzy_file,
       file_ignore_patterns = {},
-      generic_sorter =  require'telescope.sorters'.get_generic_fuzzy_sorter,
+      generic_sorter = require("telescope.sorters").get_generic_fuzzy_sorter,
       winblend = 0,
       border = {},
-      borderchars = { '─', '│', '─', '│', '┌', '┐', '┘', '└' },
+      borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
       color_devicons = true,
       use_less = true,
-      set_env = { ['COLORTERM'] = 'truecolor' }, -- default = nil,
-      file_previewer = require'telescope.previewers'.vim_buffer_cat.new,
-      grep_previewer = require'telescope.previewers'.vim_buffer_vimgrep.new,
-      qflist_previewer = require'telescope.previewers'.vim_buffer_qflist.new,
+      set_env = { ["COLORTERM"] = "truecolor" }, -- default = nil,
+      file_previewer = require("telescope.previewers").vim_buffer_cat.new,
+      grep_previewer = require("telescope.previewers").vim_buffer_vimgrep.new,
+      qflist_previewer = require("telescope.previewers").vim_buffer_qflist.new,
 
       -- Developer configurations: Not meant for general override
-      buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker,
+      buffer_previewer_maker = new_maker,
       mappings = {
         i = {
           ["<c-q>"] = actions.send_to_qflist + actions.open_qflist,
@@ -66,32 +84,32 @@ return function ()
               local value = selected_entry.value
               -- close Telescope window properly prior to switching windows
               vim.api.nvim_win_close(0, true)
-              vim.cmd("stopinsert")
+              vim.cmd "stopinsert"
               vim.cmd(("DiffviewOpen %s^!"):format(value))
-            end
-          }
-        }
+            end,
+          },
+        },
       },
     },
     extensions = {
       fzf = {
-        fuzzy = true,                    -- false will only do exact matching
+        fuzzy = true, -- false will only do exact matching
         override_generic_sorter = false, -- override the generic sorter
-        override_file_sorter = true,     -- override the file sorter
-        case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
-                                         -- the default case_mode is "smart_case"
+        override_file_sorter = true, -- override the file sorter
+        case_mode = "smart_case", -- or "ignore_case" or "respect_case"
+        -- the default case_mode is "smart_case"
       },
       media_files = {
         -- filetypes whitelist
         -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
         filetypes = { "png", "webp", "jpg", "jpeg", "mp4", "webm", "pdf" },
-        find_cmd = "fd"
+        find_cmd = "fd",
         -- find_cmd = "rg" -- find command (defaults to `fd`)
-      }
-    }
+      },
+    },
   }
 
   -- Load extensions
-  require('telescope').load_extension('fzf')
-  require('telescope').load_extension('media_files')
+  require("telescope").load_extension "fzf"
+  require("telescope").load_extension "media_files"
 end
