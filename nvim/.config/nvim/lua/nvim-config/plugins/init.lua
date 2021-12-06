@@ -1,7 +1,15 @@
 local fn = vim.fn
-local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
-  packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+  packer_bootstrap =
+    fn.system {
+      "git",
+      "clone",
+      "--depth",
+      "1",
+      "https://github.com/wbthomason/packer.nvim",
+      install_path,
+    }
 end
 
 local function conf(config_name)
@@ -107,6 +115,12 @@ return require("packer").startup {
       requires = "kyazdani42/nvim-web-devicons",
     }
     use {
+      'tamago324/lir.nvim',
+      requires = { 'tamago324/lir-git-status.nvim' },
+      config = conf("lir"),
+      after = "nvim-web-devicons",
+    }
+    use {
       "https://gitlab.com/yorickpeterse/nvim-pqf.git",
       config = function()
         require("pqf").setup {
@@ -172,6 +186,7 @@ return require("packer").startup {
           "DiffviewFiles",
           "DiffviewFileHistory",
           "Outline",
+          "lir"
         }
       end,
     }
@@ -180,6 +195,18 @@ return require("packer").startup {
       config = function()
         require("which-key").setup()
       end,
+    }
+
+    use {
+      "vim-test/vim-test",
+      setup = function()
+        vim.cmd [[
+                    let test#strategy = "vimux"
+                ]]
+      end,
+      requires = {
+        "preservim/vimux",
+      },
     }
 
     -- MISC
@@ -222,7 +249,6 @@ return require("packer").startup {
     -- }
     use { "glepnir/dashboard-nvim", setup = conf "dashboard" }
     use { "ryanoasis/vim-devicons" }
-    use { "kevinhwang91/rnvimr" }
     use {
       "iamcco/markdown-preview.nvim",
       run = "cd app && yarn install",
@@ -272,5 +298,6 @@ return require("packer").startup {
     use { "olimorris/onedarkpro.nvim", branch = "main" }
     use { "RRethy/nvim-base16" }
     use { "NTBBloodbath/doom-one.nvim" }
+    use { 'catppuccin/nvim', as = "catppuccin" }
   end,
 }

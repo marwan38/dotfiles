@@ -1,6 +1,6 @@
 local ok, err = pcall(require, "which-key")
 if not ok then
-return
+  return
 end
 
 local wk = require "which-key"
@@ -26,3 +26,14 @@ wk.register {
     q = { "<cmd>lua require'dap'.close()<cr>", "Quit" },
   },
 }
+
+wk.register({
+  ["<leader>t"] = {
+    name = "+Testing",
+    n = { "<cmd>TestNearest<cr>", "Test nearest" },
+    f = { "<cmd>TestFile<cr>", "Test file" },
+    l = { "<cmd>TestLast<cr>", "Test Last" },
+  },
+}, {
+  mode = "n",
+})
