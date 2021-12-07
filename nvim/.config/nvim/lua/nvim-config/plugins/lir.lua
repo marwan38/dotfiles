@@ -31,6 +31,7 @@ return function()
       ["m"] = actions.mkdir,
       ["a"] = actions.newfile,
       ["r"] = actions.rename,
+      ["c"] = actions.copy,
       ["<C-]>"] = actions.cd,
       ["gy"] = actions.yank_path,
       ["<C-h>"] = actions.toggle_show_hidden,

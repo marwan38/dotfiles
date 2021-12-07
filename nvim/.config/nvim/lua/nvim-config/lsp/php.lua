@@ -40,3 +40,10 @@ null_ls.register(null_ls.builtins.formatting.phpcsfixer.with {
     "$FILENAME",
   },
 })
+
+null_ls.register(null_ls.builtins.diagnostics.phpstan.with {
+  command = "./vendor/bin/phpstan",
+  condition = function(utils)
+      return utils.root_has_file "phpstan.neon"
+  end,
+})

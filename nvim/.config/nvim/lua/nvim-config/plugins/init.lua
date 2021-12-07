@@ -1,15 +1,14 @@
 local fn = vim.fn
 local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
-  packer_bootstrap =
-    fn.system {
-      "git",
-      "clone",
-      "--depth",
-      "1",
-      "https://github.com/wbthomason/packer.nvim",
-      install_path,
-    }
+  packer_bootstrap = fn.system {
+    "git",
+    "clone",
+    "--depth",
+    "1",
+    "https://github.com/wbthomason/packer.nvim",
+    install_path,
+  }
 end
 
 local function conf(config_name)
@@ -209,7 +208,7 @@ return require("packer").startup {
           "DiffviewFiles",
           "DiffviewFileHistory",
           "Outline",
-          "lir"
+          "lir",
         }
       end,
     }
@@ -271,7 +270,7 @@ return require("packer").startup {
     --   end
     -- }
     use { "glepnir/dashboard-nvim", setup = conf "dashboard" }
-    use { "ryanoasis/vim-devicons" }
+    use { "ryanoasis/vim-devicons", disable = true }
     use {
       "iamcco/markdown-preview.nvim",
       run = "cd app && yarn install",
@@ -286,6 +285,9 @@ return require("packer").startup {
         )
         vim.g.mkdp_browserfunc = "MkdpOpenInNewWindow"
       end,
+    }
+    use {
+      "vimwiki/vimwiki",
     }
 
     -- THEMES

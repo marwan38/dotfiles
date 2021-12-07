@@ -4,7 +4,7 @@ local hl = Config.common.hl
 local api = vim.api
 local hi, hi_link, hi_clear = hl.hi, hl.hi_link, hl.hi_clear
 
-local colorscheme = "catppuccin"
+local colorscheme = "gruvbox-material"
 vim.opt.bg = "dark"
 
 vim.g.ayucolor = "dark"

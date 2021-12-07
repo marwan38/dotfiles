@@ -33,8 +33,7 @@ lspconfig.eslint.setup(LspGetDefaultConfig())
 vim.api.nvim_exec([[
   augroup eslint_format
     au!
-    au BufLeave *.ts,*.tsx,*.js,*.jsx nnoremap <silent> <leader>f <Cmd>lua vim.lsp.buf.formatting()<CR>
-    au BufEnter *.ts,*.tsx,*.js,*.jsx nnoremap <silent> <leader>f <Cmd>EslintFixAll<CR>
+    au BufEnter *.ts,*.tsx,*.js,*.jsx nnoremap <buffer> <silent> <leader>f <Cmd>EslintFixAll<CR>
   augroup END
 ]], false)
 
