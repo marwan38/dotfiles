@@ -188,7 +188,7 @@ nnoremap <M-b> <Cmd>Telescope buffers<CR>
 nnoremap <M-f> <Cmd>Telescope live_grep<CR>
 nnoremap <M-t> <Cmd>Telescope lsp_workspace_symbols<CR>
 nnoremap <M-o> <Cmd>Telescope lsp_document_symbols<CR>
-nnoremap <M-d> <Cmd>Telescope lsp_document_diagnostics<CR>
+nnoremap <M-d> <Cmd>Telescope diagnostics bufnr=0<CR>
 nnoremap z= <Cmd>Telescope spell_suggest theme=get_cursor<CR>
 nnoremap <leader>fl <Cmd>Telescope current_buffer_fuzzy_find theme=get_ivy<CR>
 
@@ -246,6 +246,8 @@ nnoremap <leader>. <Cmd>Telescope lsp_code_actions theme=get_cursor<CR>
 vnoremap <leader>. <Cmd>Telescope lsp_range_code_actions theme=get_cursor<CR>
 nnoremap <silent> <leader>ld <Cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
 " nnoremap <M-O> <Cmd>lua vim.lsp.buf.organize_imports()<CR>
+nnoremap <silent> [d <Cmd>lua vim.diagnostic.goto_prev()<CR>
+nnoremap <silent> ]d <Cmd>lua vim.diagnostic.goto_next()<CR>
 
 xnoremap @ :<C-u>lua require'nvim-config.lib'.execute_macro_over_visual_range()<CR>
 
@@ -284,6 +286,10 @@ cnoreabbrev Qa qa
 cnoreabbrev QA qa
 cnoreabbrev Qa! qa!
 cnoreabbrev QA! qa!
+cnoreabbrev Wa wa
+cnoreabbrev Wa! wa!
+cnoreabbrev Wqa wqa
+cnoreabbrev Wqa! wqa!
 cnoreabbrev we w <Bar> e
 cnoreabbrev ftd filetype detect
 

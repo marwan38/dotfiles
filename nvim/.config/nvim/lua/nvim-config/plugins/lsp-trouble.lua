@@ -5,7 +5,7 @@ return function ()
   require("trouble").setup {
     height = 10, -- height of the trouble list
     icons = true, -- use dev-icons for filenames
-    mode = "workspace", -- "workspace" or "document"
+    mode = "workspace_diagnostics", -- "workspace_diagnostics", "document_diagnostics", "quickfix", "lsp_references", "loclist"
     fold_open = "", -- icon used for open folds
     fold_closed = "", -- icon used for closed folds
     action_keys = { -- key mappings for actions in the trouble list

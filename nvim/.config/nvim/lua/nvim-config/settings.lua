@@ -70,7 +70,7 @@ opt.shada = list({
   "h",
   "s1",
 })
-opt.list = true
+opt.list = false
 opt.listchars = list({
   "tab: ──",
   "space:·",
