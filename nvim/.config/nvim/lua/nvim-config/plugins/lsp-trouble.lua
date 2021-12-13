@@ -1,5 +1,5 @@
-return function ()
-  local lib = require("nvim-config.lib")
+return function()
+  local lib = require "nvim-config.lib"
   local utils = Config.common.utils
 
   require("trouble").setup {
@@ -19,7 +19,7 @@ return function ()
       cancel = "<esc>", -- cancel the preview and get back to your last window / buffer / cursor
       open_folds = "zR", -- open all folds
       previous = "k", -- preview item
-      next = "j" -- next item
+      next = "j", -- next item
     },
     indent_lines = true, -- add an indent guide below the fold icons
     auto_open = false, -- automatically open the list when you have diagnostics
@@ -30,28 +30,29 @@ return function ()
       error = "",
       warning = "",
       hint = "",
-      information = ""
+      information = "",
     },
-    use_lsp_diagnostic_signs = false -- enabling this will use the signs defined in your lsp client
+    use_lsp_diagnostic_signs = false, -- enabling this will use the signs defined in your lsp client
   }
 
-  LspTroubleCustomToggle = lib.create_buf_toggler(
-    function ()
-      return utils.find_buf_with_option("filetype", "Trouble")
-    end,
-    function ()
-      vim.cmd("LspTroubleOpen")
-    end,
-    function ()
-      vim.cmd("wincmd p | LspTroubleClose")
-    end,
-    { focus = true, remember_height = true }
-  )
+  LspTroubleCustomToggle = lib.create_buf_toggler(function()
+    return utils.find_buf_with_option("filetype", "Trouble")
+  end, function()
+    vim.cmd "LspTroubleOpen"
+  end, function()
+    vim.cmd "wincmd p | LspTroubleClose"
+  end, {
+    focus = true,
+    remember_height = true,
+  })
 
-  vim.api.nvim_exec([[
+  vim.api.nvim_exec(
+    [[
     augroup LspTroubleConfig
       au!
       au FileType Trouble setlocal cc=
     augroup END
-    ]], false)
+    ]],
+    false
+  )
 end

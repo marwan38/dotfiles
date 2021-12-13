@@ -164,16 +164,16 @@ return require("packer").startup {
         }
       end,
     }
-    use { "nvim-telescope/telescope.nvim", config = conf "telescope" }
+    use { "nvim-telescope/telescope.nvim", config = conf "telescope", after = "nvim-web-devicons" }
     use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" }
     use { "nvim-telescope/telescope-media-files.nvim" }
-    use { "akinsho/nvim-bufferline.lua", config = conf "nvim-bufferline" }
+    use { "akinsho/nvim-bufferline.lua", config = conf "nvim-bufferline", after = "nvim-web-devicons" }
     use {
       "karb94/neoscroll.nvim",
       config = conf "neoscroll",
       cond = vim.g.neovide or vim.g.nvui,
     }
-    use { "windwp/nvim-spectre", config = conf "spectre" }
+    use { "windwp/nvim-spectre", config = conf "spectre", after = "nvim-web-devicons" }
     use {
       "mattn/emmet-vim",
       setup = function()
@@ -199,6 +199,7 @@ return require("packer").startup {
         vim.g.Illuminate_delay = 250
         vim.g.Illuminate_highlightUnderCursor = 1
         vim.g.Illuminate_ftblacklist = {
+          "qf",
           "dashboard",
           "packer",
           "NeogitStatus",
@@ -223,8 +224,8 @@ return require("packer").startup {
       "vim-test/vim-test",
       setup = function()
         vim.cmd [[
-                    let test#strategy = "vimux"
-                ]]
+let test#strategy = "vimux"
+]]
       end,
       requires = {
         "preservim/vimux",
@@ -235,8 +236,8 @@ return require("packer").startup {
     use { "NTBBloodbath/galaxyline.nvim", config = conf "galaxyline" }
     use { "lewis6991/gitsigns.nvim", config = conf "gitsigns" }
     use { "lukas-reineke/indent-blankline.nvim", setup = conf "indent-blankline" }
-    use { "folke/lsp-trouble.nvim", config = conf "lsp-trouble" }
-    use { "sindrets/diffview.nvim", config = conf "diffview" }
+    use { "folke/lsp-trouble.nvim", config = conf "lsp-trouble", after = "nvim-web-devicons" }
+    use { "sindrets/diffview.nvim", config = conf "diffview", after = "nvim-web-devicons" }
     use { "sindrets/winshift.nvim", config = conf "winshift" }
     use {
       "TimUntersberger/neogit",
@@ -277,10 +278,10 @@ return require("packer").startup {
       setup = function()
         vim.api.nvim_exec(
           [[
-          function! MkdpOpenInNewWindow(url)
-            lua require'nvim-config.lib'.mkdp_open_in_new_window(vim.fn.eval("a:url"))
-          endfunction
-          ]],
+function! MkdpOpenInNewWindow(url)
+lua require'nvim-config.lib'.mkdp_open_in_new_window(vim.fn.eval("a:url"))
+endfunction
+]],
           false
         )
         vim.g.mkdp_browserfunc = "MkdpOpenInNewWindow"
@@ -325,4 +326,10 @@ return require("packer").startup {
     use { "NTBBloodbath/doom-one.nvim" }
     use { "catppuccin/nvim", as = "catppuccin" }
   end,
+  -- config = {
+  --   profile = {
+  --     enable = true,
+  --     threshold = 1
+  --   }
+  -- }
 }

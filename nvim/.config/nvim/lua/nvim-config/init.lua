@@ -11,5 +11,5 @@ require "nvim-config.colorscheme"
 
 vim.schedule(function()
   require "nvim-config.lsp"
-  vim.cmd "do BufRead"
+  -- vim.cmd "do BufRead"
 end)
