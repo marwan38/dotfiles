@@ -2,3 +2,5 @@ tmux/.tmux/*
 !tmux/.tmux/plugins/
 tmux/.tmux/plugins/*
 !tmux/.tmux/plugins/tpm/
+
+nvim/.config/nvim/plugin/*

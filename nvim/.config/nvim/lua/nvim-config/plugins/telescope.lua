@@ -71,8 +71,17 @@ return function()
       mappings = {
         i = {
           ["<c-q>"] = actions.send_to_qflist + actions.open_qflist,
+          ["<c-n>"] = require("telescope.actions").cycle_history_next,
+          ["<c-p>"] = require("telescope.actions").cycle_history_prev,
         },
-        n = {},
+        n = {
+          ["?"] = actions.which_key {
+            name_width = 20, -- typically leads to smaller floats
+            max_height = 0.5, -- increase potential maximum height
+            seperator = " > ", -- change sep between mode, keybind, and name
+            close_with_action = false, -- do not close float on action
+          },
+        },
       },
     },
     pickers = {

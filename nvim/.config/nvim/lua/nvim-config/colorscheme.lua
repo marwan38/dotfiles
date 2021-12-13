@@ -294,10 +294,8 @@ function M.apply_tweaks()
     hi("NormalFloat", { bg = bg_normal:clone():mod_value(-0.025):to_css() })
     hi("TablineSel", { bg = "NONE" })
     hi("TelescopeBorder", { fg = hl.get_fg "FloatBorder" })
-    M.apply_log_defaults()
     M.generate_diff_colors()
   end
-
   -- FloatBorder
 
   hi("FloatBorder", {
