@@ -35,6 +35,7 @@ return function()
       selection_caret = "➤ ",
       entry_prefix = "  ",
       initial_mode = "insert",
+      results_title = false,
       selection_strategy = "reset",
       sorting_strategy = "ascending",
       layout_strategy = "horizontal",
@@ -75,6 +76,12 @@ return function()
       },
     },
     pickers = {
+      find_files = {
+        results_title = false,
+      },
+      git_files = {
+        results_title = false,
+      },
       git_commits = {
         mappings = {
           i = {
@@ -85,7 +92,9 @@ return function()
               -- close Telescope window properly prior to switching windows
               vim.api.nvim_win_close(0, true)
               vim.cmd "stopinsert"
-              vim.cmd(("DiffviewOpen %s^!"):format(value))
+              vim.schedule(function()
+                vim.cmd(("DiffviewOpen %s^!"):format(value))
+              end)
             end,
           },
         },
@@ -93,7 +102,7 @@ return function()
     },
     extensions = {
       fzf = {
-        fuzzy = true, -- false will only do exact matching
+        fuzzy = true, -- false will only do exact matchin
         override_generic_sorter = false, -- override the generic sorter
         override_file_sorter = true, -- override the file sorter
         case_mode = "smart_case", -- or "ignore_case" or "respect_case"

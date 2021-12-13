@@ -5,22 +5,27 @@ local M = {}
 --#region TYPES
 
 ---@class HiSpec
+
 ---@field fg string
 ---@field bg string
 ---@field ctermfg integer
 ---@field ctermbg integer
+
 ---@field gui string
+
 ---@field sp string
 ---@field blend integer
 ---@field default boolean
 
 ---@class HiLinkSpec
 ---@field force boolean
+
 ---@field default boolean
 
 --#endregion
 
 ---@param name string Syntax group name.
+
 ---@param attr string Attribute name.
 ---@param trans? boolean Translate the syntax group (follows links).
 function M.get_hl_attr(name, attr, trans)
@@ -33,6 +38,7 @@ function M.get_hl_attr(name, attr, trans)
   end
 
   local value = vim.fn.synIDattr(id, attr)
+
   if not value or value == "" then
     return
   end
@@ -41,16 +47,21 @@ function M.get_hl_attr(name, attr, trans)
 end
 
 ---@param groups string|string[] Syntax group name, or an ordered list of
+
 ---groups where the first found value will be returned.
 ---@param trans boolean Translate the syntax group (follows links). True by default.
 function M.get_fg(groups, trans)
-  if type(trans) ~= "boolean" then trans = true end
+  if type(trans) ~= "boolean" then
+    trans = true
+  end
 
   if type(groups) == "table" then
     local v
     for _, group in ipairs(groups) do
       v = M.get_hl_attr(group, "fg", trans)
-      if v then return v end
+      if v then
+        return v
+      end
     end
     return
   end
@@ -62,13 +73,19 @@ end
 ---groups where the first found value will be returned.
 ---@param trans boolean Translate the syntax group (follows links). True by default.
 function M.get_bg(groups, trans)
-  if type(trans) ~= "boolean" then trans = true end
+  if type(trans) ~= "boolean" then
+    trans = true
+  end
 
   if type(groups) == "table" then
     local v
+
     for _, group in ipairs(groups) do
       v = M.get_hl_attr(group, "bg", trans)
-      if v then return v end
+
+      if v then
+        return v
+      end
     end
     return
   end
@@ -78,10 +95,15 @@ end
 
 ---@param groups string|string[] Syntax group name, or an ordered list of
 ---groups where the first found value will be returned.
+
 ---@param trans boolean Translate the syntax group (follows links). True by default.
 function M.get_gui(groups, trans)
-  if type(trans) ~= "boolean" then trans = true end
-  if type(groups) ~= "table" then groups = { groups } end
+  if type(trans) ~= "boolean" then
+    trans = true
+  end
+  if type(groups) ~= "table" then
+    groups = { groups }
+  end
 
   local hls
   for _, group in ipairs(groups) do
@@ -93,7 +115,8 @@ function M.get_gui(groups, trans)
       "standout",
       "underline",
       "undercurl",
-      "strikethrough"
+
+      "strikethrough",
     }
 
     for _, attr in ipairs(attributes) do
@@ -108,44 +131,57 @@ function M.get_gui(groups, trans)
   end
 end
 
----@param group string Syntax group name.
+---@param groups string|string[] Syntax group name or a list of group names.
 ---@param opt HiSpec
-function M.hi(group, opt)
+function M.hi(groups, opt)
   local use_tc = vim.o.termguicolors
   local g = use_tc and "gui" or "cterm"
 
   if not use_tc then
     opt = Config.common.utils.tbl_clone(opt)
+
     opt.fg = opt.ctermfg or opt.fg
     opt.bg = opt.ctermbg or opt.bg
   end
 
-  vim.cmd(string.format(
-    "hi %s %s %s %s %s %s %s",
-    opt.default and "def" or "",
-    group,
-    opt.fg and (g .. "fg=" .. opt.fg) or "",
-    opt.bg and (g .. "bg=" .. opt.bg) or "",
-    opt.gui and (g .. "=" .. opt.gui) or "",
-    opt.sp and ("guisp=" .. opt.sp) or "",
-    opt.blend and ("blend=" .. opt.blend) or ""
-  ))
+  if type(groups) ~= "table" then
+    groups = { groups }
+  end
+
+  for _, group in ipairs(groups) do
+    vim.cmd(
+      string.format(
+        "hi %s %s %s %s %s %s %s",
+        opt.default and "def" or "",
+        group,
+        opt.fg and (g .. "fg=" .. opt.fg) or "",
+
+        opt.bg and (g .. "bg=" .. opt.bg) or "",
+        opt.gui and (g .. "=" .. opt.gui) or "",
+        opt.sp and ("guisp=" .. opt.sp) or "",
+        opt.blend and ("blend=" .. opt.blend) or ""
+      )
+    )
+  end
 end
 
----@param from string Syntax group name.
+---@param from string|string[] Syntax group name or a list of group names.
 ---@param to? string Syntax group name. (default: `"NONE"`)
 ---@param opt? HiLinkSpec
 function M.hi_link(from, to, opt)
   opt = vim.tbl_extend("keep", opt or {}, {
     force = true,
   })
-  vim.cmd(string.format(
-    "hi%s %s link %s %s",
-    opt.force and "!" or "",
-    opt.default and "default" or "",
-    from,
-    to or "NONE"
-  ))
+
+  if type(from) ~= "table" then
+    from = { from }
+  end
+
+  for _, f in ipairs(from) do
+    vim.cmd(
+      string.format("hi%s %s link %s %s", opt.force and "!" or "", opt.default and "default" or "", f, to or "NONE")
+    )
+  end
 end
 
 ---Clear highlighting for a given syntax group, or all groups if no group is

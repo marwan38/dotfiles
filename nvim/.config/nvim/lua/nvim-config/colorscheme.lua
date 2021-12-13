@@ -2,9 +2,10 @@ local Color = Config.common.color.Color
 local utils = Config.common.utils
 local hl = Config.common.hl
 local api = vim.api
+
 local hi, hi_link, hi_clear = hl.hi, hl.hi_link, hl.hi_clear
 
-local colorscheme = "gruvbox-material"
+local colorscheme = "catppuccin"
 vim.opt.bg = "dark"
 
 vim.g.ayucolor = "dark"
@@ -19,8 +20,10 @@ vim.g.seoul256_background = 234
 vim.g.palenight_terminal_italics = 1
 vim.g.neodark = "#202020"
 vim.g.neodark = 0
+
 vim.g.neodark = 1
 vim.g.spacegray_use_italics = 1
+
 vim.g.spacegray_low_contrast = 1
 vim.g.rose_pine_variant = "moon"
 vim.g.rose_pine_enable_italics = true
@@ -42,31 +45,12 @@ end
 
 require "nvim-config.plugins.material"()
 
-do
-  hi("NonText", { gui = "nocombine" })
-  hi_link("LspReferenceText", "Visual", { default = true })
-  hi_link("LspReferenceRead", "Visual", { default = true })
-  hi_link("LspReferenceWrite", "Visual", { default = true })
-  hi_link("illuminateWord", "LspReferenceText", { default = true })
-  hi_link("illuminatedWord", "LspReferenceText", { default = true })
-  hi_link("illuminateCurWord", "illuminateWord", { default = true })
-
-  api.nvim_exec(
-    [[
-    augroup colorscheme_config
-      au!
-      au ColorScheme * call v:lua.Config.colorscheme.apply_tweaks()
-    augroup END
-  ]],
-    false
-  )
-end
-
 local M = {}
 
 function M.apply_terminal_defaults()
   -- black
   vim.g.terminal_color_0 = "#222222"
+
   vim.g.terminal_color_8 = "#666666"
   -- red
   vim.g.terminal_color_1 = "#e84f4f"
@@ -82,6 +66,7 @@ function M.apply_terminal_defaults()
   vim.g.terminal_color_12 = "#aaccbb"
   -- magenta
   vim.g.terminal_color_5 = "#b7416e"
+
   vim.g.terminal_color_13 = "#e16a98"
   -- cyan
   vim.g.terminal_color_6 = "#6dc1b6"
@@ -102,6 +87,7 @@ function M.generate_diff_colors()
   local base_mod = Color.from_hex(hl.get_fg "diffChanged" or "#51afef")
 
   local bg_add = base_add:blend(bg_normal, 0.85):mod_saturation(0.05)
+
   local bg_del = base_del:blend(bg_normal, 0.85):mod_saturation(0.05)
   local bg_mod = base_mod:blend(bg_normal, 0.85):mod_saturation(0.05)
   local bg_mod_text = base_mod:blend(bg_normal, 0.7):mod_saturation(0.05)
@@ -110,6 +96,13 @@ function M.generate_diff_colors()
   hi("DiffDelete", { bg = bg_del:to_css(), fg = "NONE", gui = "NONE" })
   hi("DiffChange", { bg = bg_mod:to_css(), fg = "NONE", gui = "NONE" })
   hi("DiffText", { bg = bg_mod_text:to_css(), fg = "NONE", gui = "NONE" })
+end
+
+function M.apply_log_defaults()
+  hi_link("logLevelTrace", "DiagnosticHint")
+  hi_link({ "logLevelInfo", "logLevelNotice" }, "DiagnosticInfo")
+  hi_link({ "logLevelWarning", "logLevelDebug", "logLevelAlert" }, "DiagnosticWarn")
+  hi_link({ "logLevelError", "logLevelCritical", "logLevelEmergency" }, "DiagnosticError")
 end
 
 function M.apply_tweaks()
@@ -143,6 +136,7 @@ function M.apply_tweaks()
     hi_link "vimVar"
     hi_link "vimFuncVar"
     hi_link "vimUserFunc"
+
     hi_link "jsonQuote"
     M.generate_diff_colors()
   elseif colorscheme == "monokai_pro" then
@@ -169,11 +163,13 @@ function M.apply_tweaks()
     hi("NonText", { fg = "#3c3c3c", bg = "None" })
     hi("CursorLine", { bg = "#303030" })
     hi("SignColumn", { fg = "#8c8c8c", bg = "#3c3c3c" })
+
     hi_link "vimVar"
     hi_link "vimFuncVar"
     hi_link "vimUserFunc"
     hi_link "jsonQuote"
     hi("GitGutterAdd", { fg = "#46830d", bg = "None" })
+
     hi("GitGutterChange", { fg = "#243958", bg = "None" })
     hi("GitGutterDelete", { fg = "#8b0808", bg = "None" })
   elseif colorscheme == "nvcode" then
@@ -194,6 +190,7 @@ function M.apply_tweaks()
       hi("DiffText", { bg = "#36426b", fg = "NONE" })
     end
     hi_link("GitsignsAdd", "String")
+
     -- hi_link("DiffviewNormal", "NormalSB")
   elseif colorscheme == "everforest" then
     hi("SignColumn", { bg = "NONE" })
@@ -224,11 +221,13 @@ function M.apply_tweaks()
     hi("StatusLine", { bg = "#212433" })
     hi("StatusLineNC", { bg = "#212433" })
     hi("Folded", { bg = "#1e212e" })
+
     hi("ColorColumn", { bg = "#33384d" })
     hi("NonText", { fg = "#3c445f" })
     hi("TabLineSel", { fg = "#82b1ff" })
     hi("IndentBlanklineContextChar", { fg = "#82b1ff" })
     hi("EndOfBuffer", { fg = "#292D3E" })
+
     hi("PmenuThumb", { bg = "#6A3EB5" })
     hi_link("QuickFixLine", "DiffText")
     hi_link("NvimTreeIndentMarker", "LineNr")
@@ -241,9 +240,12 @@ function M.apply_tweaks()
     hi("GitSignsChange", { fg = "#82b1ff" })
     hi("LspReferenceText", { bg = bg_normal:clone():mod_value(0.12):to_css() })
     hi("LspReferenceRead", { bg = bg_normal:clone():mod_value(0.12):to_css() })
+
     hi("LspReferenceWrite", { bg = bg_normal:clone():mod_value(0.12):to_css() })
+
     hi("NvimTreeRootFolder", { fg = "#C3E88D", gui = "bold" })
     hi("NvimTreeFolderIcon", { fg = "#F78C6C" })
+
     hi("NvimTreeNormal", { bg = "#222533" })
     hi("NvimTreeCursorLine", { bg = "#33374c" })
     hi("NvimTreeGitDirty", { fg = "#ffcb6b" })
@@ -278,33 +280,63 @@ function M.apply_tweaks()
       hi("NvimTreeRootFolder", { gui = "bold" })
       hi("SpellCap", { sp = "#51afef" })
       hi("SpellBad", { sp = "#FF6C69" })
+
       hi("SpellRare", { sp = "#a9a1e1" })
+
       hi("SpellLocal", { sp = "#da8548" })
       M.generate_diff_colors()
       vim.opt.pumblend = 0
     end
   elseif colorscheme == "catppuccin" then
+    local bg_normal = Color.from_hl("Normal", "bg")
     hi("diffAdded", { fg = "#B3E1A3" })
     hi("diffChanged", { fg = "#A4B9EF" })
+    hi("NormalFloat", { bg = bg_normal:clone():mod_value(-0.025):to_css() })
+    hi("TablineSel", { bg = "NONE" })
+    hi("TelescopeBorder", { fg = hl.get_fg "FloatBorder" })
+    M.apply_log_defaults()
     M.generate_diff_colors()
   end
 
   -- FloatBorder
+
   hi("FloatBorder", {
     bg = hl.get_bg "NormalFloat" or "NONE",
-    fg = hl.get_fg "FloatBorder" or "white",
+    fg = hl.get_fg { "FloatBorder", "Normal" },
   })
 
   -- Custom diff hl
   hi("DiffAddAsDelete", {
-    bg = hl.get_bg("DiffDelete", false) or "red",
+
+    bg = hl.get_bg("DiffDelete", false) or "#FF6C69",
     fg = hl.get_fg("DiffDelete", false) or "NONE",
     gui = hl.get_gui("DiffDelete", false) or "NONE",
   })
   hi_link("DiffDelete", "Comment")
 end
 
+do
+  hi("NonText", { gui = "nocombine" })
+  hi_link("LspReferenceText", "Visual", { default = true })
+  hi_link("LspReferenceRead", "Visual", { default = true })
+  hi_link("LspReferenceWrite", "Visual", { default = true })
+  hi_link({ "illuminateWord", "illuminatedWord", "illuminateCurWord" }, "LspReferenceText", { default = true })
+
+  M.apply_log_defaults()
+
+  api.nvim_exec(
+    [[
+    augroup colorscheme_config
+      au!
+      au ColorScheme * call v:lua.Config.colorscheme.apply_tweaks()
+    augroup END
+  ]],
+    false
+  )
+end
+
 Config.colorscheme = M
 
 vim.cmd("colorscheme " .. colorscheme)
+
 return M

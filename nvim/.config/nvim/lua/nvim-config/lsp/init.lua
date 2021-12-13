@@ -75,10 +75,7 @@ require("rust-tools").setup {
 
 -- Null-ls
 local null_ls = require "null-ls"
-null_ls.config {
-  debug = false,
-}
-require("lspconfig")["null-ls"].setup {
+null_ls.setup {
   on_attach = LspCommonOnAttach,
 }
 
