@@ -59,6 +59,12 @@ _G.LspGetDefaultConfig = function()
   }, M.get_local_settings())
 end
 
+-- Null-ls
+local null_ls = require "null-ls"
+null_ls.setup {
+  on_attach = LspCommonOnAttach,
+}
+
 -- Typescript
 require "nvim-config.lsp.typescript"
 
@@ -73,14 +79,11 @@ require("rust-tools").setup {
   server = LspGetDefaultConfig(),
 }
 
--- Null-ls
-local null_ls = require "null-ls"
-null_ls.setup {
-  on_attach = LspCommonOnAttach,
-}
-
 -- Vim
 require("lspconfig").vimls.setup(LspGetDefaultConfig())
+
+-- JSON
+require "nvim-config.lsp.json"
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
   virtual_text = false,

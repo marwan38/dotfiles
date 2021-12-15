@@ -55,12 +55,22 @@ local schemas = {
 
 local null_ls = require "null-ls"
 
+local capabilities = vim.tbl_deep_extend("force", LspGetDefaultConfig()["capabilities"], {
+  textDocument = {
+    completion = {
+      completionItem = {
+        snippetSupport = true,
+      },
+    },
+  },
+})
+
 require("lspconfig").jsonls.setup {
   on_attach = function(client, bufnr)
     client.resolved_capabilities.document_formatting = false
     LspCommonOnAttach(client, bufnr)
   end,
-  capabilities = LspGetDefaultConfig()["capabilities"],
+  capabilities = capabilities,
   settings = {
     json = {
       schemas = schemas,

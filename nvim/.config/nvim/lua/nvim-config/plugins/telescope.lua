@@ -46,7 +46,9 @@ return function()
         horizontal = {
           mirror = false,
         },
+
         vertical = {
+
           mirror = false,
         },
       },
@@ -55,37 +57,36 @@ return function()
       },
       file_sorter = require("telescope.sorters").get_fuzzy_file,
       file_ignore_patterns = {},
+
       generic_sorter = require("telescope.sorters").get_generic_fuzzy_sorter,
       winblend = 0,
       border = {},
+
       borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
       color_devicons = true,
       use_less = true,
       set_env = { ["COLORTERM"] = "truecolor" }, -- default = nil,
-      file_previewer = previewers.vim_buffer_cat.new,
-      grep_previewer = previewers.vim_buffer_vimgrep.new,
-      qflist_previewer = previewers.vim_buffer_qflist.new,
+      file_previewer = require("telescope.previewers").vim_buffer_cat.new,
+      grep_previewer = require("telescope.previewers").vim_buffer_vimgrep.new,
+      qflist_previewer = require("telescope.previewers").vim_buffer_qflist.new,
 
       -- Developer configurations: Not meant for general override
       buffer_previewer_maker = new_maker,
       mappings = {
         i = {
           ["<c-q>"] = actions.send_to_qflist + actions.open_qflist,
-          ["<c-n>"] = actions.cycle_history_next,
-          ["<c-p>"] = actions.cycle_history_prev,
+          ["<c-n>"] = require("telescope.actions").cycle_history_next,
+          ["<c-p>"] = require("telescope.actions").cycle_history_prev,
         },
         n = {
-          ["?"] = actions.which_key {
-            name_width = 20, -- typically leads to smaller floats
-            max_height = 0.5, -- increase potential maximum height
-            seperator = " > ", -- change sep between mode, keybind, and name
-            close_with_action = false, -- do not close float on action
-          },
+          ["<c-n>"] = require("telescope.actions").cycle_history_next,
+          ["<c-p>"] = require("telescope.actions").cycle_history_prev,
         },
       },
     },
     pickers = {
       find_files = {
+
         results_title = false,
       },
       git_files = {
@@ -98,6 +99,7 @@ return function()
               -- Open in diffview
               local selected_entry = action_state.get_selected_entry()
               local value = selected_entry.value
+
               -- close Telescope window properly prior to switching windows
               vim.api.nvim_win_close(0, true)
               vim.cmd "stopinsert"
@@ -109,9 +111,10 @@ return function()
         },
       },
     },
+
     extensions = {
       fzf = {
-        fuzzy = true, -- false will only do exact matchin
+        fuzzy = true, -- false will only do exact matching
         override_generic_sorter = false, -- override the generic sorter
         override_file_sorter = true, -- override the file sorter
         case_mode = "smart_case", -- or "ignore_case" or "respect_case"
@@ -120,6 +123,7 @@ return function()
       media_files = {
         -- filetypes whitelist
         -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
+
         filetypes = { "png", "webp", "jpg", "jpeg", "mp4", "webm", "pdf" },
         find_cmd = "fd",
         -- find_cmd = "rg" -- find command (defaults to `fd`)
