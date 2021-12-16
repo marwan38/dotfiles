@@ -7,11 +7,8 @@ window:
   title: Alacritty
   dynamic_title: true
 
-# Enable when running alacritty on windows + WSL2
-# shell:
-#   program:
-#     wsl.exe ~
-
+shell:
+  program: wsl.exe ~
 
 key_bindings:
   - { key: Space, mods: Control, chars: "\x00" }
@@ -23,6 +20,10 @@ key_bindings:
   - { Key: J, mods: Control|Alt, chars: "\x1b\x0a" }
   - { Key: K, mods: Control|Alt, chars: "\x1b\x0b" }
   - { Key: L, mods: Control|Alt, chars: "\x1b\x0c" }
+  - { Key: D, mods: Control|Alt, chars: "\x1b\x04" }
+  - { Key: P, mods: Control|Alt, chars: "\x1b\x10" }
+  - { Key: Left, mods: Alt, chars: "\x1b[1;3D" }
+  - { Key: Right, mods: Alt, chars: "\x1b[1;3C" }
 
 draw_bold_text_with_bright_colors: true
 
@@ -39,19 +40,16 @@ font:
 
   size: 12.0
 # The definition of color schemes.
-
 schemes:
   gruvbox_material_hard_dark: &gruvbox_material_hard_dark
     primary:
-
       background: "0x1d2021"
       foreground: "0xd4be98"
     normal:
       black: "0x32302f"
-
       red: "0xea6962"
-      green: "0xa9b665"
 
+      green: "0xa9b665"
       yellow: "0xd8a657"
       blue: "0x7daea3"
       magenta: "0xd3869b"
@@ -63,23 +61,18 @@ schemes:
       green: "0xa9b665"
       yellow: "0xd8a657"
       blue: "0x7daea3"
-
       magenta: "0xd3869b"
       cyan: "0x89b482"
+
       white: "0xd4be98"
-
   gruvbox_material_medium_dark: &gruvbox_material_medium_dark
-
     primary:
-
       background: "0x282828"
       foreground: "0xd4be98"
     normal:
       black: "0x3c3836"
-
       red: "0xea6962"
       green: "0xa9b665"
-
       yellow: "0xd8a657"
       blue: "0x7daea3"
       magenta: "0xd3869b"
@@ -91,16 +84,13 @@ schemes:
       green: "0xa9b665"
       yellow: "0xd8a657"
       blue: "0x7daea3"
-
       magenta: "0xd3869b"
       cyan: "0x89b482"
       white: "0xd4be98"
-
   gruvbox_material_soft_dark: &gruvbox_material_soft_dark
     primary:
       background: "0x32302f"
       foreground: "0xd4be98"
-
     normal:
       black: "0x45403d"
       red: "0xea6962"
@@ -115,7 +105,6 @@ schemes:
       red: "0xea6962"
       green: "0xa9b665"
       yellow: "0xd8a657"
-
       blue: "0x7daea3"
       magenta: "0xd3869b"
       cyan: "0x89b482"
@@ -129,17 +118,14 @@ schemes:
       red: "0xc14a4a"
       green: "0x6c782e"
       yellow: "0xb47109"
-
       blue: "0x45707a"
       magenta: "0x945e80"
       cyan: "0x4c7a5d"
       white: "0xf2e5bc"
     bright:
       black: "0x654735"
-
       red: "0xc14a4a"
       green: "0x6c782e"
-
       yellow: "0xb47109"
       blue: "0x45707a"
       magenta: "0x945e80"
@@ -149,7 +135,6 @@ schemes:
     primary:
       background: "0xfbf1c7"
       foreground: "0x654735"
-
     normal:
       black: "0x654735"
       red: "0xc14a4a"
@@ -164,9 +149,9 @@ schemes:
       red: "0xc14a4a"
       green: "0x6c782e"
       yellow: "0xb47109"
-
       blue: "0x45707a"
       magenta: "0x945e80"
+
       cyan: "0x4c7a5d"
       white: "0xeee0b7"
   gruvbox_material_soft_light: &gruvbox_material_soft_light
@@ -178,17 +163,14 @@ schemes:
       red: "0xc14a4a"
       green: "0x6c782e"
       yellow: "0xb47109"
-
       blue: "0x45707a"
       magenta: "0x945e80"
       cyan: "0x4c7a5d"
       white: "0xe6d5ae"
     bright:
       black: "0x654735"
-
       red: "0xc14a4a"
       green: "0x6c782e"
-
       yellow: "0xb47109"
       blue: "0x45707a"
       magenta: "0x945e80"
@@ -196,5 +178,4 @@ schemes:
       white: "0xe6d5ae"
 
 # Apply the color scheme.
-colors: *gruvbox_material_hard_dark
-
+colors: *gruvbox_material_medium_dark
