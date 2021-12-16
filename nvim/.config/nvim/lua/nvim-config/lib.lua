@@ -171,7 +171,6 @@ function M.workspace_files(opt)
 end
 
 ---Delete a buffer while also preserving the window layout. Changes the current
-
 ---buffer to the alt buffer if available, and then deletes it.
 ---@param force boolean Ignore unsaved changes.
 ---@param bufid integer

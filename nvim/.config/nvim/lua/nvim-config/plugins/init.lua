@@ -28,8 +28,8 @@ return require("packer").startup {
     use "wbthomason/packer.nvim"
 
     -- SYNTAX
-    use { "plasticboy/vim-markdown" }
-    use { "MTDL9/vim-log-highlighting" }
+    use { "plasticboy/vim-markdown", ft = "md" }
+    use { "MTDL9/vim-log-highlighting", ft = "log" }
 
     -- BEHAVIOUR
     use {
@@ -38,7 +38,6 @@ return require("packer").startup {
         vim.g.cursorhold_updatetime = 250
       end,
     }
-    use { "Darazaki/indent-o-matic" }
     use { "nvim-lua/popup.nvim" }
     use { "nvim-lua/plenary.nvim" }
     use { "kyazdani42/nvim-web-devicons", config = conf "nvim-web-devicons" }

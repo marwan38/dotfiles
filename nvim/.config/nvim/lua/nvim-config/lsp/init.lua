@@ -85,6 +85,9 @@ require("lspconfig").vimls.setup(LspGetDefaultConfig())
 -- JSON
 require "nvim-config.lsp.json"
 
+-- YAML
+require("lspconfig").yamlls.setup(LspGetDefaultConfig())
+
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
   virtual_text = false,
   underline = true,

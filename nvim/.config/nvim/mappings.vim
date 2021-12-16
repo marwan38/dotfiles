@@ -179,11 +179,6 @@ vnoremap * "vy/\V<C-R>=escape(@",'/\')<CR><CR>
 " Repeat prev macro
 nmap , @@
 
-" Toggle comments
-nnoremap <silent> <C-\> <Cmd>call nerdcommenter#Comment(0, "toggle")<CR>
-inoremap <silent> <C-\> <Esc>:call nerdcommenter#Comment(0, "toggle")<CR>a
-vnoremap <silent> <C-\> :call nerdcommenter#Comment(0, "toggle")<CR>gv
-
 " Telescope
 nnoremap <C-P> <Cmd>lua require'nvim-config.lib'.workspace_files()<CR>
 nnoremap <leader>p <Cmd>lua require'nvim-config.lib'.workspace_files({ all = true })<CR>
@@ -232,7 +227,7 @@ nnoremap <expr> [r v:lua.Config.lib.expr.next_reference(v:true)
 nnoremap <expr> ]r v:lua.Config.lib.expr.next_reference()
 
 " Trigger completion
-inoremap <silent><expr> <C-Space> compe#complete()
+" inoremap <silent><expr> <C-Space> compe#complete()
 " inoremap <silent><expr> <Cr> compe#confirm("<Cr>")
 
 " LSP
