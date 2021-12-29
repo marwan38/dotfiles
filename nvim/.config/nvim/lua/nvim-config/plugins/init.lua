@@ -232,7 +232,7 @@ let test#strategy = "vimux"
     }
 
     -- MISC
-    use { "NTBBloodbath/galaxyline.nvim", config = conf "galaxyline" }
+    use { 'feline-nvim/feline.nvim', config = conf("feline") }
     use { "lewis6991/gitsigns.nvim", config = conf "gitsigns" }
     use { "lukas-reineke/indent-blankline.nvim", setup = conf "indent-blankline" }
     use { "folke/lsp-trouble.nvim", config = conf "lsp-trouble", after = "nvim-web-devicons" }
@@ -289,6 +289,7 @@ endfunction
     use {
       "vimwiki/vimwiki",
     }
+    use { "lambdalisue/suda.vim" }
 
     -- THEMES
     use { "rktjmp/lush.nvim" }

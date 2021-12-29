@@ -21,6 +21,11 @@ return function ()
     integrations = {
       diffview = true
     },
+    sections = {
+      recent = {
+        folded = false,
+      },
+    },
     -- override/add mappings
     mappings = {
       -- modify status buffer mappings

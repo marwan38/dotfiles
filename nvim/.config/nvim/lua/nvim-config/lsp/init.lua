@@ -49,7 +49,6 @@ _G.LspCommonOnAttach = function(client, bufnr)
       border = "single",
     },
   }, bufnr)
-  vim.schedule(_G.ReloadGalaxyline)
 end
 
 _G.LspGetDefaultConfig = function()
