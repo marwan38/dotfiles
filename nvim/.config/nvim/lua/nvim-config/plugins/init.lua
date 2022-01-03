@@ -234,7 +234,7 @@ let test#strategy = "vimux"
     -- MISC
     use { 'feline-nvim/feline.nvim', config = conf("feline") }
     use { "lewis6991/gitsigns.nvim", config = conf "gitsigns" }
-    use { "lukas-reineke/indent-blankline.nvim", setup = conf "indent-blankline" }
+    use { "lukas-reineke/indent-blankline.nvim", config = conf "indent-blankline" }
     use { "folke/lsp-trouble.nvim", config = conf "lsp-trouble", after = "nvim-web-devicons" }
     use { "sindrets/diffview.nvim", config = conf "diffview", after = "nvim-web-devicons" }
     use { "sindrets/winshift.nvim", config = conf "winshift" }
