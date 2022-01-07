@@ -1,38 +1,46 @@
-return function()
-  local utils = Config.common.utils
-  local hl = Config.common.hl
+local utils = Config.common.utils
+local hl = Config.common.hl
+local api = vim.api
+
+Config.feline = {}
+
+local M = Config.feline
+
+M.statusline = {}
+M.components = {}
+M.colors = {}
+
+local icons = {
+  modified = "",
+  line_number = "",
+  lsp_server = "",
+
+  indent = "",
+  os = {
+
+    unix = "",
+    windows = "",
+    mac = "",
+  },
+  git = {
+    branch = "",
+    diff_add = "",
+    diff_del = "",
+    diff_mod = "",
+  },
+  diagnostic = {
+    err = "",
+    warn = "",
+    info = "",
+    hint = "",
+  },
+}
+
+function M.update()
   local lsp = require "feline.providers.lsp"
 
-  local api = vim.api
-
-  Config.feline = {}
-
-  local icons = {
-    modified = "",
-    line_number = "",
-    lsp_server = "",
-    indent = "",
-
-    os = {
-      unix = "",
-      windows = "",
-      mac = "",
-    },
-    git = {
-      branch = "",
-      diff_add = "",
-      diff_del = "",
-      diff_mod = "",
-    },
-    diagnostic = {
-      err = "",
-      warn = "",
-      info = "",
-      hint = "",
-    },
-  }
-
   local fg = hl.get_fg { "StatusLine", "Normal" }
+
   local bg = hl.get_bg { "StatusLine", "Normal" }
 
   if hl.get_hl_attr("StatusLine", "reverse") == "1" then
@@ -43,9 +51,8 @@ return function()
   hl.hi("StatusLineNC", { fg = fg, bg = bg, gui = "NONE" })
   hl.hi_link "StatusLineNC"
 
-  local colors
   if vim.o.background == "light" then
-    colors = {
+    M.colors = {
       fg = fg,
       bg = bg,
       yellow = "#ECBE7B",
@@ -59,9 +66,10 @@ return function()
       red = "#ec5f67",
     }
   else
-    colors = {
+    M.colors = {
       fg = fg,
       bg = bg,
+
       yellow = "#ECBE7B",
       cyan = "#008080",
       darkblue = "#081633",
@@ -74,6 +82,7 @@ return function()
     }
   end
 
+  local colors = M.colors
   local mode_colors = {
     n = colors.blue,
     no = colors.blue,
@@ -82,11 +91,13 @@ return function()
     ["no"] = colors.blue,
     niI = colors.blue,
     niR = colors.blue,
+
     niV = colors.blue,
     v = colors.magenta,
     V = colors.magenta,
     [""] = colors.magenta,
     s = colors.magenta,
+
     S = colors.magenta,
     [""] = colors.magenta,
     i = colors.green,
@@ -99,10 +110,12 @@ return function()
     c = colors.orange,
     cv = colors.orange,
     ce = colors.orange,
+
     r = colors.cyan,
     rm = colors.cyan,
     ["r?"] = colors.cyan,
     ["!"] = colors.cyan,
+
     t = colors.orange,
   }
 
@@ -111,20 +124,24 @@ return function()
     no = "NORMAL",
     nov = "NORMAL",
     noV = "NORMAL",
+
     ["no"] = "NORMAL",
     niI = "NORMAL",
     niR = "NORMAL",
     niV = "NORMAL",
-    v = "VISUAL",
 
+    v = "VISUAL",
     V = "VISUAL LINE",
     [""] = "VISUAL BLOCK",
+
     s = "SELECT",
     S = "SELECT LINE",
     [""] = "SELECT BLOCK",
+
     i = "INSERT",
     ic = "COMPLETION",
     ix = "COMPLETION",
+
     R = "REPLACE",
     Rc = "REPLACE",
     Rv = "REPLACE",
@@ -133,10 +150,10 @@ return function()
     cv = "EX",
     ce = "NORMAL EX",
     r = "PROMPT",
+
     rm = "PROMPT",
     ["r?"] = "CONFIRM",
     ["!"] = "SHELL",
-
     t = "TERMINAL",
   }
 
@@ -152,7 +169,6 @@ return function()
       provider = function()
         return string.rep(" ", size)
       end,
-
       hl = {
         fg = "NONE",
         bg = colors.bg,
@@ -167,15 +183,13 @@ return function()
     end
   end
 
-  local components = {
+  M.components = {
     block = {
-
       provider = function()
         return "▊"
       end,
       hl = {
         fg = colors.blue,
-        bg = colors.bg,
       },
     },
     vi_mode = {
@@ -184,10 +198,9 @@ return function()
       end,
       hl = function()
         local mode = api.nvim_get_mode().mode
+
         return {
           fg = mode_colors[mode],
-          bg = colors.bg,
-
           style = "bold",
         }
       end,
@@ -198,7 +211,6 @@ return function()
           return vim.bo.filetype
         end
       end,
-
       enabled = function()
         local exclude = { [""] = true }
         if exclude[vim.bo.filetype] then
@@ -209,8 +221,6 @@ return function()
       icon = icons.lsp_server .. " ",
       hl = {
         fg = colors.red,
-
-        bg = colors.bg,
         style = "bold",
       },
       truncate_hide = true,
@@ -219,22 +229,21 @@ return function()
       info = {
         provider = function()
           local uname = utils.get_unique_file_bufname(api.nvim_buf_get_name(0))
-          local status = vim.bo.modified and (icons.modified .. " ") or ""
-          return uname .. " " .. status
+          local status = vim.bo.modified and (" " .. icons.modified .. " ") or ""
+          return uname .. status
         end,
+
         enabled = function()
           return vim.fn.bufname() ~= ""
         end,
-
         hl = function()
           local active = (
               api.nvim_get_current_buf() == tonumber(vim.g.actual_curbuf)
               and api.nvim_get_current_win() == tonumber(vim.g.actual_curwin)
             )
+
           return {
             fg = active and colors.magenta or colors.fg,
-            bg = colors.bg,
-
             style = "bold",
           }
         end,
@@ -245,7 +254,9 @@ return function()
           local ext = vim.fn.fnamemodify(basename, ":e")
 
           local devicons = require "nvim-web-devicons"
+
           local icon, _ = devicons.get_icon(basename, ext, { default = false })
+
           return (icon or "")
         end,
         enabled = function()
@@ -266,8 +277,8 @@ return function()
           end
 
           return {
+
             fg = fg,
-            bg = colors.bg,
           }
         end,
       },
@@ -277,7 +288,6 @@ return function()
         end,
         hl = {
           fg = colors.blue,
-          bg = colors.bg,
           style = "bold",
         },
       },
@@ -302,8 +312,6 @@ return function()
         truncate_hide = true,
         hl = {
           fg = colors.green,
-          bg = colors.bg,
-
           style = "bold",
         },
       },
@@ -315,6 +323,7 @@ return function()
           end
 
           local col = tostring(vim.fn.col ".")
+
           if #col % 2 ~= 0 then
             col = utils.str_right_pad(col, #col + (2 - #col % 2))
           end
@@ -327,8 +336,8 @@ return function()
           return result
         end,
         hl = {
+
           fg = colors.fg,
-          bg = colors.bg,
         },
       },
       line_percent = {
@@ -340,17 +349,17 @@ return function()
         end,
         hl = {
           fg = colors.fg,
-          bg = colors.bg,
           style = "bold",
         },
       },
       line_count = {
+
         provider = function()
-          return (" %s %s"):format(icons.line_number, vim.fn.line "$")
+          return tostring(vim.fn.line "$")
         end,
+        icon = icons.line_number .. " ",
         hl = {
           fg = colors.fg,
-          bg = colors.bg,
         },
       },
       indent_info = {
@@ -363,9 +372,10 @@ return function()
         end,
         icon = icons.indent .. " ",
         truncate_hide = true,
+
         hl = {
           fg = colors.cyan,
-          bg = colors.bg,
+
           style = "bold",
         },
       },
@@ -374,43 +384,42 @@ return function()
       branch = {
         provider = "git_branch",
         icon = icons.git.branch .. " ",
-
         hl = {
           fg = colors.violet,
-          bg = colors.bg,
           style = "bold",
         },
       },
+
       diff_add = {
         provider = "git_diff_added",
         icon = icons.git.diff_add .. " ",
         hl = {
           fg = colors.green,
-          bg = colors.bg,
         },
+
         truncate_hide = true,
       },
       diff_mod = {
         provider = "git_diff_changed",
         icon = icons.git.diff_mod .. " ",
+
         hl = {
           fg = colors.blue,
-          bg = colors.bg,
         },
         truncate_hide = true,
       },
-
       diff_del = {
         provider = "git_diff_removed",
         icon = icons.git.diff_del .. " ",
         hl = {
+
           fg = colors.red,
-          bg = colors.bg,
         },
         truncate_hide = true,
       },
     },
     diagnostic = {
+
       err = {
         provider = "diagnostic_errors",
         icon = icons.diagnostic.err .. " ",
@@ -418,10 +427,12 @@ return function()
           return lsp.diagnostics_exist(vim.diagnostic.severity.ERROR)
         end,
         hl = {
+
           fg = colors.red,
         },
         truncate_hide = true,
       },
+
       warn = {
         provider = "diagnostic_warnings",
         icon = icons.diagnostic.warn .. " ",
@@ -429,17 +440,18 @@ return function()
           return lsp.diagnostics_exist(vim.diagnostic.severity.WARNING)
         end,
         hl = {
+
           fg = colors.yellow,
         },
         truncate_hide = true,
       },
       info = {
         provider = "diagnostic_info",
+
         icon = icons.diagnostic.info .. " ",
         enabled = function()
           return lsp.diagnostics_exist(vim.diagnostic.severity.INFO)
         end,
-
         hl = {
           fg = colors.blue,
         },
@@ -447,6 +459,7 @@ return function()
       },
       hint = {
         provider = "diagnostic_hints",
+
         icon = icons.diagnostic.hint .. " ",
         enabled = function()
           return lsp.diagnostics_exist(vim.diagnostic.severity.HINT)
@@ -459,18 +472,19 @@ return function()
     },
   }
 
-  local statusline = {
+  local comps = M.components
+  M.statusline = {
     active = {
       -- LEFT
       [1] = extend_comps({
-        components.block,
+        comps.block,
+        comps.vi_mode,
+        comps.file.icon,
 
-        components.vi_mode,
-        components.file.icon,
-        components.file.info,
-        components.git.diff_add,
-        components.git.diff_mod,
-        components.git.diff_del,
+        comps.file.info,
+        comps.git.diff_add,
+        comps.git.diff_mod,
+        comps.git.diff_del,
       }, {
         right_sep = " ",
       }),
@@ -479,19 +493,20 @@ return function()
       -- RIGHT
       [3] = utils.vec_join(
         extend_comps({
-          components.diagnostic.err,
 
-          components.diagnostic.warn,
-          components.diagnostic.hint,
-          components.diagnostic.info,
-          components.file.line_info,
-          components.file.line_percent,
-          components.file.line_count,
-          components.lsp_server,
-          components.file.indent_info,
-          components.file.format,
+          comps.diagnostic.err,
+          comps.diagnostic.warn,
+          comps.diagnostic.hint,
+          comps.diagnostic.info,
+          comps.file.line_info,
 
-          components.git.branch,
+          comps.file.line_percent,
+
+          comps.file.line_count,
+          comps.lsp_server,
+          comps.file.indent_info,
+          comps.file.format,
+          comps.git.branch,
         }, {
           left_sep = " ",
         }),
@@ -499,11 +514,13 @@ return function()
       ),
     },
     inactive = {
+
       -- LEFT
       [1] = extend_comps({
-        components.block,
-        components.file.filetype,
-        components.file.info,
+        comps.block,
+
+        comps.file.filetype,
+        comps.file.info,
       }, {
         right_sep = " ",
       }),
@@ -513,48 +530,51 @@ return function()
       [3] = {},
     },
   }
+end
 
-  Config.feline.setup = function()
-    require("feline").setup {
-      components = statusline,
-      theme = colors,
-      force_inactive = {
-        filetypes = {
-          "^NvimTree$",
-          "^vista$",
-          "^dbui$",
-          "^packer$",
-          "^fugitiveblame$",
-          "^Trouble$",
-          "^DiffviewFiles$",
-          "^DiffviewFileHistory$",
-          "^DiffviewFHOptionPanel$",
-          "^Outline$",
-          "^dashboard$",
-          "^NeogitStatus$",
-          "^lir$",
-        },
-        buftypes = { "terminal" },
-        bufnames = {},
+function M.setup()
+  require("feline").setup {
+    components = M.statusline,
+    theme = M.colors,
+    force_inactive = {
+      filetypes = {
+        "^NvimTree$",
+        "^vista$",
+        "^dbui$",
+        "^packer$",
+        "^fugitiveblame$",
+        "^Trouble$",
+        "^DiffviewFiles$",
+        "^DiffviewFileHistory$",
+        "^DiffviewFHOptionPanel$",
+        "^Outline$",
+        "^dashboard$",
+        "^NeogitStatus$",
+
+        "^lir$",
       },
-    }
-  end
+      buftypes = { "terminal" },
+      bufnames = {},
+    },
+  }
+end
 
-  Config.feline.update = function()
-    require "nvim-config.plugins.feline"()
-    Config.feline.setup()
-  end
+function M.reload()
+  M.update()
+  M.setup()
+end
 
-  api.nvim_exec(
+return function()
+  vim.api.nvim_exec(
     [[
     augroup feline_config
       au!
-      au ColorScheme * lua Config.feline.update()
-
+      au ColorScheme * lua Config.feline.reload()
     augroup END
   ]],
     false
   )
 
+  Config.feline.update()
   Config.feline.setup()
 end
