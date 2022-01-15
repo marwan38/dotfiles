@@ -30,6 +30,13 @@ return require("packer").startup {
     -- SYNTAX
     use { "plasticboy/vim-markdown", ft = "md" }
     use { "MTDL9/vim-log-highlighting", ft = "log" }
+    use {
+      "folke/todo-comments.nvim",
+      requires = "nvim-lua/plenary.nvim",
+      config = function()
+        require("todo-comments").setup {}
+      end,
+    }
 
     -- BEHAVIOUR
     use {

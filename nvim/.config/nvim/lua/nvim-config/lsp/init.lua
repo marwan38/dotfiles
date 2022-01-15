@@ -62,6 +62,9 @@ end
 local null_ls = require "null-ls"
 null_ls.setup {
   on_attach = LspCommonOnAttach,
+  sources = {
+    null_ls.builtins.formatting.prettier,
+  },
 }
 
 -- Typescript

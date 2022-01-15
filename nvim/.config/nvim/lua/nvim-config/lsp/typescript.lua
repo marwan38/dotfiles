@@ -30,12 +30,12 @@ lspconfig.tsserver.setup {
 }
 
 lspconfig.eslint.setup(LspGetDefaultConfig())
-vim.api.nvim_exec([[
-  augroup eslint_format
-    au!
-    au BufEnter *.ts,*.tsx,*.js,*.jsx nnoremap <buffer> <silent> <leader>f <Cmd>EslintFixAll<CR>
-  augroup END
-]], false)
+-- vim.api.nvim_exec([[
+--   augroup eslint_format
+--     au!
+--     au BufEnter *.ts,*.tsx,*.js,*.jsx nnoremap <buffer> <silent> <leader>f <Cmd>EslintFixAll<CR>
+--   augroup END
+-- ]], false)
 
 local null_ls = require "null-ls"
 null_ls.register(null_ls.builtins.diagnostics.stylelint.with {
