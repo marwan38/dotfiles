@@ -114,9 +114,7 @@ return function()
 
   vim.api.nvim_exec(
     [[
-
     command! -bar -nargs=? -complete=dir LirExplore call v:lua.Config.lir.explore(<f-args>)
-
     command! -bar -nargs=? -complete=dir LirFloat call v:lua.Config.lir.open_float(<f-args>)
   ]],
     false

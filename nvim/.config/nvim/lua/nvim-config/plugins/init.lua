@@ -117,12 +117,6 @@ return require("packer").startup {
     }
 
     use {
-      "kyazdani42/nvim-tree.lua",
-      commit = "bfeaf4c8ef5ff24e",
-      config = conf "nvim-tree",
-      requires = "kyazdani42/nvim-web-devicons",
-    }
-    use {
       "tamago324/lir.nvim",
       requires = { "tamago324/lir-git-status.nvim" },
       config = conf "lir",
@@ -280,7 +274,7 @@ let test#strategy = "vimux"
     --   end
     -- }
     use { "glepnir/dashboard-nvim", setup = conf "dashboard" }
-    use { "ryanoasis/vim-devicons", disable = true }
+    use { "ryanoasis/vim-devicons" }
     use {
       "iamcco/markdown-preview.nvim",
       run = "cd app && yarn install",
