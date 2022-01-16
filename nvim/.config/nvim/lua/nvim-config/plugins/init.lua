@@ -52,10 +52,12 @@ return require("packer").startup {
       "nvim-treesitter/nvim-treesitter",
       run = ":TSUpdate",
       config = conf "treesitter",
+      requires = {
+        "nvim-treesitter/nvim-treesitter-textobjects",
+        "JoosepAlviste/nvim-ts-context-commentstring",
+        "windwp/nvim-ts-autotag",
+      },
     }
-    use { "nvim-treesitter/nvim-treesitter-textobjects" }
-    use { "windwp/nvim-ts-autotag" }
-    use { "JoosepAlviste/nvim-ts-context-commentstring" }
     use { "nvim-treesitter/playground", requires = "nvim-treesitter/nvim-treesitter" }
     -- use {
     --   'lewis6991/spellsitter.nvim', config = function()
@@ -100,15 +102,16 @@ return require("packer").startup {
       after = "nvim-autopairs",
       config = conf "nvim-cmp",
     }
-    use { "hrsh7th/vim-vsnip-integ", requires = { "hrsh7th/vim-vsnip" } }
     use {
       "hrsh7th/cmp-vsnip",
       after = "nvim-cmp",
       requires = {
-        "hrsh7th/vim-vsnip",
         {
-          "rafamadriz/friendly-snippets",
-          after = "cmp-vsnip",
+          "hrsh7th/vim-vsnip",
+          requires = {
+            { "hrsh7th/vim-vsnip-integ", after = "vim-vsnip" },
+            { "rafamadriz/friendly-snippets", after = "vim-vsnip" },
+          },
         },
       },
     }

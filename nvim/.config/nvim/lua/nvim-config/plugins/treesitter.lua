@@ -2,7 +2,7 @@ return function()
   require("nvim-treesitter.configs").setup {
     ensure_installed = "maintained", -- one of "all", "maintained", or a list of languages
     indent = {
-      enable = true
+      enable = true,
     },
     highlight = {
       enable = true, -- false will disable the whole extension
@@ -16,6 +16,9 @@ return function()
         node_incremental = "<TAB>",
         node_decremental = "<S-TAB>",
       },
+    },
+    autotag = {
+      enable = true,
     },
     textobjects = {
       select = {
@@ -40,9 +43,6 @@ return function()
         swap_previous = {
           ["<leader>A"] = "@parameter.inner",
         },
-      },
-      autotag = {
-        enable = true,
       },
       context_commentstring = {
         enable = true,
