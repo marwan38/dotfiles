@@ -90,11 +90,12 @@ require "nvim-config.lsp.json"
 -- YAML
 require("lspconfig").yamlls.setup(LspGetDefaultConfig())
 
-vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+vim.diagnostic.config({
   virtual_text = false,
-  underline = true,
   signs = true,
-  update_in_insert = true,
+  underline = true,
+  update_in_insert = false,
+  severity_sort = false,
 })
 
 local pop_opts = { border = "single", max_width = 80 }

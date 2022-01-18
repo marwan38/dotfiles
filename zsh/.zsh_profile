@@ -4,4 +4,3 @@ fi
 
 # Where should I put you?
 bindkey -s ^ff "tmux-sessionizer\n"
-bindkey -s ^fb "fgb\n"

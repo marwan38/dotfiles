@@ -1,14 +1,10 @@
-alias rgi="rg --no-ignore"
 alias ta="tmux attach"
-alias gitconfig='vim $XDG_CONFIG_HOME/git/config'
-alias thist="tmux capture-pane -epS - > /tmp/tmuxhist && vim -c 'te cat /tmp/tmuxhist' -c stopinsert"
 alias cb='git branch --sort=-committerdate | fzf --header Checkout| xargs git checkout'
 
 # Project based
+# TODO: Move to a 'personal' alias file that's hidden from the public repo
 # AP
 alias rs="./devops/rsync.sh marwan"
 alias gql="npm run graphql:introspect && npm run graphql:generate"
-alias n="/usr/bin/nvim@0.5.1"
 
-
-alias php="docker run php8.0 php"
+# alias php="docker run php8.0 php"

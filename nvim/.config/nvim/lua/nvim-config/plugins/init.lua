@@ -292,6 +292,7 @@ endfunction
     }
     use {
       "vimwiki/vimwiki",
+      branch = "dev",
     }
     use { "lambdalisue/suda.vim" }
 

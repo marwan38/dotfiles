@@ -29,16 +29,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Begin ----------------------------------------------------------------------
 
-DOTFILES="$HOME/$(dirname $(readlink $(print -P %N)))"
 export EDTIOR=nvim
 
-function have_cmd {
-    if ! hash $1 2>/dev/null; then
-        echo "zshrc: Command '$1' is not installed"
-        return 1
-    fi
-}
-
+DOTFILES="$HOME/$(dirname $(readlink $(print -P %N)))"
 if [[ -d $DOTFILES/bin ]]; then
     PATH="$DOTFILES/bin:$PATH"
 fi
