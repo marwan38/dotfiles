@@ -15,7 +15,7 @@ lspconfig.intelephense.setup {
   settings = {
     intelephense = {
       environment = {
-        phpVersion = "8.0",
+        phpVersion = "7.4",
       },
     },
   },

@@ -121,9 +121,18 @@ end
 
 vim.g.mapleader = " "
 
-if vim.g.neovide then
-  vim.g.neovide_cursor_trail_size = 0
-  vim.g.neovide_cursor_trail_length = 0
-  vim.g.neovide_floating_blur = false
-  vim.g.neovide_floating_opacity = 1.0
+if vim.fn.has "wsl" then
+  vim.g.clipboard = {
+    name = "win32yank-wsl",
+    copy = {
+
+      ["+"] = "win32yank.exe -i --crlf",
+      ["*"] = "win32yank.exe -i --crlf",
+    },
+    paste = {
+      ["+"] = "win32yank.exe -o --lf",
+      ["*"] = "win32yank.exe -o --lf",
+    },
+    cache_enabled = false,
+  }
 end
