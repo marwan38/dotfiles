@@ -1,6 +1,27 @@
 return function()
   require("nvim-treesitter.configs").setup {
-    ensure_installed = "maintained", -- one of "all", "maintained", or a list of languages
+    ensure_installed = {
+      "bash",
+      "css",
+      "dockerfile",
+      "graphql",
+      "html",
+      "javascript",
+      "jsdoc",
+      "json",
+      "json5",
+      "lua",
+      "php",
+      -- "phpdoc",
+      "regex",
+      "rust",
+      "scss",
+      "toml",
+      "tsx",
+      "typescript",
+      "vim",
+      "yaml",
+    }, -- one of "all", "maintained", or a list of languages
     indent = {
       enable = true,
     },
