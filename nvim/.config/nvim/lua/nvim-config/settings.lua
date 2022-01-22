@@ -9,7 +9,7 @@ end
 
 opt.number = true
 opt.relativenumber = true
-opt.autoindent = true
+opt.smartindent = true
 opt.shiftwidth = 4
 opt.tabstop = 4
 opt.softtabstop = -1
@@ -21,14 +21,13 @@ opt.showcmd = true
 opt.mouse = "a"
 opt.hidden = true
 opt.cursorline = true
-opt.guicursor = "n-v-c-sm:block-Cursor/lCursor,i-ci-ve:ver25-Cursor/lCursor,r-cr-o:hor20"
 opt.splitbelow = true
 opt.splitright = true
-opt.wrap = true
+opt.wrap = false
 opt.linebreak = true
 opt.swapfile = true
 opt.shortmess = "filnxtToOFIA"
-opt.updatetime = 4096 -- change cursorhold time with 'vim.g.cursorhold_updatetime'
+opt.updatetime = 300
 opt.termguicolors = true
 opt.backspace = list { "indent", "eol", "start" }
 opt.inccommand = "split"
@@ -41,15 +40,7 @@ opt.completeopt = list { "menuone", "noselect" }
 opt.virtualedit = list { "block" }
 opt.signcolumn = "yes:2"
 opt.colorcolumn = list { "100" }
-opt.sessionoptions = list {
-  "blank",
-  "buffers",
-  "curdir",
-  "folds",
-  "help",
-  "tabpages",
-  "winsize",
-}
+opt.lazyredraw = true
 opt.diffopt = list {
   "algorithm:histogram",
   "internal",
@@ -59,27 +50,15 @@ opt.diffopt = list {
   "iwhite",
   "vertical",
 }
-opt.pyxversion = 3
-opt.shada = list {
-  "!",
-  "'10",
-  "/100",
-  ":100",
-  "<0",
-  "@1",
-  "f1",
-  "h",
-  "s1",
-}
-opt.list = false
+opt.list = true
 opt.listchars = list {
-  "tab: ──",
-  "space:·",
-  "nbsp:␣",
-  "trail:•",
+  -- "tab: ──",
+  -- "space:·",
+  -- "nbsp:␣",
+  -- "trail:•",
   "eol:↵",
-  "precedes:«",
-  "extends:»",
+  -- "precedes:«",
+  -- "extends:»",
 }
 opt.fillchars = list {
   "vert:▏",
@@ -112,7 +91,7 @@ if vim.fn.executable "ag" == 1 then
 end
 
 -- vim.cmd("syntax on")
-vim.cmd "filetype plugin indent on"
+-- vim.cmd "filetype plugin indent on"
 
 local init_extra_path = vim.fn.fnamemodify(vim.fn.expand "$MYVIMRC", ":h") .. "/init_extra.vim"
 if vim.fn.filereadable(init_extra_path) == 1 then

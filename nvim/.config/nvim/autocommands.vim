@@ -1,6 +1,8 @@
 augroup NvimConfig
     au!
 
+    " au VimEnter * profile start vim-profile.log | profile file * | profile func *
+
     " nuke netrw brain damage
     au VimEnter * silent! au! FileExplorer *
     " au BufEnter * if isdirectory(expand('%')) | bd | endif

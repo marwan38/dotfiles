@@ -15,6 +15,14 @@ local function conf(config_name)
   return require(string.format("nvim-config.plugins.%s", config_name))
 end
 
+-- Stop loading built in plugins
+vim.g.loaded_netrwPlugin = 1
+vim.g.loaded_tutor_mode_plugin = 1
+vim.g.loaded_2html_plugin = 1
+vim.g.loaded_zipPlugin = 1
+vim.g.loaded_tarPlugin = 1
+vim.g.loaded_gzip = 1
+
 return require("packer").startup {
   ---@diagnostic disable-next-line: unused-local
   function(use, use_rocks)
@@ -43,15 +51,18 @@ return require("packer").startup {
     use { "kyazdani42/nvim-web-devicons", config = conf "nvim-web-devicons" }
     use {
       "nvim-treesitter/nvim-treesitter",
-      run = ":TSUpdate",
       config = conf "treesitter",
       requires = {
         "nvim-treesitter/nvim-treesitter-textobjects",
         "JoosepAlviste/nvim-ts-context-commentstring",
         "windwp/nvim-ts-autotag",
+        {
+          "p00f/nvim-ts-rainbow",
+          config = conf "nvim-ts-rainbow",
+        },
+        "nvim-treesitter/playground",
       },
     }
-    use { "nvim-treesitter/playground", requires = "nvim-treesitter/nvim-treesitter" }
     use { "neovim/nvim-lspconfig" }
     use { "jose-elias-alvarez/null-ls.nvim" }
     use { "jose-elias-alvarez/nvim-lsp-ts-utils" }
@@ -121,7 +132,7 @@ return require("packer").startup {
       end,
     }
     use { "windwp/nvim-autopairs", config = conf "nvim-autopairs" }
-    use { "norcalli/nvim-colorizer.lua", config = conf "nvim-colorizer" }
+    use { "norcalli/nvim-colorizer.lua", config = conf "nvim-colorizer", event = "BufRead" }
     use {
       "numToStr/Comment.nvim",
       config = function()
@@ -223,7 +234,7 @@ let test#strategy = "vimux"
     -- MISC
     use { "feline-nvim/feline.nvim", config = conf "feline" }
     use { "lewis6991/gitsigns.nvim", config = conf "gitsigns" }
-    use { "lukas-reineke/indent-blankline.nvim", config = conf "indent-blankline" }
+    use { "lukas-reineke/indent-blankline.nvim", config = conf "indent-blankline", event = "BufRead" }
     use { "folke/lsp-trouble.nvim", config = conf "lsp-trouble", after = "nvim-web-devicons" }
     use { "sindrets/diffview.nvim", config = conf "diffview", after = "nvim-web-devicons" }
     use { "sindrets/winshift.nvim", config = conf "winshift" }
@@ -233,11 +244,6 @@ let test#strategy = "vimux"
       requires = { "nvim-lua/plenary.nvim", "sindrets/diffview.nvim" },
     }
     use { "simrat39/symbols-outline.nvim", setup = conf "symbols-outline" }
-    use {
-      "p00f/nvim-ts-rainbow",
-      requires = { "nvim-treesitter/nvim-treesitter" },
-      config = conf "nvim-ts-rainbow",
-    }
     use { "tpope/vim-fugitive" }
     -- use {
     --   'rhysd/conflict-marker.vim',
@@ -319,7 +325,7 @@ endfunction
   -- config = {
   --   profile = {
   --     enable = true,
-  --     threshold = 1
-  --   }
-  -- }
+  --     threshold = 1,
+  --   },
+  -- },
 }
