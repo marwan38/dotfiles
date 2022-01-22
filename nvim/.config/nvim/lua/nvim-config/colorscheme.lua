@@ -43,7 +43,7 @@ else
   vim.g.tokyonight_colors = nil
 end
 
-require "nvim-config.plugins.material"()
+-- require "nvim-config.plugins.material"()
 
 local M = {}
 
