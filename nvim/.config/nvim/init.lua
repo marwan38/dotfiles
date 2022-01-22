@@ -97,3 +97,4 @@ function UpdateMessagesWin()
 end
 
 return Config
+

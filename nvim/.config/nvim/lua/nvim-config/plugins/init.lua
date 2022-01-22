@@ -18,13 +18,6 @@ end
 return require("packer").startup {
   ---@diagnostic disable-next-line: unused-local
   function(use, use_rocks)
-    -- vim.g.did_load_filetypes = 1
-    vim.g.netrw_liststyle = 3
-    vim.g.netrw_bufsettings = "noma nomod nonu nowrap ro nornu"
-
-    -- vim.cmd([[runtime! ftdetect/*.vim]])
-    -- vim.cmd([[runtime! ftdetect/*.lua]])
-
     use "wbthomason/packer.nvim"
 
     -- SYNTAX
@@ -59,14 +52,6 @@ return require("packer").startup {
       },
     }
     use { "nvim-treesitter/playground", requires = "nvim-treesitter/nvim-treesitter" }
-    -- use {
-    --   'lewis6991/spellsitter.nvim', config = function()
-    --     require('spellsitter').setup {
-    --       hl = 'SpellBad',
-    --       captures = {'comment'},  -- set to {} to spellcheck everything
-    --     }
-    --   end
-    -- }
     use { "neovim/nvim-lspconfig" }
     use { "jose-elias-alvarez/null-ls.nvim" }
     use { "jose-elias-alvarez/nvim-lsp-ts-utils" }
@@ -88,7 +73,7 @@ return require("packer").startup {
     }
 
     use { "mfussenegger/nvim-dap", config = conf "dap" }
-    use "rcarriga/nvim-dap-ui"
+    use { "rcarriga/nvim-dap-ui", requires = "nvim-dap" }
 
     use {
       "hrsh7th/nvim-cmp",
@@ -99,7 +84,7 @@ return require("packer").startup {
         { "hrsh7th/cmp-buffer" },
         { "hrsh7th/cmp-cmdline" },
       },
-      after = "nvim-autopairs",
+      after = { "nvim-autopairs", "friendly-snippets" },
       config = conf "nvim-cmp",
     }
     use {
@@ -318,7 +303,7 @@ endfunction
     use { "gruvbox-community/gruvbox" }
     use { "kjssad/quantum.vim" }
     use { "juanedi/predawn.vim" }
-    use { "glepnir/zephyr-nvim" }
+    -- use { "glepnir/zephyr-nvim" }
     use { "folke/tokyonight.nvim" }
     use { "Mofiqul/dracula.nvim" }
     use { "sindrets/material.nvim" }

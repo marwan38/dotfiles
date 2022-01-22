@@ -66,12 +66,12 @@ return function()
       color_devicons = true,
       use_less = true,
       set_env = { ["COLORTERM"] = "truecolor" }, -- default = nil,
-      file_previewer = require("telescope.previewers").vim_buffer_cat.new,
-      grep_previewer = require("telescope.previewers").vim_buffer_vimgrep.new,
-      qflist_previewer = require("telescope.previewers").vim_buffer_qflist.new,
+      -- file_previewer = require("telescope.previewers").vim_buffer_cat.new,
+      -- grep_previewer = require("telescope.previewers").vim_buffer_vimgrep.new,
+      -- qflist_previewer = require("telescope.previewers").vim_buffer_qflist.new,
 
       -- Developer configurations: Not meant for general override
-      buffer_previewer_maker = new_maker,
+      -- buffer_previewer_maker = new_maker,
       mappings = {
         i = {
           ["<c-q>"] = actions.send_to_qflist + actions.open_qflist,
