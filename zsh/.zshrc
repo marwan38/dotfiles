@@ -49,14 +49,14 @@ setopt SHARE_HISTORY
 setopt HIST_REDUCE_BLANKS
 
 # Pager ------------------------------------------------------------------------
-export PAGER="less"
+# export PAGER="less"
 
-export LESS="\
-    --RAW-CONTROL-CHARS \
-    --ignore-case \
-    --LONG-PROMPT \
-    --quit-if-one-screen \
-    --chop-long-lines"
+# export LESS="\
+#     --RAW-CONTROL-CHARS \
+#     --ignore-case \
+#     --LONG-PROMPT \
+#     --quit-if-one-screen \
+#     --chop-long-lines"
 
 # export MANPAGER='nvim +Man!'
 

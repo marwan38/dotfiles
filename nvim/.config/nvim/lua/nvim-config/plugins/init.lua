@@ -22,6 +22,14 @@ vim.g.loaded_2html_plugin = 1
 vim.g.loaded_zipPlugin = 1
 vim.g.loaded_tarPlugin = 1
 vim.g.loaded_gzip = 1
+vim.cmd [[
+let g:matchparen_timeout = 2
+let g:matchparen_insert_timeout = 2
+]]
+
+-- require("packer").init({
+-- 	max_jobs = 50
+-- })
 
 return require("packer").startup {
   ---@diagnostic disable-next-line: unused-local

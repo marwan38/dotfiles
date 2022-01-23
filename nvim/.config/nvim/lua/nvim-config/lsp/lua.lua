@@ -30,19 +30,17 @@ end
 lua_add_lib "$VIMRUNTIME"
 lua_add_lib(vim.fn.stdpath "data" .. "/site/pack/packer/start/plenary.nvim")
 
-local sumneko_root_path = vim.fn.getenv "HOME" .. "/git/lua-language-server"
-local sumneko_binary = sumneko_root_path .. "/bin/" .. system_name .. "/lua-language-server"
+local runtime_path = vim.split(package.path, ';')
+table.insert(runtime_path, "lua/?.lua")
+table.insert(runtime_path, "lua/?/init.lua")
 
 local config = vim.tbl_deep_extend("force", LspGetDefaultConfig(), {
-  cmd = {
-    sumneko_binary,
-  },
-  filetypes = { "lua" },
   settings = {
     Lua = {
       runtime = {
         version = "LuaJIT",
-        path = lua_path,
+        -- Setup your lua path
+        path = runtime_path,
         fileEncoding = "utf8",
         unicodeName = true,
       },
