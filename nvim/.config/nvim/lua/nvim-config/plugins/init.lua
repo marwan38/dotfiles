@@ -27,6 +27,8 @@ return require("packer").startup {
   ---@diagnostic disable-next-line: unused-local
   function(use, use_rocks)
     use "wbthomason/packer.nvim"
+    use { "nvim-lua/popup.nvim" }
+    use { "nvim-lua/plenary.nvim" }
 
     -- SYNTAX
     use { "plasticboy/vim-markdown", ft = "md" }
@@ -46,8 +48,6 @@ return require("packer").startup {
         vim.g.cursorhold_updatetime = 250
       end,
     }
-    use { "nvim-lua/popup.nvim" }
-    use { "nvim-lua/plenary.nvim" }
     use { "kyazdani42/nvim-web-devicons", config = conf "nvim-web-devicons" }
     use {
       "nvim-treesitter/nvim-treesitter",

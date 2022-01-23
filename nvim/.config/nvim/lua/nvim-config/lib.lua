@@ -116,6 +116,7 @@ function M.execute_macro_over_visual_range()
 end
 
 
+-- Executes the expression and outputs it into a new buffer
 function M.read_new(exprression)
   vim.cmd("enew | set ft=log")
 
