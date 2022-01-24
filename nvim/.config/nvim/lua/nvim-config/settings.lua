@@ -49,13 +49,13 @@ opt.diffopt = list {
   "iwhite",
   "vertical",
 }
-opt.list = true
+opt.list = false
 opt.listchars = list {
   -- "tab: ──",
   -- "space:·",
   -- "nbsp:␣",
   -- "trail:•",
-  "eol:↵",
+  -- "eol:↵",
   -- "precedes:«",
   -- "extends:»",
 }
