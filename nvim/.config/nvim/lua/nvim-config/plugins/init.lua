@@ -231,8 +231,8 @@ return require("packer").startup {
       "vim-test/vim-test",
       setup = function()
         vim.cmd [[
-let test#strategy = "vimux"
-]]
+            let test#strategy = "vimux"
+        ]]
       end,
       requires = {
         "preservim/vimux",
@@ -252,11 +252,6 @@ let test#strategy = "vimux"
     use { "folke/lsp-trouble.nvim", config = conf "lsp-trouble", after = "nvim-web-devicons" }
     use { "sindrets/diffview.nvim", config = conf "diffview", after = "nvim-web-devicons" }
     use { "sindrets/winshift.nvim", config = conf "winshift" }
-    use {
-      "TimUntersberger/neogit",
-      config = conf "neogit",
-      requires = { "nvim-lua/plenary.nvim", "sindrets/diffview.nvim" },
-    }
     use { "simrat39/symbols-outline.nvim", setup = conf "symbols-outline" }
     use { "tpope/vim-fugitive" }
     -- use {

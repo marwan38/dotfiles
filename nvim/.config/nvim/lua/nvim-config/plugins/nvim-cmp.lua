@@ -62,10 +62,7 @@ return function()
         max_item_count = 20,
         option = {
           get_bufnrs = function()
-            return vim.tbl_filter(function(bufnr)
-              local bytesize = api.nvim_buf_get_offset(bufnr, api.nvim_buf_line_count(bufnr))
-              return bytesize < 1024 * 1024
-            end, utils.list_listed_bufs())
+            return vim.api.nvim_list_bufs()
           end,
         },
       },
