@@ -209,7 +209,6 @@ return require("packer").startup {
           "qf",
           "dashboard",
           "packer",
-          "NeogitStatus",
           "TelescopePrompt",
           "NvimTree",
           "Trouble",
@@ -232,6 +231,7 @@ return require("packer").startup {
       setup = function()
         vim.cmd [[
             let test#strategy = "vimux"
+            let test#php#phpunit#executable = './vendor/bin/phpunit'
         ]]
       end,
       requires = {

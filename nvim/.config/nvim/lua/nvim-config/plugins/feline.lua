@@ -549,7 +549,6 @@ function M.setup()
         "^DiffviewFHOptionPanel$",
         "^Outline$",
         "^dashboard$",
-        "^NeogitStatus$",
 
         "^lir$",
       },

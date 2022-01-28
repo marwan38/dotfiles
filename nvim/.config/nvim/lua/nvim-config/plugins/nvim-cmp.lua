@@ -60,11 +60,12 @@ return function()
       {
         name = "buffer",
         max_item_count = 20,
-        option = {
-          get_bufnrs = function()
-            return vim.api.nvim_list_bufs()
-          end,
-        },
+        -- Disabled until i figure out how to get the buffer filetype by buffer id
+        -- option = {
+        --   get_bufnrs = function()
+        --     return vim.api.nvim_list_bufs()
+        --   end,
+        -- },
       },
     },
     -- sorting = {

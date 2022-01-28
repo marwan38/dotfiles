@@ -192,8 +192,6 @@ nnoremap z= <Cmd>Telescope spell_suggest theme=get_cursor<CR>
 nnoremap <leader>fl <Cmd>Telescope current_buffer_fuzzy_find theme=get_ivy<CR>
 
 " Git
-nnoremap <leader>gg <Cmd>Neogit<CR>
-nnoremap <leader>gs <Cmd>Neogit kind=split<CR>
 nnoremap <leader>gl <Cmd>Git log<CR>
 nnoremap <leader>gcs <Cmd>Git commit<CR>
 nnoremap <leader>gcc <Cmd>Git commit -a<CR>

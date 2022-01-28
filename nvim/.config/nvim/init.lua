@@ -12,6 +12,13 @@ _G.pi = function(a, opt)
   print(vim.inspect(a, opt))
 end
 
+_G._prof = function()
+  print "Starting profile"
+  vim.cmd [[
+profile start vim-profile-manual.log | profile file * | profile func *
+]]
+end
+
 _G.uv = vim.loop
 
 require "nvim-config"
