@@ -1,6 +1,7 @@
 return function()
   local cmp = require "cmp"
   local cmp_autopairs = require "nvim-autopairs.completion.cmp"
+  local cmp_buffer = require "cmp_buffer"
   local api = vim.api
   local utils = Config.common.utils
 
@@ -60,19 +61,29 @@ return function()
       {
         name = "buffer",
         max_item_count = 20,
-        -- Disabled until i figure out how to get the buffer filetype by buffer id
-        -- option = {
-        --   get_bufnrs = function()
-        --     return vim.api.nvim_list_bufs()
-        --   end,
-        -- },
+        option = {
+          get_bufnrs = function()
+            local bufs = {}
+
+            for _, bufnr in ipairs(api.nvim_list_bufs()) do
+              -- dap-repl errors out
+              if api.nvim_buf_get_option(bufnr, "filetype") ~= "dap-repl" then
+                bufs[bufnr] = true
+              end
+            end
+
+            return vim.tbl_keys(bufs)
+          end,
+        },
       },
     },
-    -- sorting = {
-    --   comparators = {
-    --     function(...) return cmp_buffer:compare_locality(...) end,
-    --   },
-    -- },
+    sorting = {
+      comparators = {
+        function(...)
+          return cmp_buffer:compare_locality(...)
+        end,
+      },
+    },
   }
 
   cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
