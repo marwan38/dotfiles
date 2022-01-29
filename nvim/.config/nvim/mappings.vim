@@ -60,7 +60,7 @@ nnoremap <leader>E <Cmd>call v:lua.Config.lir.toggle_float(getcwd())<CR>
 inoremap <M-Space> <Esc>
 
 " Make session
-nnoremap <silent> <M-S> <Cmd>call MakeSession()<CR>
+nmap <silent> <M-s> <Cmd>SessionSave<CR>
 
 " Begin new line above from insert mode
 inoremap <M-Return> <Esc>O
