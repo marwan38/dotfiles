@@ -42,6 +42,8 @@ end
 
 ---@diagnostic disable-next-line: unused-local
 _G.LspCommonOnAttach = function(client, bufnr)
+  -- Enable completion triggered by <c-x><c-o>
+  vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
   require("illuminate").on_attach(client)
   require("lsp_signature").on_attach({
     bind = true, -- This is mandatory, otherwise border config won't get registered.
@@ -90,13 +92,13 @@ require "nvim-config.lsp.json"
 -- YAML
 require("lspconfig").yamlls.setup(LspGetDefaultConfig())
 
-vim.diagnostic.config({
+vim.diagnostic.config {
   virtual_text = false,
   signs = true,
   underline = true,
   update_in_insert = false,
   severity_sort = false,
-})
+}
 
 local pop_opts = { border = "single", max_width = 80 }
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, pop_opts)
@@ -147,41 +149,7 @@ end
 
 M.define_diagnostic_signs(diagnostic_signs)
 
--- Highlight references on cursor hold
-
-function M.highlight_cursor_symbol()
-  if vim.lsp.buf.server_ready() then
-    if vim.fn.mode() ~= "i" then
-      vim.lsp.buf.document_highlight()
-    end
-  end
-end
-
-function M.highlight_cursor_clear()
-  if vim.lsp.buf.server_ready() then
-    vim.lsp.buf.clear_references()
-  end
-end
 ---------------------------------
-
--- Only show diagnostics if current word + line is not the same as last call.
-local last_diagnostics_word = nil
-function M.show_position_diagnostics()
-  local cword = vim.fn.expand "<cword>"
-  local cline = vim.api.nvim_win_get_cursor(0)[1]
-
-  if last_diagnostics_word and last_diagnostics_word[1] == cline and last_diagnostics_word[2] == cword then
-    return
-  end
-  last_diagnostics_word = { cline, cword }
-
-  if vim.diagnostic then
-    vim.diagnostic.show_position_diagnostics()
-  else
-    ---@diagnostic disable-next-line: deprecated
-    vim.lsp.diagnostic.show_position_diagnostics()
-  end
-end
 
 -- LSP auto commands
 vim.api.nvim_exec(
@@ -195,8 +163,6 @@ vim.api.nvim_exec(
     " au CursorHoldI  * silent! lua Config.lsp.highlight_cursor_symbol()
     " au CursorMoved  * silent! lua Config.lsp.highlight_cursor_clear()
     " au CursorMovedI * silent! lua Config.lsp.highlight_cursor_clear()
-
-    au CursorHold * silent! lua Config.lsp.show_position_diagnostics()
   augroup END
   ]],
   false

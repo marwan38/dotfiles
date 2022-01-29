@@ -227,7 +227,6 @@ function M.get_indent_level()
 end
 
 function M.full_indent()
-
   local pos = api.nvim_win_get_cursor(0)
 
   local col = pos[2]
